@@ -19,4 +19,4 @@ MonoBehaviour:
   fullAtk: 0
   fullAr: 0
   fullMr: 0
-  isOwning: 0
+  isOwning: 1
