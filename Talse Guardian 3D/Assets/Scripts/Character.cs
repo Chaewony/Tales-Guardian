@@ -24,7 +24,8 @@ public class Character : MonoBehaviour
             }
             else
             {
-                charSlot[i].sprite = allCharacter[i].mySprite;
+				charSlot[i].sprite = allCharacter[i].mySprite;
+                //흑백처리 알아보기 or 검정 반투명 레이어 끼얹기
                 charSlot[i].color = new Color(charSlot[i].color.r, charSlot[i].color.g, charSlot[i].color.b, 0.5f);
             }
         }
@@ -33,5 +34,52 @@ public class Character : MonoBehaviour
 	{
         if (allCharacter[index].myIsOwning)
             illustSlot.sprite = allCharacter[index].myIllustSprite;
+    }
+
+    public void ShowOwningCharacters() //가지고있는 캐릭터들만 표시
+    {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            //모든 캐릭터 이미지들 이미지 슬롯에 넣기
+            if (allCharacter[i].myIsOwning)
+            {
+                charSlot[i].sprite = allCharacter[i].mySprite;
+            }
+        }
+    }
+    public void ShowDefTypeCharacters() //가지고있는 캐릭터들만 표시
+    {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            //모든 캐릭터 이미지들 이미지 슬롯에 넣기
+            if (allCharacter[i].myIsOwning&&allCharacter[i].myPosType=="Def")
+            {
+                charSlot[i].sprite = allCharacter[i].mySprite;
+            }
+        }
+    }
+
+    public void ShowAtkTypeCharacters() //가지고있는 캐릭터들만 표시
+    {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            //모든 캐릭터 이미지들 이미지 슬롯에 넣기
+            if (allCharacter[i].myIsOwning&&allCharacter[i].myPosType == "Atk")
+            {
+                charSlot[i].sprite = allCharacter[i].mySprite;
+            }
+        }
+    }
+
+    public void ShowSupTypeCharacters() //가지고있는 캐릭터들만 표시
+    {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            //모든 캐릭터 이미지들 이미지 슬롯에 넣기
+            if (allCharacter[i].myIsOwning&&allCharacter[i].myPosType == "Sup")
+            {
+                charSlot[i].sprite = allCharacter[i].mySprite;
+            }
+        }
     }
 }

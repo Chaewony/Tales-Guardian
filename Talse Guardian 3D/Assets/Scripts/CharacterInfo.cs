@@ -15,6 +15,10 @@ public class CharacterInfo : ScriptableObject
     [SerializeField]
     private string charName;
     [SerializeField]
+    private string rank; //등급
+    [SerializeField]
+    private string positionType; //포지션
+    [SerializeField]
     private float fullHp;
     [SerializeField]
     private float fullAtk;
@@ -28,6 +32,7 @@ public class CharacterInfo : ScriptableObject
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }
     public string myCharName { get => charName; }
+    public string myPosType { get => positionType; }
     public float myHp { get => fullHp; }
     public float myAtk { get => fullAtk; }
     public float myAr { get => fullAr; }

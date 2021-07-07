@@ -17,3 +17,20 @@ public enum ButtonType
 	Char2, //캐릭터 2 선택
 	Char3 //캐릭터 3 선택
 }
+
+public enum ArrangementButtonType
+{
+	//배치 씬
+	Team1,
+	Team2,
+	Team3,
+	Theme1,
+	Theme2,
+	Theme3,
+	Theme4,
+	Theme5,
+	DefType,
+	AtkType,
+	SupType,
+	All
+}
