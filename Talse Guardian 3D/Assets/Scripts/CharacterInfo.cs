@@ -28,6 +28,10 @@ public class CharacterInfo : ScriptableObject
     private float fullMr; //Magic resist 마법방어력
     [SerializeField]
     private bool isOwning; //플레이어가 가지고 있는 카드인지
+    [SerializeField]
+    private string firstSkillName;
+    [SerializeField]
+    private string secondSkillName;
 
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }
@@ -38,4 +42,6 @@ public class CharacterInfo : ScriptableObject
     public float myAr { get => fullAr; }
     public float myMr { get => fullMr; }
     public bool myIsOwning { get => isOwning; }
+    public string myFirstSkillName { get => firstSkillName; }
+    public string mySecondSkillName { get => secondSkillName; }
 }

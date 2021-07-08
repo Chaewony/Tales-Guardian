@@ -22,3 +22,5 @@ MonoBehaviour:
   fullAr: 0
   fullMr: 0
   isOwning: 1
+  firstSkillName: "\uBE68\uAC04 \uAD6C\uB450\uC758 \uB9C8\uBC95"
+  secondSkillName: "\uC740 \uAD6C\uB450\uC758 \uB9C8\uBC95"

@@ -8,12 +8,12 @@ public class ArrangeButton : MonoBehaviour
     public ArrangementButtonType arrangeButtonType;
     public Character character;
 
-	private void Start()
-	{
+    private void Start()
+    {
         character.ShowOwningCharacters();
     }
 
-	public void OnButtonClick()
+    public void OnButtonClick()
     {
         switch (arrangeButtonType)
         {
