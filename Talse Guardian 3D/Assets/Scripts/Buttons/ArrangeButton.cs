@@ -11,6 +11,7 @@ public class ArrangeButton : MonoBehaviour
 	private void Start()
 	{
         character.ShowOwningCharacters();
+        Debug.Log("전체보기");
     }
 
 	public void OnButtonClick()
