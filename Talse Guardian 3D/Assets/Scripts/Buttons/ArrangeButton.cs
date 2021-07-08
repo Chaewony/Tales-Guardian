@@ -11,7 +11,6 @@ public class ArrangeButton : MonoBehaviour
 	private void Start()
 	{
         character.ShowOwningCharacters();
-        Debug.Log("전체보기");
     }
 
 	public void OnButtonClick()
@@ -43,19 +42,15 @@ public class ArrangeButton : MonoBehaviour
                 Debug.Log("Theme5 클릭");
                 break;
             case ArrangementButtonType.DefType:
-                Debug.Log("방어형 클릭");
                 character.ShowDefTypeCharacters();
                 break;
             case ArrangementButtonType.AtkType:
-                Debug.Log("공격형 클릭");
                 character.ShowAtkTypeCharacters();
                 break;
             case ArrangementButtonType.SupType:
-                Debug.Log("보조형 클릭");
                 character.ShowSupTypeCharacters();
                 break;
             case ArrangementButtonType.All:
-                Debug.Log("전체 보기 클릭");
                 character.ShowOwningCharacters();
                 break;
         }
