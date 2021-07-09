@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
   illustSprite: {fileID: 21300000, guid: 5bb2d8423a2805e4084259835f30609f, type: 3}
+  battleSprite: {fileID: 21300000, guid: df1015d27a5417041b6123a2cbeffa8c, type: 3}
   charName: "\uBC30\uACE0\uD508 \uD638\uB791\uC774"
   rank: Normal
   positionType: Def

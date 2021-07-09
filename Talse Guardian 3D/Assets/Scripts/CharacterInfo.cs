@@ -13,6 +13,8 @@ public class CharacterInfo : ScriptableObject
     [SerializeField]
     private Sprite illustSprite;
     [SerializeField]
+    private Sprite battleSprite;
+    [SerializeField]
     private string charName;
     [SerializeField]
     private string rank; //등급
@@ -32,9 +34,12 @@ public class CharacterInfo : ScriptableObject
     private string firstSkillName;
     [SerializeField]
     private string secondSkillName;
+    [SerializeField]
+    private bool isSelected;
 
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }
+    public Sprite mybattleSprite { get => battleSprite; }
     public string myCharName { get => charName; }
     public string myPosType { get => positionType; }
     public float myHp { get => fullHp; }
@@ -44,4 +49,5 @@ public class CharacterInfo : ScriptableObject
     public bool myIsOwning { get => isOwning; }
     public string myFirstSkillName { get => firstSkillName; }
     public string mySecondSkillName { get => secondSkillName; }
+    public bool myIsSelected { get => isSelected; set => isSelected = value; }
 }

@@ -25,5 +25,6 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
 		PositionType.text = "포지션 타입: " + character.myPosType;
 		FirstSkillName.text = "스킬1: " + character.myFirstSkillName;
 		SecondSkillName.text = "스킬2: " + character.mySecondSkillName;
+		character.myIsSelected = true;
 	}
 }
