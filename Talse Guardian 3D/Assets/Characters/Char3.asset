@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
   illustSprite: {fileID: 21300000, guid: 21e9348fcc6cfd448985922549d68cb0, type: 3}
-  battleSprite: {fileID: 21300000, guid: df1015d27a5417041b6123a2cbeffa8c, type: 3}
+  battleSprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
   charName: "\uBE4C\uB9AC\uB098"
   rank: Normal
   positionType: Sup
@@ -25,3 +25,4 @@ MonoBehaviour:
   isOwning: 1
   firstSkillName: "\uD30C\uB2E4\uB2ED!"
   secondSkillName: "\uAF2C\uB07C\uC624!"
+  isSelected: 0

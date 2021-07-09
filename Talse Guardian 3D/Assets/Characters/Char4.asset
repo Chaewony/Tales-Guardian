@@ -25,3 +25,4 @@ MonoBehaviour:
   isOwning: 1
   firstSkillName: "\uC9C0\uD321\uC774 \uC2A4\uC719"
   secondSkillName: "\uCFE0\uD0A4 \uBD80\uC218\uAE30"
+  isSelected: 0

@@ -259,6 +259,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &56906204
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +398,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &76290658
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +537,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &77568695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 241521877}
   gridColor: {fileID: 241521878}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &263561052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,6 +1643,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &324177783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2372,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &446644881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 446644882}
   gridColor: {fileID: 446644883}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &463857916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,6 +2679,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &550811188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2761,6 +2769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 550811189}
   gridColor: {fileID: 550811190}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &586825439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3526,6 +3535,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &743091029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,6 +3770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 770445942}
   gridColor: {fileID: 770445943}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &787510366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,6 +3909,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &799831129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,6 +4048,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &855585967
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,6 +4216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 884048497}
   gridColor: {fileID: 884048498}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &907531799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4912,6 +4926,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1071961443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1071961444}
+  - component: {fileID: 1071961445}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1071961444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071961443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 593, y: 457, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071961445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071961443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbf4333fcc901e41a95673ce1fa6a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCharacter:
+  - {fileID: 11400000, guid: 76da178f6d7ffb94aa7bd47207eaa70b, type: 2}
+  - {fileID: 11400000, guid: 950833a0e5729604c91ffbee90e4e70a, type: 2}
+  - {fileID: 11400000, guid: 6d0299029965f30499cd212a59704b82, type: 2}
+  - {fileID: 11400000, guid: 66b7c4f120e1d96488b6726fda3d7972, type: 2}
+  - {fileID: 11400000, guid: 0415dc6bc2dc5684d8de21547da3791b, type: 2}
+  - {fileID: 11400000, guid: fddfea17d04f1c44486bc75320e2dc87, type: 2}
+  - {fileID: 11400000, guid: 69f36f6f4bea398449511cc9898217c7, type: 2}
+  - {fileID: 11400000, guid: 9b5edcfa27a8bbf428599823e6c27472, type: 2}
+  - {fileID: 11400000, guid: 28271bce424491044b60bcb047f2a9b3, type: 2}
+  - {fileID: 11400000, guid: baa024ddf93415a48b5eeb26675a7d22, type: 2}
+  - {fileID: 11400000, guid: 1fdc54db73d12a24f873ca4f3bde2e9c, type: 2}
+  - {fileID: 11400000, guid: 0f6995f8b5e4fcd4f8957abe366756e5, type: 2}
+  - {fileID: 11400000, guid: 1019036d4ab41e24e820e47b3c74701d, type: 2}
+  - {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
+  - {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
+  - {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
+  canClickGrid: 0
 --- !u!1 &1104999677
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,6 +5125,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1105032770
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,6 +5420,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1155982828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,6 +5865,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1352158942
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,6 +6111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 1428493115}
   gridColor: {fileID: 1428493116}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1441228887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,6 +6328,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1476455036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6705,6 +6785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 1609375589}
   gridColor: {fileID: 1609375590}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1634426431
 GameObject:
   m_ObjectHideFlags: 0
@@ -7251,6 +7332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 1764943139}
   gridColor: {fileID: 1764943140}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1771853894
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,6 +7500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridScale: {fileID: 1867646759}
   gridColor: {fileID: 1867646760}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &1877668907
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,6 +8158,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &2082812433
 GameObject:
   m_ObjectHideFlags: 0
@@ -8503,6 +8587,7 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
 --- !u!1 &2094786575
 GameObject:
   m_ObjectHideFlags: 0
@@ -8719,3 +8804,4 @@ MonoBehaviour:
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
