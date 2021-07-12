@@ -27,6 +27,6 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
 		FirstSkillName.text = "스킬1: " + character.myFirstSkillName;
 		SecondSkillName.text = "스킬2: " + character.mySecondSkillName;
 		gameManager.SetAllCharactersToSelectedFalse();//미리 selected 되어있던 캐릭터의 isSelected는 꺼주기
-		character.myIsSelected = true; 
+		character.myIsSelected = true;
 	}
 }

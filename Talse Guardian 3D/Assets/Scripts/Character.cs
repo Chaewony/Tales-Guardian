@@ -14,7 +14,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     private GameObject[] slot;
 
-    public void ShowCharacters()
+	public void ShowCharacters()
     {
         for (int i = 0; i < allCharacter.Count; i++)
         {

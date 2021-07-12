@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public List<CharacterInfo> allCharacter = new List<CharacterInfo>();
     public bool canClickGrid; //그리드가 클릭될 수 있는 상태인지 아닌지 판별
+    [SerializeField]
+    private GameObject[] slot;
 
-	private void Start()
+    private void Start()
 	{
         canClickGrid = false;
         SetAllCharactersToSelectedFalse();
