@@ -6,13 +6,17 @@ public class GameManager : MonoBehaviour
 {
     public List<CharacterInfo> allCharacter = new List<CharacterInfo>();
     public bool canClickGrid; //그리드가 클릭될 수 있는 상태인지 아닌지 판별
+    public GameObject[] slot;
     [SerializeField]
-    private GameObject[] slot;
+    private List<FieldInfo> allFields = new List<FieldInfo>();
+
+    public int arrangementCount;
 
     private void Start()
 	{
         canClickGrid = false;
         SetAllCharactersToSelectedFalse();
+        arrangementCount = 0;
 
     }
 	// Update is called once per frame
@@ -21,14 +25,23 @@ public class GameManager : MonoBehaviour
         //그리드가 클릭될 수 있는 상태인지 아닌지 판별, 가지고 있는 카드 중 셀렉된 캐릭터가 있으면true, 아니면 false
         for (int i = 0; i < allCharacter.Count; i++)
         {
-            if (allCharacter[i].myIsOwning && !allCharacter[i].myIsSelected) 
+            if (allCharacter[i].myIsOwning && !allCharacter[i].myIsSelected)
             {
                 canClickGrid = false;
             }
-            else if (allCharacter[i].myIsOwning && allCharacter[i].myIsSelected)
+            else if (allCharacter[i].myIsOwning && allCharacter[i].myIsSelected && arrangementCount < 4)
 			{
                 canClickGrid = true;
                 break;
+            }
+        }
+
+        //배치되면 배치된 카드 슬롯 비활성화
+        for (int i = 0; i < allFields.Count; i++)
+        {
+            if (allFields[i].myArrangedCharIndex != -1)
+            {
+                slot[allFields[i].myArrangedCharIndex].gameObject.SetActive(false);
             }
         }
     }

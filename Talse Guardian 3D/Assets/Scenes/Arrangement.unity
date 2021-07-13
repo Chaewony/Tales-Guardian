@@ -5014,6 +5014,16 @@ MonoBehaviour:
   - {fileID: 787510366}
   - {fileID: 446642535}
   - {fileID: 1474062102}
+  allFields:
+  - {fileID: 11400000, guid: 98c873883be4b15468a05cc4849dee40, type: 2}
+  - {fileID: 11400000, guid: 92f1000112928574f829f1256df4e356, type: 2}
+  - {fileID: 11400000, guid: d028f5c854d832d428b21749b0b00e7f, type: 2}
+  - {fileID: 11400000, guid: 4700d79b735173741b7681c7924c3aa4, type: 2}
+  - {fileID: 11400000, guid: 9722716cbd3b6db4d96d97a6c7488ee3, type: 2}
+  - {fileID: 11400000, guid: f01dbcf66dc71124aaa7c789c0437b0b, type: 2}
+  - {fileID: 11400000, guid: f12a112bd75cc194c9fbb8ac83318535, type: 2}
+  - {fileID: 11400000, guid: d58388a23004bf34d8151157453141aa, type: 2}
+  - {fileID: 11400000, guid: 4f6e3b96defb929448cd1274ce29cfbf, type: 2}
 --- !u!1 &1104999677
 GameObject:
   m_ObjectHideFlags: 0
@@ -7738,7 +7748,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
-  m_StartAxis: 1
+  m_StartAxis: 0
   m_CellSize: {x: 170, y: 170}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 1

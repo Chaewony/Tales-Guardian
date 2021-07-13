@@ -20,7 +20,9 @@ public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 		defaultScale = fieldScale.localScale;
 		defaultColor = fieldColor.color;
 		isClicked = false;
+		field.myArrangedCharIndex = -1;
 	}
+
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 		if (!isClicked)
@@ -55,7 +57,9 @@ public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 				if (gameManager.allCharacter[i].myIsSelected)
 				{
 					fieldColor.sprite = gameManager.allCharacter[i].mybattleSprite;
+					field.myArrangedCharIndex = i;
 					//gridColor.color = defaultColor;
+					gameManager.arrangementCount++;
 				}
 			}
 			gameManager.SetAllCharactersToSelectedFalse();
@@ -67,6 +71,9 @@ public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 			isClicked = false;
 			fieldColor.color = defaultColor;
 			fieldColor.sprite = null; //재클릭시 이미지 빼기(선택 해제)
+			gameManager.slot[field.myArrangedCharIndex].gameObject.SetActive(true);
+			field.myArrangedCharIndex = -1;
+			gameManager.arrangementCount--;
 		}
 	}
 }
