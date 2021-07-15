@@ -36,6 +36,8 @@ public class CharacterInfo : ScriptableObject
     private string secondSkillName;
     [SerializeField]
     private bool isSelected;
+    [SerializeField]
+    private float currentHp;
 
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }
@@ -43,6 +45,7 @@ public class CharacterInfo : ScriptableObject
     public string myCharName { get => charName; }
     public string myPosType { get => positionType; }
     public float myHp { get => fullHp; }
+    public float myCurrentHp { get => currentHp; set => currentHp = value; }
     public float myAtk { get => fullAtk; }
     public float myAr { get => fullAr; }
     public float myMr { get => fullMr; }

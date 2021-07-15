@@ -18,7 +18,7 @@ MonoBehaviour:
   charName: "\uBC30\uACE0\uD508 \uD638\uB791\uC774"
   rank: Normal
   positionType: Def
-  fullHp: 0
+  fullHp: 100
   fullAtk: 0
   fullAr: 0
   fullMr: 0
@@ -26,3 +26,4 @@ MonoBehaviour:
   firstSkillName: "\uC6B0\uB85C\uC9C0\uD0DD"
   secondSkillName: "\uACAC\uC778\uBD88\uBC1C"
   isSelected: 0
+  currentHp: 44

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Field0
   m_EditorClassIdentifier: 
   index: 0
+  arrangedCharIndex: 0

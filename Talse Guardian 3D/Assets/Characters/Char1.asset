@@ -18,11 +18,12 @@ MonoBehaviour:
   charName: "\uB291\uB300"
   rank: Normal
   positionType: Atk
-  fullHp: 0
+  fullHp: 100
   fullAtk: 0
   fullAr: 0
   fullMr: 0
   isOwning: 1
   firstSkillName: "\uC5B4\uB460 \uC18D\uC758 \uC0AC\uB0E5"
   secondSkillName: "\uD558\uC6B8\uB9C1"
-  isSelected: 1
+  isSelected: 0
+  currentHp: 86
