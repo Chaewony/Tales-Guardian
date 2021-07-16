@@ -27,6 +27,7 @@ public class BattleManager : MonoBehaviour
     }
     void SetPlayerSquad()
 	{
+        //Set Info
         int j = 0;
         for (int i = 0; i < allField.Count; i++)
             if (allField[i].myArrangedCharIndex != -1)
@@ -34,6 +35,8 @@ public class BattleManager : MonoBehaviour
                 playerSquad[j] = allCharacter[allField[i].myArrangedCharIndex];
                 j++;
             }
+
+        //Set Skill Slot
     }
     void IntitiateHp()//current hp 초기화
 	{

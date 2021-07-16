@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 86073917}
   - component: {fileID: 86073916}
   - component: {fileID: 86073915}
+  - component: {fileID: 86073918}
   m_Layer: 5
   m_Name: AtkButton1
   m_TagString: Untagged
@@ -495,7 +496,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 86073916}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 86073918}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &86073916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +545,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86073913}
   m_CullTransparentMesh: 0
+--- !u!114 &86073918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86073913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &133466261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1083,7 @@ GameObject:
   - component: {fileID: 255659967}
   - component: {fileID: 255659966}
   - component: {fileID: 255659965}
+  - component: {fileID: 255659968}
   m_Layer: 5
   m_Name: AtkButton2
   m_TagString: Untagged
@@ -1128,7 +1153,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 255659966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 255659968}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255659966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1202,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255659963}
   m_CullTransparentMesh: 0
+--- !u!114 &255659968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255659963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &280478397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,6 +2291,7 @@ GameObject:
   - component: {fileID: 727116360}
   - component: {fileID: 727116359}
   - component: {fileID: 727116358}
+  - component: {fileID: 727116361}
   m_Layer: 5
   m_Name: AtkButton2
   m_TagString: Untagged
@@ -2312,7 +2361,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 727116359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 727116361}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &727116359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2350,6 +2410,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727116356}
   m_CullTransparentMesh: 0
+--- !u!114 &727116361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727116356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &746865661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,6 +2844,7 @@ GameObject:
   - component: {fileID: 991575816}
   - component: {fileID: 991575815}
   - component: {fileID: 991575814}
+  - component: {fileID: 991575817}
   m_Layer: 5
   m_Name: AtkButton1
   m_TagString: Untagged
@@ -2841,7 +2914,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 991575815}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 991575817}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &991575815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2879,6 +2963,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991575812}
   m_CullTransparentMesh: 0
+--- !u!114 &991575817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991575812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1001582309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3384,16 @@ MonoBehaviour:
   - {fileID: 1464620767}
   - {fileID: 1669044075}
   - {fileID: 1582295799}
+  skill1:
+  - {fileID: 280478399}
+  - {fileID: 746865663}
+  - {fileID: 1274424950}
+  - {fileID: 2088253850}
+  skill2:
+  - {fileID: 329937295}
+  - {fileID: 1222378884}
+  - {fileID: 151423796}
+  - {fileID: 1295978701}
 --- !u!1 &1222378882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3778,7 +3884,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1365595423}
-  - component: {fileID: 1365595424}
   m_Layer: 0
   m_Name: PlayerFields
   m_TagString: Untagged
@@ -3809,62 +3914,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1365595424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365595422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 823ee44e08466fb48bd8aeeb687c9d22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allField:
-  - {fileID: 11400000, guid: 98c873883be4b15468a05cc4849dee40, type: 2}
-  - {fileID: 11400000, guid: 92f1000112928574f829f1256df4e356, type: 2}
-  - {fileID: 11400000, guid: d028f5c854d832d428b21749b0b00e7f, type: 2}
-  - {fileID: 11400000, guid: 4700d79b735173741b7681c7924c3aa4, type: 2}
-  - {fileID: 11400000, guid: 9722716cbd3b6db4d96d97a6c7488ee3, type: 2}
-  - {fileID: 11400000, guid: f01dbcf66dc71124aaa7c789c0437b0b, type: 2}
-  - {fileID: 11400000, guid: f12a112bd75cc194c9fbb8ac83318535, type: 2}
-  - {fileID: 11400000, guid: d58388a23004bf34d8151157453141aa, type: 2}
-  - {fileID: 11400000, guid: 4f6e3b96defb929448cd1274ce29cfbf, type: 2}
-  allCharacter:
-  - {fileID: 11400000, guid: 76da178f6d7ffb94aa7bd47207eaa70b, type: 2}
-  - {fileID: 11400000, guid: 950833a0e5729604c91ffbee90e4e70a, type: 2}
-  - {fileID: 11400000, guid: 6d0299029965f30499cd212a59704b82, type: 2}
-  - {fileID: 11400000, guid: 66b7c4f120e1d96488b6726fda3d7972, type: 2}
-  - {fileID: 11400000, guid: 0415dc6bc2dc5684d8de21547da3791b, type: 2}
-  - {fileID: 11400000, guid: fddfea17d04f1c44486bc75320e2dc87, type: 2}
-  - {fileID: 11400000, guid: 69f36f6f4bea398449511cc9898217c7, type: 2}
-  - {fileID: 11400000, guid: 9b5edcfa27a8bbf428599823e6c27472, type: 2}
-  - {fileID: 11400000, guid: 28271bce424491044b60bcb047f2a9b3, type: 2}
-  - {fileID: 11400000, guid: baa024ddf93415a48b5eeb26675a7d22, type: 2}
-  - {fileID: 11400000, guid: 1fdc54db73d12a24f873ca4f3bde2e9c, type: 2}
-  - {fileID: 11400000, guid: 0f6995f8b5e4fcd4f8957abe366756e5, type: 2}
-  - {fileID: 11400000, guid: 1019036d4ab41e24e820e47b3c74701d, type: 2}
-  - {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
-  - {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
-  - {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
-  fieldSprite:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1445500523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +3926,7 @@ GameObject:
   - component: {fileID: 1445500527}
   - component: {fileID: 1445500526}
   - component: {fileID: 1445500525}
+  - component: {fileID: 1445500528}
   m_Layer: 5
   m_Name: AtkButton1
   m_TagString: Untagged
@@ -3946,7 +3996,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1445500526}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445500528}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1445500526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3984,6 +4045,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445500523}
   m_CullTransparentMesh: 0
+--- !u!114 &1445500528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445500523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1464620765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,6 +4294,7 @@ GameObject:
   - component: {fileID: 1539307057}
   - component: {fileID: 1539307056}
   - component: {fileID: 1539307055}
+  - component: {fileID: 1539307058}
   m_Layer: 5
   m_Name: AtkButton2
   m_TagString: Untagged
@@ -4290,7 +4364,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1539307056}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1539307058}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1539307056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4328,6 +4413,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539307053}
   m_CullTransparentMesh: 0
+--- !u!114 &1539307058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539307053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1582295797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,6 +4681,7 @@ GameObject:
   - component: {fileID: 1657911108}
   - component: {fileID: 1657911107}
   - component: {fileID: 1657911106}
+  - component: {fileID: 1657911109}
   m_Layer: 5
   m_Name: AtkButton2
   m_TagString: Untagged
@@ -4653,7 +4751,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1657911107}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1657911109}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1657911107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4691,6 +4800,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657911104}
   m_CullTransparentMesh: 0
+--- !u!114 &1657911109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657911104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1669044073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4778,6 +4899,7 @@ GameObject:
   - component: {fileID: 1670412077}
   - component: {fileID: 1670412076}
   - component: {fileID: 1670412075}
+  - component: {fileID: 1670412078}
   m_Layer: 5
   m_Name: AtkButton1
   m_TagString: Untagged
@@ -4847,7 +4969,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1670412076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1670412078}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1670412076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4885,6 +5018,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670412073}
   m_CullTransparentMesh: 0
+--- !u!114 &1670412078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670412073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a39ce75aa3a45b30e260b879463d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1722846273
 GameObject:
   m_ObjectHideFlags: 0
