@@ -26,4 +26,4 @@ MonoBehaviour:
   firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
   secondSkillName: "\uC18D\uC774\uAE30"
   isSelected: 0
-  currentHp: 30
+  currentHp: 100
