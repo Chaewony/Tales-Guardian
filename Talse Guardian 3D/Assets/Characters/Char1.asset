@@ -26,4 +26,6 @@ MonoBehaviour:
   firstSkillName: "\uC5B4\uB460 \uC18D\uC758 \uC0AC\uB0E5"
   secondSkillName: "\uD558\uC6B8\uB9C1"
   isSelected: 0
-  currentHp: 86
+  currentHp: 100
+  firstSkillSecondTargetRange: 010000000200000003000000
+  secondSkillSecondTargetRange: 01000000030000000600000008000000

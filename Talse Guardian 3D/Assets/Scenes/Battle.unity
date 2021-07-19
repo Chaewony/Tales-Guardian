@@ -311,10 +311,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 0}
-  leftField: {fileID: 1298091577}
+  leftUpField: {fileID: 0}
   upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 1298091577}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 1939914141}
   downField: {fileID: 937813575}
+  rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
 --- !u!65 &56504858
 BoxCollider:
@@ -577,6 +581,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 4
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &133466261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1250,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 3
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &280478397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,10 +1434,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 1298091577}
-  leftField: {fileID: 0}
+  leftUpField: {fileID: 0}
   upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 0}
+  rightField: {fileID: 1298091577}
+  leftDownField: {fileID: 0}
   downField: {fileID: 604870883}
+  rightDownField: {fileID: 1939914141}
   battleManager: {fileID: 574789748}
 --- !u!65 &313645445
 BoxCollider:
@@ -1629,10 +1659,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 1178900980}
-  leftField: {fileID: 712981140}
+  leftUpField: {fileID: 604870883}
   upField: {fileID: 1939914141}
+  rightUpField: {fileID: 937813575}
+  leftField: {fileID: 712981140}
+  rightField: {fileID: 1178900980}
+  leftDownField: {fileID: 0}
   downField: {fileID: 0}
+  rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
 --- !u!65 &434377438
 BoxCollider:
@@ -2154,10 +2188,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 1939914141}
-  leftField: {fileID: 0}
+  leftUpField: {fileID: 0}
   upField: {fileID: 313645444}
+  rightUpField: {fileID: 1298091577}
+  leftField: {fileID: 0}
+  rightField: {fileID: 1939914141}
+  leftDownField: {fileID: 0}
   downField: {fileID: 712981140}
+  rightDownField: {fileID: 434377437}
   battleManager: {fileID: 574789748}
 --- !u!65 &604870884
 BoxCollider:
@@ -2473,10 +2511,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 434377437}
-  leftField: {fileID: 0}
+  leftUpField: {fileID: 0}
   upField: {fileID: 604870883}
+  rightUpField: {fileID: 1939914141}
+  leftField: {fileID: 0}
+  rightField: {fileID: 434377437}
+  leftDownField: {fileID: 0}
   downField: {fileID: 0}
+  rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
 --- !u!65 &712981141
 BoxCollider:
@@ -2709,6 +2751,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 7
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &746865661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,10 +3016,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 0}
-  leftField: {fileID: 1939914141}
+  leftUpField: {fileID: 1298091577}
   upField: {fileID: 56504857}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 1939914141}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 434377437}
   downField: {fileID: 1178900980}
+  rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
 --- !u!65 &937813576
 BoxCollider:
@@ -3282,6 +3339,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 0
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &1001582309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,10 +3636,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 0}
-  leftField: {fileID: 434377437}
+  leftUpField: {fileID: 1939914141}
   upField: {fileID: 937813575}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 434377437}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 0}
   downField: {fileID: 0}
+  rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
 --- !u!65 &1178900981
 BoxCollider:
@@ -4049,10 +4121,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 56504857}
-  leftField: {fileID: 313645444}
+  leftUpField: {fileID: 0}
   upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 313645444}
+  rightField: {fileID: 56504857}
+  leftDownField: {fileID: 604870883}
   downField: {fileID: 1939914141}
+  rightDownField: {fileID: 937813575}
   battleManager: {fileID: 574789748}
 --- !u!65 &1298091578
 BoxCollider:
@@ -4403,6 +4479,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 6
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &1464620765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,6 +4859,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 1
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &1582295797
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,6 +5258,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 5
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &1669044073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,6 +5488,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
+  skillButtonType: 2
+  enemyField:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &1722846273
 GameObject:
   m_ObjectHideFlags: 0
@@ -6257,10 +6377,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85ed47b4a7db94bb45c02dc2c2e3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightField: {fileID: 937813575}
-  leftField: {fileID: 604870883}
+  leftUpField: {fileID: 313645444}
   upField: {fileID: 1298091577}
+  rightUpField: {fileID: 56504857}
+  leftField: {fileID: 604870883}
+  rightField: {fileID: 937813575}
+  leftDownField: {fileID: 712981140}
   downField: {fileID: 434377437}
+  rightDownField: {fileID: 1178900980}
   battleManager: {fileID: 574789748}
 --- !u!65 &1939914142
 BoxCollider:

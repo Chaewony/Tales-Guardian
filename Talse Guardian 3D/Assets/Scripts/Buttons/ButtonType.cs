@@ -34,3 +34,18 @@ public enum ArrangementButtonType
 	SupType,
 	All
 }
+
+public enum SkillButtonType
+{
+	char0skill1,
+	char0skill2,
+
+	char1skill1,
+	char1skill2,
+	
+	char2skill1,
+	char2skill2,
+	
+	char3skill1,
+	char3skill2,
+}

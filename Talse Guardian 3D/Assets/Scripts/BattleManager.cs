@@ -24,11 +24,6 @@ public class BattleManager : MonoBehaviour
         canAttack = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void SetPlayerSquad()
 	{
         //Set Info

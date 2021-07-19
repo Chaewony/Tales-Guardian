@@ -38,6 +38,9 @@ public class CharacterInfo : ScriptableObject
     private bool isSelected;
     [SerializeField]
     private float currentHp;
+    
+    public int[] firstSkillSecondTargetRange;
+    public int[] secondSkillSecondTargetRange;
 
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }
