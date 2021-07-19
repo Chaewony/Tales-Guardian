@@ -53,9 +53,13 @@ public class PlayerSquadUI : MonoBehaviour
 	{
         //스킬1
         for (int i = 0; i < battleManager.playerSquad.Count; i++)
+        {
             skill1[i].text = battleManager.playerSquad[i].myFirstSkillName;
+        }
         //스킬2
         for (int i = 0; i < battleManager.playerSquad.Count; i++)
+        {
             skill2[i].text = battleManager.playerSquad[i].mySecondSkillName;
+        }
     }
 }

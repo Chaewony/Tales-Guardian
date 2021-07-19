@@ -2716,6 +2716,7 @@ MonoBehaviour:
   - {fileID: 717486898}
   - {fileID: 1828388602}
   illustSlot: {fileID: 1152137511}
+  slot: []
 --- !u!1 &884056767
 GameObject:
   m_ObjectHideFlags: 0

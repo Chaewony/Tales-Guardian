@@ -12,12 +12,16 @@ public class BattleManager : MonoBehaviour
 
     public SpriteRenderer[] playerSquadCharacters;
 
+    public bool canAttack;
+
     // Start is called before the first frame update
     void Start()
     {
         SetPlayerSquad();
         IntitiateHp();
         SetPlayerSquadCharacters();
+
+        canAttack = false;
     }
 
     // Update is called once per frame
