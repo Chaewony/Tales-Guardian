@@ -12,7 +12,8 @@ public class BattleManager : MonoBehaviour
 
     public SpriteRenderer[] playerSquadCharacters;
 
-    public bool canAttack;
+    public bool canAttack; //어택 턴을 나타내는 것이 아니라, 스킬 클릭됐다는걸 체크
+    public bool canMove; //이동 턴을 나타내는 것이 아니라, 이동할 캐릭터가 클릭됐다는걸 체크
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class BattleManager : MonoBehaviour
         SetPlayerSquadCharacters();
 
         canAttack = false;
+        canMove = false;
     }
 
     void SetPlayerSquad()

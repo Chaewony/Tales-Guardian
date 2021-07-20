@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 181
+  controlID: 2098
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 59
+  controlID: 2205
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 104
+  controlID: 2232
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 932.57574, y: -243.04436, z: 727.1507}
+    m_Target: {x: 613, y: 328.16068, z: 53.91514}
     speed: 2
-    m_Value: {x: 932.57574, y: -243.04436, z: 727.1507}
+    m_Value: {x: 613, y: 328.16068, z: 53.91514}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -500,13 +500,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.58544314, y: -0.042755768, z: 0.030918181, w: -0.80905}
+    m_Target: {x: -0.17838904, y: -0.025373401, z: 0.0045830887, w: -0.98366827}
     speed: 2
-    m_Value: {x: -0.5854169, y: -0.042753853, z: 0.030916795, w: -0.8090138}
+    m_Value: {x: -0.17838097, y: -0.025372252, z: 0.004582881, w: -0.9836237}
   m_Size:
-    m_Target: 2443.3223
+    m_Target: 1037.6998
     speed: 2
-    m_Value: 2443.3223
+    m_Value: 1037.6998
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8aa20000
-      m_LastClickedID: 41610
-      m_ExpandedIDs: 9ebbffff78bcffffd4eeffffbef8ffff6afbffffb03400003835000036360000ba3700002a3c00007c3c0000283d0000b2a10000e2a100006aa20000bca200003aa3000054a3000068a3000072a30000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2af9ffffe0f9ffff6afbffff983e0000663f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -651,11 +651,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Characters
+    - Assets/Scripts/Enemy
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Characters
+  - Assets/Scripts/Enemy
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\\uC11C\uCC44\uC6D0\\Documents\\GitHub\\Tales-Guardian\\Talse
     Guardian 3D"
@@ -663,8 +663,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f6360000
-    m_LastClickedID: 14070
+    m_SelectedIDs: 16370000
+    m_LastClickedID: 14102
     m_ExpandedIDs: 00000000ea360000ec360000f436000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ea360000ec360000
+    m_ExpandedIDs: 00000000ea360000ec36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -786,4 +786,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 189
+  m_LastVerticalScrollValue: 0
