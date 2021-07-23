@@ -15,6 +15,8 @@ public class BattleManager : MonoBehaviour
     public bool canAttack; //어택 턴을 나타내는 것이 아니라, 스킬 클릭됐다는걸 체크
     public bool canMove; //이동 턴을 나타내는 것이 아니라, 이동할 캐릭터가 클릭됐다는걸 체크
 
+    public BattleState battleState;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,43 @@ public class BattleManager : MonoBehaviour
 
         canAttack = false;
         canMove = false;
+
+        battleState = BattleState.SELECT_TURN;
     }
 
-    void SetPlayerSquad()
+	private void Update()
+	{
+		if(battleState== BattleState.SELECT_TURN)
+		{
+            //공수 선택시 띄워줄 UI 띄우는 함수 불러오기
+            //그리고 버튼 결과에 따라 그 함수에서 스테이트 바꿔줄 것
+		}
+
+        if(battleState==BattleState.PLAYER_MOVE)
+		{
+            //플레이어의 이동 턴이 오면 실행
+            //이동 "선택"
+		}
+
+        if(battleState==BattleState.PLAYER_ATTACK)
+		{
+            //플레이어의 공격 턴이 오면 실행
+            //공격 "선택"
+		}
+
+        if(battleState==BattleState.TURN_END)
+		{
+            //플레이어의 선택이 끝나면 실행(에너미 스테이트는 플레이어랑 동시에 한다고 생각함)
+            //여기서 해줄 것: 이동 및 공격 "실행"
+		}
+
+        if(battleState==BattleState.BATTLE_END)
+		{
+            //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
+		}
+	}
+
+	void SetPlayerSquad()
 	{
         //Set Info
         int j = 0;
