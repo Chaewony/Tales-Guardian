@@ -40,7 +40,7 @@ public class BattleManager : MonoBehaviour
 
         if(battleState==BattleState.PLAYER_MOVE)
 		{
-            //플레이어의 이동 턴이 오면 실행
+            //플레이어의 이동 턴이 오면 실행(즉 에너미의 공격 선택을 호출)
             //이동 "선택"
             Debug.Log("플레이어 이동턴");
         }
@@ -52,13 +52,27 @@ public class BattleManager : MonoBehaviour
             Debug.Log("플레이어 공격턴");
 		}
 
-        if(battleState==BattleState.TURN_END)
+        if(battleState==BattleState.PLAYER_ATTACK_CHOOSE_END)
 		{
-            //플레이어의 선택이 끝나면 실행(에너미 스테이트는 플레이어랑 동시에 한다고 생각함)
-            //여기서 해줄 것: 이동 및 공격 "실행"
-		}
+            //에너미의 이동을 실행
+            //초기화시켜줄것 시키기
+            canAttack = false;
+            Debug.Log("어택 선택 턴 종료");
+            Debug.Log("에너미가 이동했습니다.");
+            Debug.Log("플레이어의 공격이 실행됩니다");
+            //플레이어 공격 실행 함수 불러와주기
+            //에너미 필드 색상과 리스트 초기화
+            battleState = BattleState.PLAYER_MOVE;
 
-        if(battleState==BattleState.BATTLE_END)
+        }
+
+        if (battleState == BattleState.PLAYER_MOVE_CHOOSE_END)
+        {
+            //플레이어의 이동은 바로 화면에 출력되니 신경쓰지 말고 에너미 공격을 하면 됨
+            Debug.Log("이동 선택 턴 종료");
+        }
+
+        if (battleState==BattleState.BATTLE_END)
 		{
             //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
 		}

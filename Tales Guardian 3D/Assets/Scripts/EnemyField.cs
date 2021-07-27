@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyField : MonoBehaviour
 {
-	//Transform fieldScale;
 	SpriteRenderer fieldColor;
 
 	public EnemyField leftUpField;     // 1
@@ -15,23 +14,36 @@ public class EnemyField : MonoBehaviour
 	public EnemyField leftDownField;   // 6
 	public EnemyField downField;       // 7
 	public EnemyField rightDownField;  // 8
-	//Vector3 defaultScale;
+
 	Color defaultColor;
 
 	public BattleManager battleManager;
 
-	//private int[] mySecondTarget;
-
 	List<int> mySecondTarget = new List<int>();
+
+	List<EnemyField> selectedSecondTarget = new List<EnemyField>();
+	bool isClicked;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		//fieldScale = GetComponent<Transform>();
 		fieldColor = GetComponent<SpriteRenderer>();
 
-		//defaultScale = fieldScale.localScale;
 		defaultColor = fieldColor.color;
+
+		isClicked = false;
+	}
+
+	private void Update()
+	{
+		if(selectedSecondTarget!=null && isClicked)
+		{
+			fieldColor.color = new Color(1, 0.5f, 0.5f);
+			for (int i = 0; i < selectedSecondTarget.Count; i++)
+			{
+				selectedSecondTarget[i].fieldColor.color = new Color(1, 0.75f, 0.5f);
+			}
+		}
 	}
 
 	public void SetSecondTarget(int[] secondTarget)
@@ -46,29 +58,17 @@ public class EnemyField : MonoBehaviour
 		}
 	}
 
+	private void SecondTargetEnter()
+	{
+		fieldColor.color = new Color(1, 0.75f, 0.5f);
+	}
+	private void SecondTargetExit()
+	{
+		fieldColor.color = defaultColor;
+	}
+
 	private void OnMouseEnter()
 	{
-		//fieldScale.localScale = defaultScale * 1.05f;
-		/*if(fieldColor.color== new Color(1, 1, 1)) 
-			fieldColor.color = new Color(fieldColor.color.r, 0.5f, 0.5f);
-		else if (fieldColor.color == new Color(0, 0, 0))
-			fieldColor.color = new Color(0.5f, fieldColor.color.g, fieldColor.color.b);*/
-
-		/*if (battleManager.canAttack)
-		{
-			fieldColor.color = new Color(1, 0.5f, 0.5f);
-
-			if (rightField != null)
-				rightField.SecondTargetEnter();
-			if (leftField != null)
-				leftField.SecondTargetEnter();
-			if (upField != null)
-				upField.SecondTargetEnter();
-			if (downField != null)
-				downField.SecondTargetEnter();
-			else return;
-		}*/
-
 		if (battleManager.canAttack && mySecondTarget != null)
 		{
 			fieldColor.color = new Color(1, 0.5f, 0.5f);
@@ -122,18 +122,8 @@ public class EnemyField : MonoBehaviour
 	}
 	private void OnMouseExit()
 	{
-		//fieldScale.localScale = defaultScale;
 		fieldColor.color = defaultColor;
 
-		/*if (rightField != null)
-			rightField.SecondTargetExit();
-		if (leftField != null)
-			leftField.SecondTargetExit();
-		if (upField != null)
-			upField.SecondTargetExit();
-		if (downField != null)
-			downField.SecondTargetExit();
-		else return;*/
 		if (battleManager.canAttack && mySecondTarget != null)
 		{
 			for (int i = 0; i < mySecondTarget.Count; i++)
@@ -183,17 +173,59 @@ public class EnemyField : MonoBehaviour
 			}
 		}
 	}
-	private void SecondTargetEnter()
+
+	private void OnMouseDown()
 	{
-		/*if (fieldColor.color == new Color(1, 1, 1))
-			fieldColor.color = new Color(fieldColor.color.r, 0.75f, 0.5f);
-		else if (fieldColor.color == new Color(0, 0, 0))
-			fieldColor.color = new Color(0.75f, 0.5f, 0.25f);*/
-		fieldColor.color = new Color(1, 0.75f, 0.5f);
-	}
-	private void SecondTargetExit()
-	{
-		//fieldScale.localScale = defaultScale;
-		fieldColor.color = defaultColor;
+		if (battleManager.canAttack)
+		{
+			isClicked = true; //버튼 하나하나마다 설정되어있어서 다른 버튼 누르면 못걸러짐
+
+			for (int i = 0; i < mySecondTarget.Count; i++)
+			{
+				switch (mySecondTarget[i])
+				{
+					case 1:
+						if (leftUpField != null)
+							selectedSecondTarget.Add(leftUpField);
+						break;
+
+					case 2:
+						if (upField != null)
+							selectedSecondTarget.Add(upField);
+						break;
+
+					case 3:
+						if (rightUpField != null)
+							selectedSecondTarget.Add(rightUpField);
+						break;
+
+					case 4:
+						if (leftField != null)
+							selectedSecondTarget.Add(leftField);
+						break;
+
+					case 5:
+						if (rightField != null)
+							selectedSecondTarget.Add(rightField);
+						break;
+
+					case 6:
+						if (leftDownField != null)
+							selectedSecondTarget.Add(leftDownField);
+						break;
+
+					case 7:
+						if (downField != null)
+							selectedSecondTarget.Add(downField);
+						break;
+
+					case 8:
+						if (rightDownField != null)
+							selectedSecondTarget.Add(rightDownField);
+						break;
+				}
+			}
+			battleManager.battleState = BattleState.PLAYER_ATTACK_CHOOSE_END;
+		}
 	}
 }
