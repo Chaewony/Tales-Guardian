@@ -6,6 +6,7 @@ public class PlayerField : MonoBehaviour
 {
 	public BattleManager battleManager;
 	public PlayerMove[] playerMove;
+
 	private void OnMouseDown() //플레이어필드가 클릭됐을 때
 	{
 		if (battleManager.canMove) //움직일 수 있는 상태면

@@ -14,8 +14,11 @@ public class BattleManager : MonoBehaviour
 
     public bool canAttack; //어택 턴을 나타내는 것이 아니라, 스킬 클릭됐다는걸 체크
     public bool canMove; //이동 턴을 나타내는 것이 아니라, 이동할 캐릭터가 클릭됐다는걸 체크
+    public bool canClick; //이동 턴을 나타내는 것이 아니라, 이동할 캐릭터를 클릭할 수 있다는걸 체크
 
     public BattleState battleState;
+
+    public int[] dice;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class BattleManager : MonoBehaviour
 
         canAttack = false;
         canMove = false;
+        canClick = true;
 
         battleState = BattleState.SELECT_TURN;
     }
