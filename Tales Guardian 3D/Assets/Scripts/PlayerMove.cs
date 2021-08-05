@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
 
 	public bool clicked;
 
-	public int remainMoveTime;
+	
 
 	void Start()
 	{
@@ -42,10 +42,10 @@ public class PlayerMove : MonoBehaviour
 		{
 			this.transform.position = new Vector3(fieldPosition.x, this.transform.position.y, fieldPosition.z); //캐릭터 이동
 			
-			if (remainMoveTime > 1) remainMoveTime--;
+			if (battleManager.remainMoveTime > 1) battleManager.remainMoveTime--;
 			else
 			{
-				remainMoveTime = 0;
+				battleManager.remainMoveTime = 0;
 				characterColor.color = defaultColor; //원래 색깔로 되돌리기
 				clicked = false;
 				battleManager.canMove = false;
@@ -57,6 +57,6 @@ public class PlayerMove : MonoBehaviour
 
 	public void ThrowDice()
 	{
-		remainMoveTime = battleManager.dice[Random.Range(0, 6)]; 
+		battleManager.remainMoveTime = battleManager.dice[Random.Range(0, 6)]; 
 	}
 }

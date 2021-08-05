@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class BattleManager : MonoBehaviour
     public BattleState battleState;
 
     public int[] dice;
+    public int remainMoveTime;
+    public GameObject DiceButton;
+    public bool isThrown;
+    public Text remainMoveTimeText;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +35,8 @@ public class BattleManager : MonoBehaviour
         canAttack = false;
         canMove = false;
         canClick = true;
+
+        isThrown = false;
 
         battleState = BattleState.SELECT_TURN;
     }
@@ -46,6 +53,8 @@ public class BattleManager : MonoBehaviour
 		{
             //플레이어의 이동 턴이 오면 실행(즉 에너미의 공격 선택을 호출)
             //이동 "선택"
+            if(!isThrown) DiceButton.SetActive(true);
+            remainMoveTimeText.text = "남은 이동 횟수: " + remainMoveTime;
             Debug.Log("플레이어 이동턴");
         }
 
@@ -61,6 +70,7 @@ public class BattleManager : MonoBehaviour
             //에너미의 이동을 실행
             //초기화시켜줄것 시키기
             canAttack = false;
+            
             Debug.Log("어택 선택 턴 종료");
             Debug.Log("에너미가 이동했습니다.");
             Debug.Log("플레이어의 공격이 실행됩니다");
@@ -73,6 +83,8 @@ public class BattleManager : MonoBehaviour
         if (battleState == BattleState.PLAYER_MOVE_CHOOSE_END)
         {
             //플레이어의 이동은 바로 화면에 출력되니 신경쓰지 말고 에너미 공격을 하면 됨
+            isThrown = false; //주사위
+            remainMoveTimeText.text = " ";
             Debug.Log("이동 선택 턴 종료");
         }
 
@@ -85,11 +97,11 @@ public class BattleManager : MonoBehaviour
 	void SetPlayerSquad()
 	{
         //Set Info
-        int j = 0;
+        int j = 0; 
         for (int i = 0; i < allField.Count; i++)
             if (allField[i].myArrangedCharIndex != -1)
             {
-                playerSquad[j] = allCharacter[allField[i].myArrangedCharIndex];
+                playerSquad[j] = allCharacter[allField[i].myArrangedCharIndex]; 
                 j++;
             }
 
