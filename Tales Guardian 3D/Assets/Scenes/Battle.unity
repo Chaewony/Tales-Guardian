@@ -1146,6 +1146,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
   clicked: 0
+  otherCharacters:
+  - {fileID: 1538612398}
+  - {fileID: 1929592936}
+  - {fileID: 1861881022}
 --- !u!1 &228038565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,7 +1994,7 @@ Transform:
   - {fileID: 1518857075}
   - {fileID: 590855758}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434377434
 GameObject:
@@ -2582,37 +2586,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602456571}
   m_CullTransparentMesh: 0
---- !u!1 &604174575
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 604174576}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &604174576
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604174575}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1313, y: 327.8607, z: 53.91514}
-  m_LocalScale: {x: 35, y: 1, z: 17}
-  m_Children:
-  - {fileID: 866140671}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604870880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,87 +3701,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnCard: {fileID: 1866963661}
   turnCardIndex: 1
---- !u!1 &866140670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 866140671}
-  - component: {fileID: 866140672}
-  m_Layer: 0
-  m_Name: "\uC6A9\uAC10\uD55C\uCFE0\uD0A4"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &866140671
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866140670}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0}
-  m_LocalScale: {x: 2.3925793, y: 5.0032306, z: 0.05882353}
-  m_Children: []
-  m_Father: {fileID: 604174576}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &866140672
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866140670}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 92f9ee5370b86374abad169e42c6452e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.07, y: 2.54}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &912228584
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,6 +6255,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
   clicked: 0
+  otherCharacters:
+  - {fileID: 1929592936}
+  - {fileID: 211583487}
+  - {fileID: 1861881022}
 --- !u!1 &1539307053
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,6 +7459,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
   clicked: 0
+  otherCharacters:
+  - {fileID: 1538612398}
+  - {fileID: 1929592936}
+  - {fileID: 211583487}
 --- !u!1 &1866963656
 GameObject:
   m_ObjectHideFlags: 0
@@ -7956,6 +7856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleManager: {fileID: 574789748}
   clicked: 0
+  otherCharacters:
+  - {fileID: 1538612398}
+  - {fileID: 211583487}
+  - {fileID: 1861881022}
 --- !u!1 &1933419328
 GameObject:
   m_ObjectHideFlags: 0
@@ -8435,7 +8339,7 @@ Transform:
   - {fileID: 211583487}
   - {fileID: 1861881022}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2088253848
 GameObject:

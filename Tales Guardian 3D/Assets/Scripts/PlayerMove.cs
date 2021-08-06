@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
 
 	public bool clicked;
 
-	
+	public Transform[] otherCharacters;
 
 	void Start()
 	{
@@ -36,6 +36,7 @@ public class PlayerMove : MonoBehaviour
 	public void move(Vector3 fieldPosition)
 	{
 		if (clicked && battleManager.battleState == BattleState.PLAYER_MOVE &&
+			ComparePosition(fieldPosition) && //다른캐릭터가 없으면 이동 가능
 			(Vector3.Distance(fieldPosition, this.transform.position) < 351) && //대각선 이동 방지
 			(Mathf.Abs(fieldPosition.x - this.transform.position.x) < 351 && //좌우 두 칸 이동 방지
 			(Mathf.Abs(fieldPosition.z - this.transform.position.z) < 171))) //상하 두 칸 이동 방지
@@ -55,8 +56,14 @@ public class PlayerMove : MonoBehaviour
 		}
 	}
 
-	public void ThrowDice()
+	public bool ComparePosition(Vector3 fieldPosition) //다른캐릭터가 움직이려는 필드에 있는지 확인
 	{
-		battleManager.remainMoveTime = battleManager.dice[Random.Range(0, 6)]; 
+		for(int i=0;i< otherCharacters.Length;i++)
+		{
+			if (otherCharacters[i].position.x == fieldPosition.x && otherCharacters[i].position.z == fieldPosition.z)
+				return false; //있으면 false
+		}
+
+		return true; //없으면 true
 	}
 }
