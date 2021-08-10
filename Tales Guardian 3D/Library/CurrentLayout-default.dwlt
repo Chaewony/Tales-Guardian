@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 133
+  controlID: 146
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 112
+  controlID: 86
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 158
+  controlID: 147
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 487
     width: 284
     height: 244
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_defaultScale: 0.3502604
   m_LastWindowPixelSize: {x: 672.5, y: 418.75}
   m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
+  m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 797.2856, y: -540.9496, z: 1720.2411}
+    m_Target: {x: 816.11816, y: -1419.6571, z: 244.91188}
     speed: 2
-    m_Value: {x: 797.2856, y: -540.9496, z: 1720.2411}
+    m_Value: {x: 816.11816, y: -1419.6571, z: 244.91188}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -500,13 +500,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.27627274, y: -0.0016963825, z: 0.00055911, w: -0.96112806}
+    m_Target: {x: -0.68340915, y: 0.0053173974, z: -0.0048779426, w: -0.7300669}
     speed: 2
-    m_Value: {x: -0.27625936, y: -0.0016963005, z: 0.00055908295, w: -0.96108156}
+    m_Value: {x: -0.6833758, y: 0.0053171376, z: -0.004877704, w: -0.7300312}
   m_Size:
-    m_Target: 1560.5402
+    m_Target: 3211.4084
     speed: 2
-    m_Value: 1560.5402
+    m_Value: 3362.7314
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,9 +560,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 182f0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0efaffff4afbffff143b0000
+      m_ExpandedIDs: 08f9ffffcaf9fffff8f9ffff4afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -651,11 +651,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Enemy
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Enemy
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\\uC11C\uCC44\uC6D0\\Documents\\GitHub\\Tales-Guardian\\Tales
     Guardian 3D"
@@ -663,9 +663,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a380000
-    m_LastClickedID: 14346
-    m_ExpandedIDs: 00000000d2370000d4370000d637000000ca9a3b
+    m_SelectedIDs: da370000
+    m_LastClickedID: 14298
+    m_ExpandedIDs: 00000000b2370000b4370000b637000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -693,7 +693,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2370000d4370000d6370000
+    m_ExpandedIDs: 00000000b2370000b4370000b6370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

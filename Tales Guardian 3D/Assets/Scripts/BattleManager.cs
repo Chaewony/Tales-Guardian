@@ -99,7 +99,7 @@ public class BattleManager : MonoBehaviour
         //Set Info
         int j = 0; 
         for (int i = 0; i < allField.Count; i++)
-            if (allField[i].myArrangedCharIndex != -1)
+            if (allField[i].myArrangedCharIndex != -1) //배치가 된 필드일 경우
             {
                 playerSquad[j] = allCharacter[allField[i].myArrangedCharIndex]; 
                 j++;
