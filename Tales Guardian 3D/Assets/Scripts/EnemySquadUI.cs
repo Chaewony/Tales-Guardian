@@ -13,17 +13,11 @@ public class EnemySquadUI : MonoBehaviour
     public Text[] hpValue;
     public Image[] hpBar;
 
-    [SerializeField]
-    private Text[] skill1;
-    [SerializeField]
-    private Text[] skill2;
-
     // Update is called once per frame
     void Update()
     {
         ShowCharImageUI();
         ShowHpBar();
-        ShowSkill();
     }
 
     void ShowCharImageUI()
@@ -41,19 +35,6 @@ public class EnemySquadUI : MonoBehaviour
             {
                 battleManager.enemySquad[i].myCurrentHp = 0;
             }
-        }
-    }
-    void ShowSkill()
-    {
-        //스킬1
-        for (int i = 0; i < battleManager.allStage[battleManager.stageIndex].EnemyIndex.Length; i++)
-        {
-            skill1[i].text = battleManager.enemySquad[i].myFirstSkillName;
-        }
-        //스킬2
-        for (int i = 0; i < battleManager.allStage[battleManager.stageIndex].EnemyIndex.Length; i++)
-        {
-            skill2[i].text = battleManager.enemySquad[i].mySecondSkillName;
         }
     }
 }
