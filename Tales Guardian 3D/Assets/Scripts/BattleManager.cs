@@ -6,12 +6,21 @@ using UnityEngine.UI;
 public class BattleManager : MonoBehaviour
 {
     public List<FieldInfo> allField = new List<FieldInfo>();
+
     public List<CharacterInfo> allCharacter = new List<CharacterInfo>();
+    public List<EnemyInfo> allEnemy = new List<EnemyInfo>();
+    
     public List<CharacterInfo> playerSquad = new List<CharacterInfo>();//플레이어 스쿼드 리스트
+    public List<EnemyInfo> enemySquad = new List<EnemyInfo>();//에너미 스쿼드 리스트
+
+    public List<StageInfo> allStage = new List<StageInfo>();
+    public int stageIndex;
 
     public Transform[] playerFields;
+    public Transform[] enemyFields;
 
     public SpriteRenderer[] playerSquadCharacters;
+    public SpriteRenderer[] enemySquadCharacters;
 
     public bool canAttack; //어택 턴을 나타내는 것이 아니라, 스킬 클릭됐다는걸 체크
     public bool canMove; //이동 턴을 나타내는 것이 아니라, 이동할 캐릭터가 클릭됐다는걸 체크
@@ -28,9 +37,12 @@ public class BattleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        CheckStage();
         SetPlayerSquad();
+        SetEnemySquad();
         IntitiateHp();
         SetPlayerSquadCharacters();
+        SetEnemySquadCharacters();
 
         canAttack = false;
         canMove = false;
@@ -93,8 +105,16 @@ public class BattleManager : MonoBehaviour
             //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
 		}
 	}
+    void CheckStage()
+    {
+        for (int i = 0; i < allStage.Count; i++)
+        {
+            if (allStage[i].isSelected)
+            { stageIndex = i; }
+        }
+    }
 
-	void SetPlayerSquad()
+    void SetPlayerSquad()
 	{
         //Set Info
         int j = 0; 
@@ -104,16 +124,30 @@ public class BattleManager : MonoBehaviour
                 playerSquad[j] = allCharacter[allField[i].myArrangedCharIndex]; 
                 j++;
             }
-
-        //Set Skill Slot
     }
+
+    void SetEnemySquad()
+	{
+        //Set Info
+        int j = 0;
+        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+        {
+            enemySquad[j] = allEnemy[allStage[stageIndex].EnemyIndex[i]];
+            j++;
+        }
+    }
+
     void IntitiateHp()//current hp 초기화
 	{
         for(int i = 0; i < playerSquad.Count; i++)
 		{
             playerSquad[i].myCurrentHp = playerSquad[i].myHp;
 		}
-	}
+        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+        {
+            enemySquad[i].myCurrentHp = enemySquad[i].myHp;
+        }
+    }
     void SetPlayerSquadCharacters()
 	{
         //이미지 렌더링
@@ -131,5 +165,19 @@ public class BattleManager : MonoBehaviour
                 j++;
             }
 
+    }
+    void SetEnemySquadCharacters()
+    {
+        //이미지 렌더링
+        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+        {
+            enemySquadCharacters[i].sprite = enemySquad[i].mybattleSprite;
+        }
+        //위치정비
+        int j = 0;
+        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+		{
+            enemySquadCharacters[i].transform.position = new Vector3(enemyFields[allStage[stageIndex].EnemyArrangedIndex[i]].position.x, enemySquadCharacters[j].transform.position.y, enemyFields[allStage[stageIndex].EnemyArrangedIndex[i]].position.z);
+        }
     }
 }
