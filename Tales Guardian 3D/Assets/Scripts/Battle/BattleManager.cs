@@ -65,32 +65,20 @@ public class BattleManager : MonoBehaviour
 		{
             //플레이어의 이동 턴이 오면 실행(즉 에너미의 공격 선택을 호출)
             //이동 "선택"
-            if(!isThrown) DiceButton.SetActive(true);
+            canAttack = false;
+            if (!isThrown) DiceButton.SetActive(true);
             remainMoveTimeText.text = "남은 이동 횟수: " + remainMoveTime;
-            Debug.Log("플레이어 이동턴");
+            Debug.Log("플레이어 이동선택 및 이동");
         }
 
-        if(battleState==BattleState.PLAYER_ATTACK)
+        if(battleState==BattleState.PLAYER_ATTACK_TURN)
 		{
             //플레이어의 공격 턴이 오면 실행
-            //공격 "선택"
-            Debug.Log("플레이어 공격턴");
+            //공격 "선택" + 에너미 이동 + 공격 "실행"
+            //하나의 스크립트가 아니라 필드 각각의 스크립트가 있어 한 함수만 불러와주기 까다로움
+            //EnemyField 스크립트 참고
+            Debug.Log("플레이어 공격턴, 플레이어 공격선택 + 에너미 이동 + 플레이어 공격실행 ");
 		}
-
-        if(battleState==BattleState.PLAYER_ATTACK_CHOOSE_END)
-		{
-            //에너미의 이동을 실행
-            //초기화시켜줄것 시키기
-            canAttack = false;
-            
-            Debug.Log("어택 선택 턴 종료");
-            Debug.Log("에너미가 이동했습니다.");
-            Debug.Log("플레이어의 공격이 실행됩니다");
-            //플레이어 공격 실행 함수 불러와주기
-            //에너미 필드 색상과 리스트 초기화
-            battleState = BattleState.PLAYER_MOVE;
-
-        }
 
         if (battleState == BattleState.PLAYER_MOVE_CHOOSE_END)
         {

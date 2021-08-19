@@ -21,8 +21,10 @@ public class EnemyField : MonoBehaviour
 
 	List<int> mySecondTarget = new List<int>();
 
-	List<EnemyField> selectedSecondTarget = new List<EnemyField>();
+	public List<EnemyField> selectedSecondTarget = new List<EnemyField>();
 	bool isClicked;
+
+	public EnemyMove enemyMove;
 
 	// Start is called before the first frame update
 	void Start()
@@ -225,7 +227,50 @@ public class EnemyField : MonoBehaviour
 						break;
 				}
 			}
-			battleManager.battleState = BattleState.PLAYER_ATTACK_CHOOSE_END;
+			//선택 이후
+			Invoke("Delay", 2f);
+			Invoke("Attack", 4f);
+			Invoke("Initiate", 6f);
+			//enemyMove.Move();
+			//Attack();
+			//Initiate();
+			//battleManager.battleState = BattleState.PLAYER_MOVE;
 		}
+	}
+
+	private void Attack()
+	{
+		//첫번째 타겟에 공격
+		for (int i = 0; i < battleManager.enemySquad.Count; i++)
+		{
+			if (battleManager.enemySquadCharacters[i].transform.position.x == this.transform.position.x &&
+				battleManager.enemySquadCharacters[i].transform.position.z == this.transform.position.z)
+			{
+				battleManager.enemySquad[i].myCurrentHp -= 10;//수치 바꿀 것
+			}
+		}
+		//두번째 타겟에 공격, i랑 j랑 잘 볼 것
+		for(int i=0;i< selectedSecondTarget.Count; i++)
+		{
+			for (int j = 0; j < battleManager.enemySquad.Count; j++)
+			{
+				if (battleManager.enemySquadCharacters[j].transform.position.x == selectedSecondTarget[i].transform.position.x&& battleManager.enemySquadCharacters[j].transform.position.z == selectedSecondTarget[i].transform.position.z)
+				{
+					battleManager.enemySquad[j].myCurrentHp -= 5;//수치 바꿀 것
+				}
+			}
+		}
+	}
+
+	private void Initiate()
+	{
+		OnMouseExit();
+		selectedSecondTarget = new List<EnemyField>(); //리스트 초기화
+		battleManager.battleState = BattleState.PLAYER_MOVE;
+	}
+
+	private void Delay()
+	{
+		enemyMove.Move();
 	}
 }

@@ -9,7 +9,7 @@ public class SkillButton : MonoBehaviour
     public EnemyField[] enemyField;
 	public void OnButtonClick()
 	{
-        if (battleManager.battleState == BattleState.PLAYER_ATTACK)
+        if (battleManager.battleState == BattleState.PLAYER_ATTACK_TURN)
         {
             switch (skillButtonType)
             {

@@ -64,7 +64,7 @@ public class TurnCard : MonoBehaviour
     {
         if(TurnCardRandomList[enemyTurnCardIndex].myCardNum< TurnCardRandomList[myTurnCardIndex].myCardNum)
 		{
-            battleManager.battleState = BattleState.PLAYER_ATTACK;
+            battleManager.battleState = BattleState.PLAYER_ATTACK_TURN;
         }
         if (TurnCardRandomList[enemyTurnCardIndex].myCardNum > TurnCardRandomList[myTurnCardIndex].myCardNum)
         {

@@ -301,6 +301,8 @@ MonoBehaviour:
   downField: {fileID: 937813575}
   rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &56504858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1833,6 +1835,8 @@ MonoBehaviour:
   downField: {fileID: 604870883}
   rightDownField: {fileID: 1939914141}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &313645445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2047,6 +2051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375648508}
+  - component: {fileID: 375648509}
   m_Layer: 0
   m_Name: EnemySquad
   m_TagString: Untagged
@@ -2072,6 +2077,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &375648509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375648507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ef1358954854c40a950f829a470c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleManager: {fileID: 574789748}
+  enemyFields:
+  - {fileID: 313645444}
+  - {fileID: 1298091577}
+  - {fileID: 56504857}
+  - {fileID: 604870883}
+  - {fileID: 1939914141}
+  - {fileID: 937813575}
+  - {fileID: 712981140}
+  - {fileID: 434377437}
+  - {fileID: 1178900980}
 --- !u!1 &382660415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,6 +2279,8 @@ MonoBehaviour:
   downField: {fileID: 0}
   rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &434377438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3000,6 +3030,8 @@ MonoBehaviour:
   downField: {fileID: 712981140}
   rightDownField: {fileID: 434377437}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &604870884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3468,6 +3500,8 @@ MonoBehaviour:
   downField: {fileID: 0}
   rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &712981141
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4417,6 +4451,8 @@ MonoBehaviour:
   downField: {fileID: 1178900980}
   rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &937813576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5553,6 +5589,8 @@ MonoBehaviour:
   downField: {fileID: 0}
   rightDownField: {fileID: 0}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &1178900981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6122,6 +6160,8 @@ MonoBehaviour:
   downField: {fileID: 1939914141}
   rightDownField: {fileID: 937813575}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &1298091578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9498,6 +9538,8 @@ MonoBehaviour:
   downField: {fileID: 434377437}
   rightDownField: {fileID: 1178900980}
   battleManager: {fileID: 574789748}
+  selectedSecondTarget: []
+  enemyMove: {fileID: 375648509}
 --- !u!65 &1939914142
 BoxCollider:
   m_ObjectHideFlags: 0
