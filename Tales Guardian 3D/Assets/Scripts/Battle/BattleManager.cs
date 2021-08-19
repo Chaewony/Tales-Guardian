@@ -65,7 +65,7 @@ public class BattleManager : MonoBehaviour
 		{
             //플레이어의 이동 턴이 오면 실행(즉 에너미의 공격 선택을 호출)
             //이동 "선택"
-            canAttack = false;
+            //canAttack = false;
             if (!isThrown) DiceButton.SetActive(true);
             remainMoveTimeText.text = "남은 이동 횟수: " + remainMoveTime;
             Debug.Log("플레이어 이동선택 및 이동");

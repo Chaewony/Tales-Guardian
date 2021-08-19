@@ -228,9 +228,10 @@ public class EnemyField : MonoBehaviour
 				}
 			}
 			//선택 이후
-			Invoke("Delay", 2f);
-			Invoke("Attack", 4f);
-			Invoke("Initiate", 6f);
+			battleManager.canAttack = false;
+			Invoke("Delay", 1f);
+			Invoke("Attack", 2f);
+			Invoke("Initiate", 3f);
 			//enemyMove.Move();
 			//Attack();
 			//Initiate();
@@ -264,8 +265,13 @@ public class EnemyField : MonoBehaviour
 
 	private void Initiate()
 	{
-		OnMouseExit();
-		selectedSecondTarget = new List<EnemyField>(); //리스트 초기화
+		selectedSecondTarget = null;
+		//selectedSecondTarget = new List<EnemyField>(); //리스트 초기화
+		for(int i=0;i<enemyMove.enemyFields.Length;i++)
+		{
+			enemyMove.enemyFields[i].fieldColor.color = enemyMove.enemyFields[i].defaultColor;
+		}
+		isClicked = false;
 		battleManager.battleState = BattleState.PLAYER_MOVE;
 	}
 
