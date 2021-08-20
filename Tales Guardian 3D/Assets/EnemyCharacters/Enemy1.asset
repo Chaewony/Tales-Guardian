@@ -24,5 +24,5 @@ MonoBehaviour:
   firstSkillName: "\uD558"
   secondSkillName: "\uC138"
   currentHp: 100
-  firstSkillSecondTargetRange: 
-  secondSkillSecondTargetRange: 
+  firstSkillSecondTargetRange: 010000000200000003000000
+  secondSkillSecondTargetRange: 01000000060000000800000003000000

@@ -34,6 +34,8 @@ public class BattleManager : MonoBehaviour
     public bool isThrown;
     public Text remainMoveTimeText;
 
+    public EnemyAttack enemyAttack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,7 +87,7 @@ public class BattleManager : MonoBehaviour
             //플레이어의 이동은 바로 화면에 출력되니 신경쓰지 말고 에너미 공격을 하면 됨
             isThrown = false; //주사위
             remainMoveTimeText.text = " ";
-            Debug.Log("이동 선택 턴 종료");
+            enemyAttack.EnemyAttackChoose();
         }
 
         if (battleState==BattleState.BATTLE_END)

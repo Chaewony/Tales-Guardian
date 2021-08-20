@@ -51,6 +51,7 @@ public class PlayerMove : MonoBehaviour
 				clicked = false;
 				battleManager.canMove = false;
 				battleManager.canClick = true;
+
 				battleManager.battleState = BattleState.PLAYER_MOVE_CHOOSE_END;
 			}
 		}

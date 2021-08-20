@@ -659,6 +659,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 0}
+  upField: {fileID: 279705866}
+  rightUpField: {fileID: 1686665764}
+  leftField: {fileID: 0}
+  rightField: {fileID: 914494928}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 0}
+  rightDownField: {fileID: 0}
 --- !u!1 &93371282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,6 +1661,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 0}
+  upField: {fileID: 1164669172}
+  rightUpField: {fileID: 322146206}
+  leftField: {fileID: 0}
+  rightField: {fileID: 1686665764}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 88232861}
+  rightDownField: {fileID: 914494928}
 --- !u!1 &280478397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,6 +1980,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 0}
+  upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 1164669172}
+  rightField: {fileID: 1306853173}
+  leftDownField: {fileID: 279705866}
+  downField: {fileID: 1686665764}
+  rightDownField: {fileID: 912228588}
 --- !u!1 &329937293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,6 +2517,7 @@ MonoBehaviour:
   DiceButton: {fileID: 93371282}
   isThrown: 0
   remainMoveTimeText: {fileID: 228038567}
+  enemyAttack: {fileID: 1557815368}
 --- !u!4 &574789749
 Transform:
   m_ObjectHideFlags: 0
@@ -4233,6 +4258,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 322146206}
+  upField: {fileID: 1306853173}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 1686665764}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 914494928}
+  downField: {fileID: 1933419332}
+  rightDownField: {fileID: 0}
 --- !u!1 &914494924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4347,6 +4380,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 279705866}
+  upField: {fileID: 1686665764}
+  rightUpField: {fileID: 912228588}
+  leftField: {fileID: 88232861}
+  rightField: {fileID: 1933419332}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 0}
+  rightDownField: {fileID: 0}
 --- !u!1 &937813572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5485,6 +5526,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 0}
+  upField: {fileID: 0}
+  rightUpField: {fileID: 322146206}
+  leftField: {fileID: 0}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 279705866}
+  rightDownField: {fileID: 1686665764}
 --- !u!1 &1178900977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6289,6 +6338,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 0}
+  upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 322146206}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 1686665764}
+  downField: {fileID: 912228588}
+  rightDownField: {fileID: 0}
 --- !u!1 &1341878749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,6 +7426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1557815367}
+  - component: {fileID: 1557815368}
   m_Layer: 0
   m_Name: PlayerFields
   m_TagString: Untagged
@@ -7399,6 +7457,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557815368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557815366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232f23c2bf7101248a6b9e23b7b1a881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleManager: {fileID: 574789748}
+  playerFields:
+  - {fileID: 1164669172}
+  - {fileID: 322146206}
+  - {fileID: 1306853173}
+  - {fileID: 279705866}
+  - {fileID: 1686665764}
+  - {fileID: 912228588}
+  - {fileID: 88232861}
+  - {fileID: 914494928}
+  - {fileID: 1933419332}
+  playerFieldsColor:
+  - {fileID: 1164669171}
+  - {fileID: 322146205}
+  - {fileID: 1306853172}
+  - {fileID: 279705865}
+  - {fileID: 1686665763}
+  - {fileID: 912228587}
+  - {fileID: 88232860}
+  - {fileID: 914494927}
+  - {fileID: 1933419331}
+  defaultColor:
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1571128746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8392,6 +8493,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 1164669172}
+  upField: {fileID: 322146206}
+  rightUpField: {fileID: 1306853173}
+  leftField: {fileID: 279705866}
+  rightField: {fileID: 912228588}
+  leftDownField: {fileID: 88232861}
+  downField: {fileID: 914494928}
+  rightDownField: {fileID: 1933419332}
 --- !u!1 &1722846273
 GameObject:
   m_ObjectHideFlags: 0
@@ -9434,6 +9543,14 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  leftUpField: {fileID: 1686665764}
+  upField: {fileID: 912228588}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 914494928}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 0}
+  rightDownField: {fileID: 0}
 --- !u!1 &1939914138
 GameObject:
   m_ObjectHideFlags: 0

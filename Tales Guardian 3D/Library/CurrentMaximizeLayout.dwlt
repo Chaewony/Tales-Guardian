@@ -23,8 +23,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 910, y: 442}
-  m_MaxSize: {x: 22005, y: 10021}
+  m_MinSize: {x: 909, y: 442}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
   controlID: -1
 --- !u!114 &2
@@ -86,9 +86,9 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -206,9 +206,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1284.5417, y: 76.905525, z: 1386.5807}
+    m_Target: {x: 963, y: 328.1607, z: 676}
     speed: 2
-    m_Value: {x: 1284.5417, y: 76.905525, z: 1386.5807}
+    m_Value: {x: 963, y: 328.1607, z: 676}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -258,9 +258,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.42186207, y: 0.037830282, z: -0.01755034, w: -0.9057005}
   m_Size:
-    m_Target: 985.26495
+    m_Target: 236.61809
     speed: 2
-    m_Value: 985.26495
+    m_Value: 236.61809
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -332,10 +332,10 @@ MonoBehaviour:
     y: 0
     width: 274
     height: 731
-  m_MinSize: {x: 202, y: 342}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 200, y: 321}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 5900
+  controlID: 576
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,8 +355,8 @@ MonoBehaviour:
     y: 0
     width: 274
     height: 487
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -391,9 +391,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 00420000
-      m_LastClickedID: 16896
-      m_ExpandedIDs: 34f6fffff2f6ffff4afbffff4a370000ce40000044430000
+      m_SelectedIDs: d83c0000
+      m_LastClickedID: 15576
+      m_ExpandedIDs: 10faffffd2faffff4afbffff423f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -436,8 +436,8 @@ MonoBehaviour:
     y: 487
     width: 274
     height: 244
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -534,11 +534,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/IncompletionResources
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/IncompletionResources
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\\uC11C\uCC44\uC6D0\\Documents\\GitHub\\Tales-Guardian\\Tales
     Guardian 3D"
@@ -546,9 +546,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88380000
-    m_LastClickedID: 14472
-    m_ExpandedIDs: 00000000883800008a380000b438000000ca9a3b
+    m_SelectedIDs: b8380000
+    m_LastClickedID: 14520
+    m_ExpandedIDs: 000000008e3800009038000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,7 +576,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000883800008a38000000ca9a3b
+    m_ExpandedIDs: 000000008e3800009038000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -601,8 +601,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 00420000
-    m_LastClickedInstanceID: 16896
+    m_SelectedInstanceIDs: d83c0000
+    m_LastClickedInstanceID: 15576
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 2cd8ffff1a380000
     m_RenameOverlay:
@@ -620,7 +620,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 97.5}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
@@ -651,8 +651,8 @@ MonoBehaviour:
     y: 0
     width: 294
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -695,4 +695,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 249

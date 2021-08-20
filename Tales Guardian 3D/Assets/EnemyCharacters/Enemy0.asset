@@ -23,6 +23,6 @@ MonoBehaviour:
   fullMr: 0
   firstSkillName: "\uC548"
   secondSkillName: "\uB155"
-  currentHp: 100
-  firstSkillSecondTargetRange: 
-  secondSkillSecondTargetRange: 
+  currentHp: 95
+  firstSkillSecondTargetRange: 020000000100000003000000
+  secondSkillSecondTargetRange: 0100000003000000

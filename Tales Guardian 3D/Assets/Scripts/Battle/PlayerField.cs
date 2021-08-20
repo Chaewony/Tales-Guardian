@@ -7,6 +7,27 @@ public class PlayerField : MonoBehaviour
 	public BattleManager battleManager;
 	public PlayerMove[] playerMove;
 
+	SpriteRenderer fieldColor;
+	Color defaultColor;
+
+	public List<int> mySecondTarget = new List<int>();
+	public List<PlayerField> selectedSecondTarget = new List<PlayerField>();
+
+	public PlayerField leftUpField;     // 1
+	public PlayerField upField;         // 2
+	public PlayerField rightUpField;    // 3
+	public PlayerField leftField;       // 4
+	public PlayerField rightField;      // 5
+	public PlayerField leftDownField;   // 6
+	public PlayerField downField;       // 7
+	public PlayerField rightDownField;  // 8
+
+	void Start()
+	{
+		fieldColor = GetComponent<SpriteRenderer>();
+		defaultColor = fieldColor.color;
+	}
+
 	private void OnMouseDown() //플레이어필드가 클릭됐을 때
 	{
 		if (battleManager.canMove) //움직일 수 있는 상태면
@@ -18,5 +39,96 @@ public class PlayerField : MonoBehaviour
 				//Debug.Log(this.gameObject);
 			}
 		}
+	}
+
+	public void SetSecondTarget(int[] secondTarget)
+	{
+		mySecondTarget = new List<int>();
+		for (int i = 0; i < secondTarget.Length; i++)
+		{
+			mySecondTarget.Add(secondTarget[i]);
+		}
+		Debug.Log(secondTarget.Length);
+		ColorTargets();
+	}
+
+	private void ColorTargets()
+	{
+		fieldColor.color = new Color(1, 0.5f, 0.5f);
+
+		for (int i = 0; i < mySecondTarget.Count; i++)
+		{
+			switch (mySecondTarget[i])
+			{
+				case 1:
+					if (leftUpField != null)
+					{
+						leftUpField.Color();
+						selectedSecondTarget.Add(leftUpField);
+					}
+					break;
+
+				case 2:
+					if (upField != null)
+					{
+						upField.Color();
+						selectedSecondTarget.Add(upField);
+					}
+					break;
+
+				case 3:
+					if (rightUpField != null)
+					{
+						rightUpField.Color();
+						selectedSecondTarget.Add(rightUpField);
+					}
+					break;
+
+				case 4:
+					if (leftField != null)
+					{
+						leftField.Color();
+						selectedSecondTarget.Add(leftField);
+					}
+					break;
+
+				case 5:
+					if (rightField != null)
+					{
+						rightField.Color();
+						selectedSecondTarget.Add(rightField);
+					}
+					break;
+
+				case 6:
+					if (leftDownField != null)
+					{
+						leftDownField.Color();
+						selectedSecondTarget.Add(leftDownField);
+					}
+					break;
+
+				case 7:
+					if (downField != null)
+					{
+						downField.Color();
+						selectedSecondTarget.Add(downField);
+					}
+					break;
+
+				case 8:
+					if (rightDownField != null)
+					{
+						rightDownField.Color();
+						selectedSecondTarget.Add(rightDownField);
+					}
+					break;
+			}
+		}
+	}
+
+	private void Color()
+	{
+		fieldColor.color = new Color(1, 0.75f, 0.5f);
 	}
 }
