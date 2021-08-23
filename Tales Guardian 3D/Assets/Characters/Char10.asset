@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7072fa3e3654fff43a5d7389a6ee991f, type: 3}
   m_Name: Char10
   m_EditorClassIdentifier: 
+  LocalNumber: 110
   sprite: {fileID: 21300000, guid: a05c7771a6422e04cb2e9df89e6a5d7d, type: 3}
   illustSprite: {fileID: 0}
+  battleSprite: {fileID: 0}
   charName: "\uCE7C\uB9AC\uB2E4"
   rank: Rare
   positionType: Atk
@@ -24,3 +26,10 @@ MonoBehaviour:
   isOwning: 1
   firstSkillName: "\uD3EC\uC2DD\uC790\uC758 \uC601\uC5ED"
   secondSkillName: "\uACF5\uD3EC\uC758 \uD3EC\uD6A8"
+  isSelected: 0
+  currentHp: 0
+  HaveManyCard: 0
+  EnhanceStep: 0
+  Location: -1
+  firstSkillSecondTargetRange: 
+  secondSkillSecondTargetRange: 

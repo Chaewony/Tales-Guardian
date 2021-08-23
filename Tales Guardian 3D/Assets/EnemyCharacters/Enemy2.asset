@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Enemy2
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 496b4e588c3a1c64f911e6b072edbb94, type: 3}
-  battleSprite: {fileID: 21300000, guid: 496b4e588c3a1c64f911e6b072edbb94, type: 3}
+  battleSprite: {fileID: 0}
   charName: 
   rank: 
   positionType: 
-  fullHp: 100
+  fullHp: 0
   fullAtk: 0
   fullAr: 0
   fullMr: 0
-  firstSkillName: "\uC694"
-  secondSkillName: "\uC81C"
-  currentHp: 100
-  firstSkillSecondTargetRange: 0100000002000000
-  secondSkillSecondTargetRange: 0300000004000000
+  firstSkillName: 
+  secondSkillName: 
+  currentHp: 0
+  firstSkillSecondTargetRange: 
+  secondSkillSecondTargetRange: 

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7072fa3e3654fff43a5d7389a6ee991f, type: 3}
   m_Name: Char14
   m_EditorClassIdentifier: 
+  LocalNumber: 114
   sprite: {fileID: 21300000, guid: a05c7771a6422e04cb2e9df89e6a5d7d, type: 3}
   illustSprite: {fileID: 0}
+  battleSprite: {fileID: 0}
   charName: "\uB3C4\uB85C\uC2DC"
   rank: Legendary
   positionType: Sup
@@ -24,3 +26,10 @@ MonoBehaviour:
   isOwning: 1
   firstSkillName: "\uBE68\uAC04 \uAD6C\uB450\uC758 \uB9C8\uBC95"
   secondSkillName: "\uC740 \uAD6C\uB450\uC758 \uB9C8\uBC95"
+  isSelected: 0
+  currentHp: 0
+  HaveManyCard: 0
+  EnhanceStep: 0
+  Location: -1
+  firstSkillSecondTargetRange: 
+  secondSkillSecondTargetRange: 

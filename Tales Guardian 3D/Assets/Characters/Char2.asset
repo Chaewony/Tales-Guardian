@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7072fa3e3654fff43a5d7389a6ee991f, type: 3}
   m_Name: Char2
   m_EditorClassIdentifier: 
+  LocalNumber: 102
   sprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
   illustSprite: {fileID: 21300000, guid: 5bb2d8423a2805e4084259835f30609f, type: 3}
   battleSprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
@@ -27,5 +28,8 @@ MonoBehaviour:
   secondSkillName: "\uACAC\uC778\uBD88\uBC1C"
   isSelected: 0
   currentHp: 100
+  HaveManyCard: 0
+  EnhanceStep: 0
+  Location: -1
   firstSkillSecondTargetRange: 02000000040000000500000007000000
   secondSkillSecondTargetRange: 0100000002000000030000000400000005000000060000000700000008000000
