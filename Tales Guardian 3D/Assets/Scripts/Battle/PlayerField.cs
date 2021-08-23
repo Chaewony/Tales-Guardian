@@ -13,6 +13,7 @@ public class PlayerField : MonoBehaviour
 	public List<int> mySecondTarget = new List<int>();
 	public List<PlayerField> selectedSecondTarget = new List<PlayerField>();
 
+	//상하좌우 반대로(에너미가 보는 방향)
 	public PlayerField leftUpField;     // 1
 	public PlayerField upField;         // 2
 	public PlayerField rightUpField;    // 3
@@ -21,6 +22,8 @@ public class PlayerField : MonoBehaviour
 	public PlayerField leftDownField;   // 6
 	public PlayerField downField;       // 7
 	public PlayerField rightDownField;  // 8
+
+	public EnemyAttack enemyAttack;
 
 	void Start()
 	{
@@ -48,7 +51,7 @@ public class PlayerField : MonoBehaviour
 		{
 			mySecondTarget.Add(secondTarget[i]);
 		}
-		Debug.Log(secondTarget.Length);
+		//Debug.Log(secondTarget.Length);
 		ColorTargets();
 	}
 
@@ -130,5 +133,14 @@ public class PlayerField : MonoBehaviour
 	private void Color()
 	{
 		fieldColor.color = new Color(1, 0.75f, 0.5f);
+	}
+	public void PlayerFieldInitiate()
+	{
+		for (int i = 0; i < enemyAttack.playerFields.Length; i++)
+		{
+			enemyAttack.playerFields[i].fieldColor.color = enemyAttack.playerFields[i].defaultColor;
+		}
+		selectedSecondTarget = new List<PlayerField>();
+		battleManager.battleState = BattleState.PLAYER_ATTACK_TURN;
 	}
 }

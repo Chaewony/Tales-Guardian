@@ -265,8 +265,8 @@ public class EnemyField : MonoBehaviour
 
 	private void Initiate()
 	{
-		selectedSecondTarget = null;
-		//selectedSecondTarget = new List<EnemyField>(); //리스트 초기화
+		//selectedSecondTarget = null;
+		selectedSecondTarget = new List<EnemyField>(); //리스트 초기화
 		for(int i=0;i<enemyMove.enemyFields.Length;i++)
 		{
 			enemyMove.enemyFields[i].fieldColor.color = enemyMove.enemyFields[i].defaultColor;

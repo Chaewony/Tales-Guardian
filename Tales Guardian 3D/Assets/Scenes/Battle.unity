@@ -659,14 +659,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  mySecondTarget: 
+  selectedSecondTarget: []
   leftUpField: {fileID: 0}
-  upField: {fileID: 279705866}
-  rightUpField: {fileID: 1686665764}
-  leftField: {fileID: 0}
-  rightField: {fileID: 914494928}
-  leftDownField: {fileID: 0}
-  downField: {fileID: 0}
+  upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 914494928}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 1686665764}
+  downField: {fileID: 279705866}
   rightDownField: {fileID: 0}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &93371282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,14 +1664,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  mySecondTarget: 
+  selectedSecondTarget: []
   leftUpField: {fileID: 0}
-  upField: {fileID: 1164669172}
-  rightUpField: {fileID: 322146206}
-  leftField: {fileID: 0}
-  rightField: {fileID: 1686665764}
-  leftDownField: {fileID: 0}
-  downField: {fileID: 88232861}
-  rightDownField: {fileID: 914494928}
+  upField: {fileID: 88232861}
+  rightUpField: {fileID: 914494928}
+  leftField: {fileID: 1686665764}
+  rightField: {fileID: 0}
+  leftDownField: {fileID: 322146206}
+  downField: {fileID: 1164669172}
+  rightDownField: {fileID: 0}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &280478397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,14 +1986,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
-  leftUpField: {fileID: 0}
-  upField: {fileID: 0}
-  rightUpField: {fileID: 0}
-  leftField: {fileID: 1164669172}
-  rightField: {fileID: 1306853173}
-  leftDownField: {fileID: 279705866}
-  downField: {fileID: 1686665764}
-  rightDownField: {fileID: 912228588}
+  mySecondTarget: 
+  selectedSecondTarget: []
+  leftUpField: {fileID: 912228588}
+  upField: {fileID: 1686665764}
+  rightUpField: {fileID: 279705866}
+  leftField: {fileID: 1306853173}
+  rightField: {fileID: 1164669172}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 0}
+  rightDownField: {fileID: 0}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &329937293
 GameObject:
   m_ObjectHideFlags: 0
@@ -4258,14 +4267,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
-  leftUpField: {fileID: 322146206}
-  upField: {fileID: 1306853173}
-  rightUpField: {fileID: 0}
-  leftField: {fileID: 1686665764}
-  rightField: {fileID: 0}
-  leftDownField: {fileID: 914494928}
-  downField: {fileID: 1933419332}
-  rightDownField: {fileID: 0}
+  mySecondTarget: 
+  selectedSecondTarget: []
+  leftUpField: {fileID: 0}
+  upField: {fileID: 1933419332}
+  rightUpField: {fileID: 914494928}
+  leftField: {fileID: 0}
+  rightField: {fileID: 1686665764}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 1306853173}
+  rightDownField: {fileID: 322146206}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &914494924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,14 +4392,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
-  leftUpField: {fileID: 279705866}
-  upField: {fileID: 1686665764}
-  rightUpField: {fileID: 912228588}
-  leftField: {fileID: 88232861}
-  rightField: {fileID: 1933419332}
-  leftDownField: {fileID: 0}
-  downField: {fileID: 0}
-  rightDownField: {fileID: 0}
+  mySecondTarget: 
+  selectedSecondTarget: []
+  leftUpField: {fileID: 0}
+  upField: {fileID: 0}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 1933419332}
+  rightField: {fileID: 88232861}
+  leftDownField: {fileID: 912228588}
+  downField: {fileID: 1686665764}
+  rightDownField: {fileID: 279705866}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &937813572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,14 +5541,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
-  leftUpField: {fileID: 0}
-  upField: {fileID: 0}
-  rightUpField: {fileID: 322146206}
-  leftField: {fileID: 0}
+  mySecondTarget: 
+  selectedSecondTarget: []
+  leftUpField: {fileID: 1686665764}
+  upField: {fileID: 279705866}
+  rightUpField: {fileID: 0}
+  leftField: {fileID: 322146206}
   rightField: {fileID: 0}
   leftDownField: {fileID: 0}
-  downField: {fileID: 279705866}
-  rightDownField: {fileID: 1686665764}
+  downField: {fileID: 0}
+  rightDownField: {fileID: 0}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &1178900977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6338,14 +6356,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
+  mySecondTarget: 
+  selectedSecondTarget: []
   leftUpField: {fileID: 0}
-  upField: {fileID: 0}
-  rightUpField: {fileID: 0}
-  leftField: {fileID: 322146206}
-  rightField: {fileID: 0}
-  leftDownField: {fileID: 1686665764}
-  downField: {fileID: 912228588}
+  upField: {fileID: 912228588}
+  rightUpField: {fileID: 1686665764}
+  leftField: {fileID: 0}
+  rightField: {fileID: 322146206}
+  leftDownField: {fileID: 0}
+  downField: {fileID: 0}
   rightDownField: {fileID: 0}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &1341878749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,26 +7501,6 @@ MonoBehaviour:
   - {fileID: 88232861}
   - {fileID: 914494928}
   - {fileID: 1933419332}
-  playerFieldsColor:
-  - {fileID: 1164669171}
-  - {fileID: 322146205}
-  - {fileID: 1306853172}
-  - {fileID: 279705865}
-  - {fileID: 1686665763}
-  - {fileID: 912228587}
-  - {fileID: 88232860}
-  - {fileID: 914494927}
-  - {fileID: 1933419331}
-  defaultColor:
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1571128746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8493,14 +8494,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
-  leftUpField: {fileID: 1164669172}
-  upField: {fileID: 322146206}
-  rightUpField: {fileID: 1306853173}
-  leftField: {fileID: 279705866}
-  rightField: {fileID: 912228588}
-  leftDownField: {fileID: 88232861}
-  downField: {fileID: 914494928}
-  rightDownField: {fileID: 1933419332}
+  mySecondTarget: 
+  selectedSecondTarget: []
+  leftUpField: {fileID: 1933419332}
+  upField: {fileID: 914494928}
+  rightUpField: {fileID: 88232861}
+  leftField: {fileID: 912228588}
+  rightField: {fileID: 279705866}
+  leftDownField: {fileID: 1306853173}
+  downField: {fileID: 322146206}
+  rightDownField: {fileID: 1164669172}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &1722846273
 GameObject:
   m_ObjectHideFlags: 0
@@ -9543,14 +9547,17 @@ MonoBehaviour:
   - {fileID: 1929592939}
   - {fileID: 211583490}
   - {fileID: 1861881025}
-  leftUpField: {fileID: 1686665764}
-  upField: {fileID: 912228588}
+  mySecondTarget: 
+  selectedSecondTarget: []
+  leftUpField: {fileID: 0}
+  upField: {fileID: 0}
   rightUpField: {fileID: 0}
-  leftField: {fileID: 914494928}
-  rightField: {fileID: 0}
+  leftField: {fileID: 0}
+  rightField: {fileID: 914494928}
   leftDownField: {fileID: 0}
-  downField: {fileID: 0}
-  rightDownField: {fileID: 0}
+  downField: {fileID: 912228588}
+  rightDownField: {fileID: 1686665764}
+  enemyAttack: {fileID: 1557815368}
 --- !u!1 &1939914138
 GameObject:
   m_ObjectHideFlags: 0
