@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7072fa3e3654fff43a5d7389a6ee991f, type: 3}
+  m_Name: Char2
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
+  illustSprite: {fileID: 21300000, guid: 5bb2d8423a2805e4084259835f30609f, type: 3}
+  battleSprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
+  charName: "\uBC30\uACE0\uD508 \uD638\uB791\uC774"
+  rank: Normal
+  positionType: Def
+  fullHp: 100
+  fullAtk: 0
+  fullAr: 0
+  fullMr: 0
+  isOwning: 1
+  firstSkillName: "\uC6B0\uB85C\uC9C0\uD0DD"
+  secondSkillName: "\uACAC\uC778\uBD88\uBC1C"
+  isSelected: 0
+  currentHp: 100
+  firstSkillSecondTargetRange: 02000000040000000500000007000000
+  secondSkillSecondTargetRange: 0100000002000000030000000400000005000000060000000700000008000000
