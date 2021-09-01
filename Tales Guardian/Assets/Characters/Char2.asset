@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Char2
   m_EditorClassIdentifier: 
   LocalNumber: 102
-  sprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
+  sprite: {fileID: 21300000, guid: 496b4e588c3a1c64f911e6b072edbb94, type: 3}
   illustSprite: {fileID: 21300000, guid: 5bb2d8423a2805e4084259835f30609f, type: 3}
   battleSprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
   charName: "\uBC30\uACE0\uD508 \uD638\uB791\uC774"
@@ -26,7 +26,7 @@ MonoBehaviour:
   isOwning: 1
   firstSkillName: "\uC6B0\uB85C\uC9C0\uD0DD"
   secondSkillName: "\uACAC\uC778\uBD88\uBC1C"
-  isSelected: 0
+  isSelected: 1
   currentHp: 100
   HaveManyCard: 0
   EnhanceStep: 0

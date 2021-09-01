@@ -51,35 +51,35 @@ public class ArrangeButtonCase2 : MonoBehaviour
     {
         if(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber != -1)
         {
-            if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter) == true)
+            if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == true)
             {//결과 2.
                 Debug.Log("결과2");
                 this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
-                AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter[SelectCharacterNumber].myLocation = FieldNumber;
+                AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation = FieldNumber;
                 AllcharacterManager.GetComponent<AllCharacterManager>().ClearField();
                 AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                 AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
             }
-            else if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter) == false)
+            else if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)
             {
                 if(AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount != 4)
                 {//결과 3.
-                    if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter) == true)//애들 있는데 배치)
+                    if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == true)//애들 있는데 배치)
                     {//결과 4. 
                         Debug.Log("결과3.1");
                         this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
-                        AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter[FindWillSameFieldCharNumber(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter)].myLocation = -1;
-                        AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter[SelectCharacterNumber].myLocation = FieldNumber;
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[FindWillSameFieldCharNumber(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs)].GetComponent<CharactersPrefab>().myLocation = -1;
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation = FieldNumber;
                         AllcharacterManager.GetComponent<AllCharacterManager>().ClearField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().SeeNowFilterType();
                     }
-                    else if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter) == false)// 애들 없는데 배치)
+                    else if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)// 애들 없는데 배치)
                     {//결과 5. 
                         Debug.Log("결과3.2");
                         this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
-                        AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter[SelectCharacterNumber].myLocation = FieldNumber;
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation = FieldNumber;
                         AllcharacterManager.GetComponent<AllCharacterManager>().ClearField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount++;
@@ -89,18 +89,18 @@ public class ArrangeButtonCase2 : MonoBehaviour
                 }
                 else if (AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount == 4)
                 { 
-                    if(SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter) == true)//애들 있는데 배치)
+                    if(SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == true)//애들 있는데 배치)
                     {//결과 4. 
                         Debug.Log("결과4");
                         this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
-                        AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter[FindWillSameFieldCharNumber(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter)].myLocation = -1;
-                        AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter[SelectCharacterNumber].myLocation = FieldNumber;
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[FindWillSameFieldCharNumber(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs)].GetComponent<CharactersPrefab>().myLocation = -1;
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation = FieldNumber;
                         AllcharacterManager.GetComponent<AllCharacterManager>().ClearField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().SeeNowFilterType();
                     }
-                    else if(SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().allCharacter) == false)// 애들 없는데 배치)
+                    else if(SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)// 애들 없는데 배치)
                     {//결과 5. 
                         Debug.Log("결과5");
                     }
@@ -113,28 +113,28 @@ public class ArrangeButtonCase2 : MonoBehaviour
             Debug.Log("결과1");
         }
     }
-    public bool CheckSelectedCharIsInField(int SelectCharacterNumber, CharacterInfo[] b)
+    public bool CheckSelectedCharIsInField(int SelectCharacterNumber, GameObject[] b)
     {
-        if (b[SelectCharacterNumber].myLocation != -1) { Debug.Log(SelectCharacterNumber); return true; }
+        if (b[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation != -1) { Debug.Log(SelectCharacterNumber); return true; }
         else { Debug.Log(SelectCharacterNumber); return false; }
     }
-    public bool SelectedFieldIsFill(int FieldNumber, CharacterInfo[] b)
+    public bool SelectedFieldIsFill(int FieldNumber, GameObject[] b)
     {
         for(int i = 0; i<b.Length;i++)
         {
-            if(b[i].myLocation == FieldNumber)
+            if(b[i].GetComponent<CharactersPrefab>().myLocation == FieldNumber)
             {
                 return true;
             }
         }
         return false;
     }
-    public int FindWillSameFieldCharNumber(int FieldNumber, CharacterInfo[] b)
+    public int FindWillSameFieldCharNumber(int FieldNumber, GameObject[] b)
     {
         int SameCharNumber = 17;
         for (int i = 0; i < b.Length; i++)
         {
-            if (b[i].myLocation == FieldNumber)
+            if (b[i].GetComponent<CharactersPrefab>().myLocation == FieldNumber)
             {
                 SameCharNumber = i;
             }

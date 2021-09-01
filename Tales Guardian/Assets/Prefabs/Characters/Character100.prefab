@@ -54,7 +54,7 @@ MonoBehaviour:
   fullAtk: 100
   fullAr: 100
   fullMr: 100
-  isOwning: 0
+  isOwning: 1
   firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
   secondSkillName: "\uC18D\uC774\uAE30"
   isSelected: 0

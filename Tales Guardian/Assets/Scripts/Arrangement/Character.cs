@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Character : MonoBehaviour
 {
     [SerializeField]
-    private List<CharacterInfo> allCharacter = new List<CharacterInfo>();
+    private List<GameObject> allCharacter;
     [SerializeField]
     private Image[] charSlot; //캐릭터 선택창에 띄워질 이미지 슬롯들
     [SerializeField]
@@ -20,14 +20,14 @@ public class Character : MonoBehaviour
         for (int i = 0; i < allCharacter.Count; i++)
         {
             //모든 캐릭터 이미지들 이미지 슬롯에 넣기
-            if (allCharacter[i].myIsOwning)
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning)
             {
-                charSlot[i].sprite = allCharacter[i].mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
                 charSlot[i].color = new Color(charSlot[i].color.r, charSlot[i].color.g, charSlot[i].color.b, 1.0f);
             }
             else
             {
-                charSlot[i].sprite = allCharacter[i].mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
                 //흑백처리 알아보기 or 검정 반투명 레이어 끼얹기
                 charSlot[i].color = new Color(charSlot[i].color.r, charSlot[i].color.g, charSlot[i].color.b, 0.5f);
             }
@@ -35,8 +35,8 @@ public class Character : MonoBehaviour
     }
     public void SelectMainCharacter(int index) //메인캐릭터 선택 후 화면에 보이지는 이미지
     {
-        if (allCharacter[index].myIsOwning)
-            illustSlot.sprite = allCharacter[index].myIllustSprite;
+        if (allCharacter[index].GetComponent<CharactersPrefab>().myIsOwning)
+            illustSlot.sprite = allCharacter[index].GetComponent<CharactersPrefab>().myIllustSprite;
     }
 
     public void ShowOwningCharacters() //가지고있는 캐릭터들만 표시
@@ -44,10 +44,10 @@ public class Character : MonoBehaviour
         for (int i = 0; i < allCharacter.Count; i++)
         {
             //모든 캐릭터 이미지들 이미지 슬롯에 넣기
-            if (allCharacter[i].myIsOwning)
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myLocation == -1)
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
             }
         }
     }
@@ -56,10 +56,10 @@ public class Character : MonoBehaviour
         for (int i = 0; i < allCharacter.Count; i++)
         {
             //모든 캐릭터 이미지들 이미지 슬롯에 넣기
-            if (allCharacter[i].myIsOwning && allCharacter[i].myPosType == "Def")
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myPosType == "Def")
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
             }
             else slot[i].SetActive(false);
         }
@@ -70,10 +70,10 @@ public class Character : MonoBehaviour
         for (int i = 0; i < allCharacter.Count; i++)
         {
             //모든 캐릭터 이미지들 이미지 슬롯에 넣기
-            if (allCharacter[i].myIsOwning && allCharacter[i].myPosType == "Atk")
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myPosType == "Atk")
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
             }
             else slot[i].SetActive(false);
         }
@@ -84,10 +84,10 @@ public class Character : MonoBehaviour
         for (int i = 0; i < allCharacter.Count; i++)
         {
             //모든 캐릭터 이미지들 이미지 슬롯에 넣기
-            if (allCharacter[i].myIsOwning && allCharacter[i].myPosType == "Sup")
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myPosType == "Sup")
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
             }
             else slot[i].SetActive(false);
         }
