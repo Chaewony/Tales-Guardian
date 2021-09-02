@@ -7,6 +7,8 @@ public class EnemysPrefab : MonoBehaviour
     [SerializeField]
     private Sprite battleSprite;
     [SerializeField]
+    private Sprite Sprite;
+    [SerializeField]
     private string charName;
     [SerializeField]
     private string rank; //등급
@@ -39,6 +41,7 @@ public class EnemysPrefab : MonoBehaviour
     public int[] secondSkillSecondTargetRange;
 
     public Sprite mybattleSprite { get => battleSprite; }
+    public Sprite mySprite { get => Sprite; }
     public string myCharName { get => charName; }
     public string myPosType { get => positionType; }
     public float myFullHp { get => fullHp; }

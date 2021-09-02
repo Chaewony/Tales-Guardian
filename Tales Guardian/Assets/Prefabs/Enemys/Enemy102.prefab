@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleSprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 496b4e588c3a1c64f911e6b072edbb94, type: 3}
   charName: 
   rank: 
   positionType: 

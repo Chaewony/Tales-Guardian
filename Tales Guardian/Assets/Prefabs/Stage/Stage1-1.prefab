@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a11082b90bae064db2ec17a93053e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
+  isSelected: 1
   CanSelected: 1
-  EnemyIndex: 
-  EnemyArrangedIndex: 
+  IsClear: 0
+  EnemyIndex: 0000000001000000
+  EnemyArrangedIndex: 0600000008000000

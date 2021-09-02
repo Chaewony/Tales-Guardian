@@ -13,11 +13,12 @@ public class ChangeScene : MonoBehaviour
         switch (scenebuttontype)
         {
             case SceneButtonType.BattleArrangeButton:
-                SceneManager.LoadScene("Arrangement");
+                SceneManager.LoadScene("BattleArrangementCheck");
                 Debug.Log("배치로");
                 break;
             case SceneButtonType.CloseButton:              
                 Debug.Log("닫기");
+                SceneManager.LoadScene("FirstThemeStageSelection");
                 break;
             case SceneButtonType.StartButton:
                 SceneManager.LoadScene("Battle");

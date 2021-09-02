@@ -7,8 +7,13 @@ public class Draw : MonoBehaviour
 {
     // Start is called before the first frame update
     public Text Havebookmarker;
-    public int HaveBookmarker;
+    [SerializeField]
+    private GameObject User;
 
+    public void Start()
+    {
+        DrawUserHaveBookMarker();
+    }
     public int FunctionDraw()
     {
         int DrawResult = 0;
@@ -34,8 +39,9 @@ public class Draw : MonoBehaviour
 
         return DrawResult;
     }
-    public void Update()
+
+    public void DrawUserHaveBookMarker()
     {
-        Havebookmarker.text = "보유 중인 책갈피 수 " + HaveBookmarker;
+        Havebookmarker.text = "보유 중인 책갈피 수 " + User.GetComponent<UserInformation>().MyHaveBookIndx;
     }
 }

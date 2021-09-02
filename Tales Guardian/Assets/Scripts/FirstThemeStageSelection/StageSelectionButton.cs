@@ -18,7 +18,7 @@ public class StageSelectionButton : MonoBehaviour, IPointerEnterHandler, IPointe
     public GameObject SelectStageInfo;
     public int StageSize;
     [SerializeField]
-    public StageInfo[] stage;
+    public GameObject[] stage;
     public GameObject DontGoMessage;
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -35,31 +35,32 @@ public class StageSelectionButton : MonoBehaviour, IPointerEnterHandler, IPointe
         SelectStageNumber = 1;
         for(int i = 0;i<StageSize;i++)
         {
-            stage[i].isSelected = false;
+            stage[i].GetComponent<StagePrefab>().StageisSelected = false;
         }
     }
     
-    public void FillCharSlot(Image[] TargetImage,StageInfo StageEnemyInfo)
+    public void FillCharSlot(Image[] TargetImage,StagePrefab StageEnemyInfo)
     {
-        for(int i = 0; i < StageEnemyInfo.EnemyIndex.Length;i++)
+        for(int i = 0; i < StageEnemyInfo.StageEnemysIndex.Length;i++)
         {
-            TargetImage[i].sprite = AllCharacter.GetComponent<AllCharacters>().allCharacter[StageEnemyInfo.EnemyIndex[i]].mySprite;
+            TargetImage[i].sprite = AllCharacter.GetComponent<AllCharacters>().allCharacter[StageEnemyInfo.StageEnemysIndex[i]].mySprite;
             TargetImage[i].color = new Color(charSlot[i].color.r, charSlot[i].color.g, charSlot[i].color.b, 1.0f);
         }
-        for(int i = StageEnemyInfo.EnemyIndex.Length; i < 5; i++)
+        for(int i = StageEnemyInfo.StageEnemysIndex.Length; i < 5; i++)
         {
             TargetImage[i].sprite = null;
         }
     }
+
     public void SetIsSelected(int SelectStageNumber)
     {
         for(int i= 0; i<5; i++)
         {
-            stage[i].isSelected = false;
+            stage[i].GetComponent<StagePrefab>().StageisSelected = false;
         }
-        { stage[SelectStageNumber].isSelected = true; }
-
+        stage[SelectStageNumber].GetComponent<StagePrefab>().StageisSelected = true;
     }
+
     public void OnButtonClick()
     {
         switch (Stageselectionbuttontype)
@@ -77,70 +78,70 @@ public class StageSelectionButton : MonoBehaviour, IPointerEnterHandler, IPointe
                 PlayerMoveMananger.GetComponent<Player>().SelectStage = PlayerMoveMananger.GetComponent<Player>().Stage[0];
                 PlayerMoveMananger.GetComponent<Player>().SelectStageAdress = 0;
                 SelectStageNumber = 1;
-                if (stage[SelectStageNumber - 1].CanSelected)
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected)
                 {
-                    FillCharSlot(charSlot, stage[SelectStageNumber - 1]);
+                    FillCharSlot(charSlot, stage[SelectStageNumber - 1].GetComponent<StagePrefab>());
                     SetIsSelected(SelectStageNumber - 1);
                     StageText.text = "1 - " + SelectStageNumber;
                     SelectStageInfo.SetActive(true);
                 }
-                if (stage[SelectStageNumber - 1].CanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
                 break;
             case StageSelectionButtonType.SecondStage:
                 Debug.Log("Select 1-2 Stage");
                 PlayerMoveMananger.GetComponent<Player>().SelectStage = PlayerMoveMananger.GetComponent<Player>().Stage[2];
                 PlayerMoveMananger.GetComponent<Player>().SelectStageAdress = 2;
                 SelectStageNumber = 2;
-                if (stage[SelectStageNumber - 1].CanSelected)
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected)
                 {
-                    FillCharSlot(charSlot, stage[SelectStageNumber - 1]);
+                    FillCharSlot(charSlot, stage[SelectStageNumber - 1].GetComponent<StagePrefab>());
                     SetIsSelected(SelectStageNumber - 1);
                     StageText.text = "1 - " + SelectStageNumber;
                     SelectStageInfo.SetActive(true);
                 }
-                if (stage[SelectStageNumber - 1].CanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
                 break;
             case StageSelectionButtonType.ThirdStage:
                 Debug.Log("Select 1-3 Stage");
                 PlayerMoveMananger.GetComponent<Player>().SelectStage = PlayerMoveMananger.GetComponent<Player>().Stage[5];
                 PlayerMoveMananger.GetComponent<Player>().SelectStageAdress = 5;
                 SelectStageNumber = 3;
-                if (stage[SelectStageNumber - 1].CanSelected)
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected)
                 {
-                    FillCharSlot(charSlot, stage[SelectStageNumber - 1]);
+                    FillCharSlot(charSlot, stage[SelectStageNumber - 1].GetComponent<StagePrefab>());
                     SetIsSelected(SelectStageNumber - 1);
                     StageText.text = "1 - " + SelectStageNumber;
                     SelectStageInfo.SetActive(true);
                 }
-                if (stage[SelectStageNumber - 1].CanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
                 break;
             case StageSelectionButtonType.ForthStage:
                 Debug.Log("Select 1-4 Stage");
                 PlayerMoveMananger.GetComponent<Player>().SelectStage = PlayerMoveMananger.GetComponent<Player>().Stage[8];
                 PlayerMoveMananger.GetComponent<Player>().SelectStageAdress = 8;
                 SelectStageNumber = 4;
-                if (stage[SelectStageNumber - 1].CanSelected)
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected)
                 {
-                    FillCharSlot(charSlot, stage[SelectStageNumber - 1]);
+                    FillCharSlot(charSlot, stage[SelectStageNumber - 1].GetComponent<StagePrefab>());
                     SetIsSelected(SelectStageNumber - 1);
                     StageText.text = "1 - " + SelectStageNumber;
                     SelectStageInfo.SetActive(true);
                 }
-                if (stage[SelectStageNumber - 1].CanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
                 break;
             case StageSelectionButtonType.FifthStage:
                 Debug.Log("Select 1-5 Stage");
                 PlayerMoveMananger.GetComponent<Player>().SelectStage = PlayerMoveMananger.GetComponent<Player>().Stage[10];
                 PlayerMoveMananger.GetComponent<Player>().SelectStageAdress = 10;
                 SelectStageNumber = 5;
-                if (stage[SelectStageNumber - 1].CanSelected)
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected)
                 {
-                    FillCharSlot(charSlot, stage[SelectStageNumber - 1]);
+                    FillCharSlot(charSlot, stage[SelectStageNumber - 1].GetComponent<StagePrefab>());
                     SetIsSelected(SelectStageNumber - 1);
                     StageText.text = "1 - " + SelectStageNumber;
                     SelectStageInfo.SetActive(true);
                 }
-                if (stage[SelectStageNumber - 1].CanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
+                if (stage[SelectStageNumber - 1].GetComponent<StagePrefab>().StageCanSelected == false) { SelectStageInfo.SetActive(false); DontGoMessage.SetActive(true); }
                 break;
             case StageSelectionButtonType.IsNotStage:
                 Debug.Log("Select Not Stage");

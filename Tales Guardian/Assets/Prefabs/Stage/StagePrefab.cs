@@ -15,8 +15,8 @@ public class StagePrefab : MonoBehaviour
     [SerializeField]
     private int[] EnemyArrangedIndex;
 
-    public int[] StageCharactersIndex { get => EnemyIndex; }
-    public int[] StageCharactersArrangedIndex { get => EnemyArrangedIndex; }
+    public int[] StageEnemysIndex { get => EnemyIndex; }
+    public int[] StageEnemysArrangedIndex { get => EnemyArrangedIndex; }
     public bool StageisSelected { get => isSelected; set { isSelected = value; } }
     public bool StageCanSelected { get => CanSelected; set { CanSelected = value; } }
     public bool StageIsClear { get => IsClear; set { IsClear = value; } }
