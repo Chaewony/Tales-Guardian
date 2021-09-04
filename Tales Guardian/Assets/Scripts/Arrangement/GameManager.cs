@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
         canClickGrid = false;
         SetAllCharactersToSelectedFalse();
         //arrangementCount = 0;
-
     }
     // Update is called once per frame CharacterPrefabs[i].GetComponent<CharactersPrefab>()
     void Update()
@@ -44,7 +43,7 @@ public class GameManager : MonoBehaviour
         {
             if (FieldPrefabs[i].GetComponent<FieldPrefab>().myArrangedCharIndex != -1)
             {
-                slot[FieldPrefabs[i].GetComponent<FieldPrefab>().myArrangedCharIndex].gameObject.SetActive(false);
+                slot[FieldPrefabs[i].GetComponent<FieldPrefab>().myArrangedCharIndex].SetActive(false);
             }
         }
     }

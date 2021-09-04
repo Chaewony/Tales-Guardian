@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edab669cec03864e86f280d4f685195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalNumber: 100
+  LocalNumber: 105
   sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}

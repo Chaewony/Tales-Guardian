@@ -49,11 +49,6 @@ public class AllCharacterManager : MonoBehaviour
         ArrangementCount = 0;
     }
 
-    public void Update()
-    {
-        
-    }
-
     public void SeeNowFilterType()
     {
         switch(NowFilterType)
@@ -93,7 +88,7 @@ public class AllCharacterManager : MonoBehaviour
         {
             if (CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation != -1) // 배치된 상태의 캐릭터
             {
-                FieldPrefabs[CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation].GetComponent<FieldPrefab>().myArrangedCharIndex = SelectCharacterNumber;
+                FieldPrefabs[CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation].GetComponent<FieldPrefab>().myArrangedCharIndex = CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocalNumber % 100;
             }
         }
     }

@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     private GameObject[] slot;
 
-	public void ShowCharacters()
+    public void ShowCharacters()
     {
         for (int i = 0; i < allCharacter.Count; i++)
         {
@@ -38,9 +38,27 @@ public class Character : MonoBehaviour
         if (allCharacter[index].GetComponent<CharactersPrefab>().myIsOwning)
             illustSlot.sprite = allCharacter[index].GetComponent<CharactersPrefab>().myIllustSprite;
     }
-
+    /*
+    public void IfSetArrangementShowSlotCharacters() //가지고있는 캐릭터들만 표시
+    {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            //모든 캐릭터 이미지들 이미지 슬롯에 넣기
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myLocation == -1)
+            {
+                //Debug.Log(i);
+                slot[i].SetActive(true);
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+            }
+        }
+    }
+    */
     public void ShowOwningCharacters() //가지고있는 캐릭터들만 표시
     {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            slot[i].SetActive(false);
+        }
         for (int i = 0; i < allCharacter.Count; i++)
         {
             //모든 캐릭터 이미지들 이미지 슬롯에 넣기
