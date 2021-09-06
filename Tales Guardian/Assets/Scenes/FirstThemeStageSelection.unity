@@ -3037,7 +3037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charSlot: []
-  AllCharacter: {fileID: 0}
+  AllCharacter: {fileID: 1301706610}
   Scale: {fileID: 752428518}
   Stageselectionbuttontype: 8
   PlayerMoveMananger: {fileID: 767370270}
