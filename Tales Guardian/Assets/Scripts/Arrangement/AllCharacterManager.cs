@@ -12,9 +12,12 @@ public class AllCharacterManager : MonoBehaviour
     public Image[] AllField;
     public int ArrangementCount;
     public int SelectCharatectThemeNumber;
-    public FieldInfo[] RealAllField;
     public int NowFilterType;
     public Character character;
+
+    public GameObject[] CharacterPrefabs;
+    public GameObject[] FieldPrefabs;
+    //FieldPrefabs.GetComponent<FieldPrefab>() CharacterPrefabs[i].GetComponent<CharactersPrefab>()
 
     public void Start()
     {
@@ -24,9 +27,9 @@ public class AllCharacterManager : MonoBehaviour
         FillField();
         SelectCharacterNumber = -1;
         ArrangementCount = 0;
-        for (int i = 0; i < allCharacter.Length; i++)
+        for (int i = 0; i < CharacterPrefabs.Length; i++)
         {
-            if (allCharacter[i].myLocation != -1)
+            if (CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation != -1)
             {
                 ArrangementCount++;
             }
@@ -35,20 +38,15 @@ public class AllCharacterManager : MonoBehaviour
 
     public void ResetTeam()
     {
-        for (int i = 0; i < allCharacter.Length; i++)
+        for (int i = 0; i < CharacterPrefabs.Length; i++)
         {
-            allCharacter[i].myLocation = -1;
+            CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation = -1;
         }
-        for (int i = 0; i < RealAllField.Length; i++)
+        for (int i = 0; i < FieldPrefabs.Length; i++)
         {
-            RealAllField[i].myArrangedCharIndex = -1;
+            FieldPrefabs[i].GetComponent<FieldPrefab>().myArrangedCharIndex = -1;
         }
         ArrangementCount = 0;
-    }
-
-    public void Update()
-    {
-        
     }
 
     public void SeeNowFilterType()
@@ -82,15 +80,15 @@ public class AllCharacterManager : MonoBehaviour
 
     public void FillField()
     {
-        for(int i = 0; i<RealAllField.Length;i++)
+        for(int i = 0; i< FieldPrefabs.Length;i++)
         {
-            RealAllField[i].myArrangedCharIndex = -1;
+            FieldPrefabs[i].GetComponent<FieldPrefab>().myArrangedCharIndex = -1;
         }
-        for(int i = 0; i<allCharacter.Length;i++)
+        for(int i = 0; i< CharacterPrefabs.Length;i++)
         {
-            if(allCharacter[i].myLocation != -1) // 배치된 상태의 캐릭터
+            if (CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation != -1) // 배치된 상태의 캐릭터
             {
-                RealAllField[allCharacter[i].myLocation].myArrangedCharIndex = allCharacter[i].myLocalNumber % 100;
+                FieldPrefabs[CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation].GetComponent<FieldPrefab>().myArrangedCharIndex = CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocalNumber % 100;
             }
         }
     }
@@ -109,12 +107,12 @@ public class AllCharacterManager : MonoBehaviour
 
     public void DrawField()
     {
-        for (int i = 0; i<allCharacter.Length; i++)
+        for (int i = 0; i< CharacterPrefabs.Length; i++)
         {
-            if(allCharacter[i].myLocation != -1 )
+            if(CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation != -1 )
             {
-                AllField[allCharacter[i].myLocation].sprite = allCharacter[i].mySprite;
-                AllField[allCharacter[i].myLocation].color = new Color(1, 1, 1, 1);
+                AllField[CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation].sprite = CharacterPrefabs[i].GetComponent<CharactersPrefab>().mySprite;
+                AllField[CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation].color = new Color(1, 1, 1, 1);
             }
         }
     }

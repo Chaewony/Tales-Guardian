@@ -11,6 +11,7 @@ public class FieldInfo : ScriptableObject
     int index;
     [SerializeField]
     int arrangedCharIndex;
+
     public int myIndex { get => index; }
     public int myArrangedCharIndex { get => arrangedCharIndex; set => arrangedCharIndex = value; }
 }

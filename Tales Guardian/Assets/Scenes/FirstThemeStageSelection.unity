@@ -266,11 +266,11 @@ MonoBehaviour:
   SelectStageInfo: {fileID: 1308079463}
   StageSize: 5
   stage:
-  - {fileID: 11400000, guid: f1269c30d71e10144917f3e0b2c03ab0, type: 2}
-  - {fileID: 11400000, guid: 537984fc997c41e4d874504a463f110f, type: 2}
-  - {fileID: 11400000, guid: b9b73f3b9061bc240b3c411bb73f9db9, type: 2}
-  - {fileID: 11400000, guid: 42f6d43dd49798d448e52f288b8c95ef, type: 2}
-  - {fileID: 11400000, guid: f9469667d4608dc41b145a9df8d657c5, type: 2}
+  - {fileID: 218030451372203383, guid: 64b20965a19bc1e49aa80a3ddd560000, type: 3}
+  - {fileID: 6079217902740716081, guid: 58dad69e598aa72439ea48cbc35e12e4, type: 3}
+  - {fileID: 6301331028341747340, guid: 1c0d4b1561ba5ca4282b083a4c7be446, type: 3}
+  - {fileID: 4841989953206079712, guid: abeacfe7829da484aaf6da27814567de, type: 3}
+  - {fileID: 2546403686570532743, guid: 3afbc7c67626ef4479e08186de8f148a, type: 3}
   DontGoMessage: {fileID: 644627391}
 --- !u!114 &10031597
 MonoBehaviour:
@@ -730,11 +730,11 @@ MonoBehaviour:
   SelectStageInfo: {fileID: 1308079463}
   StageSize: 5
   stage:
-  - {fileID: 11400000, guid: f1269c30d71e10144917f3e0b2c03ab0, type: 2}
-  - {fileID: 11400000, guid: 537984fc997c41e4d874504a463f110f, type: 2}
-  - {fileID: 11400000, guid: b9b73f3b9061bc240b3c411bb73f9db9, type: 2}
-  - {fileID: 11400000, guid: 42f6d43dd49798d448e52f288b8c95ef, type: 2}
-  - {fileID: 11400000, guid: f9469667d4608dc41b145a9df8d657c5, type: 2}
+  - {fileID: 218030451372203383, guid: 64b20965a19bc1e49aa80a3ddd560000, type: 3}
+  - {fileID: 6079217902740716081, guid: 58dad69e598aa72439ea48cbc35e12e4, type: 3}
+  - {fileID: 6301331028341747340, guid: 1c0d4b1561ba5ca4282b083a4c7be446, type: 3}
+  - {fileID: 4841989953206079712, guid: abeacfe7829da484aaf6da27814567de, type: 3}
+  - {fileID: 2546403686570532743, guid: 3afbc7c67626ef4479e08186de8f148a, type: 3}
   DontGoMessage: {fileID: 644627391}
 --- !u!114 &162598176
 MonoBehaviour:
@@ -1429,11 +1429,11 @@ MonoBehaviour:
   SelectStageInfo: {fileID: 1308079463}
   StageSize: 5
   stage:
-  - {fileID: 11400000, guid: f1269c30d71e10144917f3e0b2c03ab0, type: 2}
-  - {fileID: 11400000, guid: 537984fc997c41e4d874504a463f110f, type: 2}
-  - {fileID: 11400000, guid: b9b73f3b9061bc240b3c411bb73f9db9, type: 2}
-  - {fileID: 11400000, guid: 42f6d43dd49798d448e52f288b8c95ef, type: 2}
-  - {fileID: 11400000, guid: f9469667d4608dc41b145a9df8d657c5, type: 2}
+  - {fileID: 218030451372203383, guid: 64b20965a19bc1e49aa80a3ddd560000, type: 3}
+  - {fileID: 6079217902740716081, guid: 58dad69e598aa72439ea48cbc35e12e4, type: 3}
+  - {fileID: 6301331028341747340, guid: 1c0d4b1561ba5ca4282b083a4c7be446, type: 3}
+  - {fileID: 4841989953206079712, guid: abeacfe7829da484aaf6da27814567de, type: 3}
+  - {fileID: 2546403686570532743, guid: 3afbc7c67626ef4479e08186de8f148a, type: 3}
   DontGoMessage: {fileID: 644627391}
 --- !u!114 &386924368
 MonoBehaviour:
@@ -1821,11 +1821,11 @@ MonoBehaviour:
   SelectStageInfo: {fileID: 1308079463}
   StageSize: 5
   stage:
-  - {fileID: 11400000, guid: f1269c30d71e10144917f3e0b2c03ab0, type: 2}
-  - {fileID: 11400000, guid: 537984fc997c41e4d874504a463f110f, type: 2}
-  - {fileID: 11400000, guid: b9b73f3b9061bc240b3c411bb73f9db9, type: 2}
-  - {fileID: 11400000, guid: 42f6d43dd49798d448e52f288b8c95ef, type: 2}
-  - {fileID: 11400000, guid: f9469667d4608dc41b145a9df8d657c5, type: 2}
+  - {fileID: 218030451372203383, guid: 64b20965a19bc1e49aa80a3ddd560000, type: 3}
+  - {fileID: 6079217902740716081, guid: 58dad69e598aa72439ea48cbc35e12e4, type: 3}
+  - {fileID: 6301331028341747340, guid: 1c0d4b1561ba5ca4282b083a4c7be446, type: 3}
+  - {fileID: 4841989953206079712, guid: abeacfe7829da484aaf6da27814567de, type: 3}
+  - {fileID: 2546403686570532743, guid: 3afbc7c67626ef4479e08186de8f148a, type: 3}
   DontGoMessage: {fileID: 644627391}
 --- !u!114 &505499496
 MonoBehaviour:
@@ -2618,11 +2618,11 @@ MonoBehaviour:
   SelectStageInfo: {fileID: 1308079463}
   StageSize: 5
   stage:
-  - {fileID: 11400000, guid: f1269c30d71e10144917f3e0b2c03ab0, type: 2}
-  - {fileID: 11400000, guid: 537984fc997c41e4d874504a463f110f, type: 2}
-  - {fileID: 11400000, guid: b9b73f3b9061bc240b3c411bb73f9db9, type: 2}
-  - {fileID: 11400000, guid: 42f6d43dd49798d448e52f288b8c95ef, type: 2}
-  - {fileID: 11400000, guid: f9469667d4608dc41b145a9df8d657c5, type: 2}
+  - {fileID: 218030451372203383, guid: 64b20965a19bc1e49aa80a3ddd560000, type: 3}
+  - {fileID: 6079217902740716081, guid: 58dad69e598aa72439ea48cbc35e12e4, type: 3}
+  - {fileID: 6301331028341747340, guid: 1c0d4b1561ba5ca4282b083a4c7be446, type: 3}
+  - {fileID: 4841989953206079712, guid: abeacfe7829da484aaf6da27814567de, type: 3}
+  - {fileID: 2546403686570532743, guid: 3afbc7c67626ef4479e08186de8f148a, type: 3}
   DontGoMessage: {fileID: 644627391}
 --- !u!114 &599322502
 MonoBehaviour:
@@ -3037,7 +3037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charSlot: []
-  AllCharacter: {fileID: 0}
+  AllCharacter: {fileID: 1301706610}
   Scale: {fileID: 752428518}
   Stageselectionbuttontype: 8
   PlayerMoveMananger: {fileID: 767370270}
@@ -4741,6 +4741,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
   - {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
   - {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
+  CharacterPrefabs:
+  - {fileID: 5704841294774080917, guid: 42eb87e09b52610408640aeb5b49882c, type: 3}
+  - {fileID: 7119325226909660676, guid: 989492c98b8e7ae4aace51bb98d9d693, type: 3}
+  - {fileID: 1384423671807335634, guid: abf45bb3471ff0a4b862f935e4e51132, type: 3}
+  - {fileID: 3855316628178745931, guid: 6a571c4941453e542ad999ef8899e153, type: 3}
+  - {fileID: 8882423349749291825, guid: 86f7a9d493b770b4e81e4b9147b0b1f4, type: 3}
+  - {fileID: 7186380179176256298, guid: ab4f3d769cece2f40a8c3f4e39fe9238, type: 3}
+  - {fileID: 4672814021806367019, guid: 852e32313f1948d4497e6077cb75fa00, type: 3}
+  - {fileID: 3661378846237559028, guid: 036657a6f949fab4082685b149b8871e, type: 3}
+  - {fileID: 7332583369613540253, guid: b1874ec6a86c95448aaf2cc58703cfd8, type: 3}
+  - {fileID: 2193119615341136182, guid: 3f5fbf6137d170c4dab789dcefc6b505, type: 3}
+  - {fileID: 1566361136052736295, guid: 5091c8428fdc9664ba52405d958b2a6f, type: 3}
+  - {fileID: 7269996347652833408, guid: 66a7ac98f9259324c8d9af351c167110, type: 3}
+  - {fileID: 2710704161921713602, guid: 35fe238bc4c5f8949ab3f72f2180b0db, type: 3}
+  - {fileID: 3167359251926805406, guid: 397e1510f14faf348baee9b734b309fe, type: 3}
+  - {fileID: 527303766288465412, guid: 9c88600b57de1374a859fcaa59ca25ea, type: 3}
+  - {fileID: 7840313671681440707, guid: 3f5885f86e401a645854b0b57d9817e3, type: 3}
 --- !u!4 &1301706612
 Transform:
   m_ObjectHideFlags: 0

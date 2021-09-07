@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-	public FieldInfo field;
-    
+    public GameObject FieldPrefab;
 	public Transform fieldScale;
 	public Image fieldColor;
 	Vector3 defaultScale;
@@ -27,7 +26,7 @@ public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 	public void OnPointerEnter(PointerEventData eventData)
 	{
         fieldScale.localScale = defaultScale * 1.05f;
-		if (field.myArrangedCharIndex != -1)
+		if (FieldPrefab.GetComponent<FieldPrefab>().myArrangedCharIndex != -1)
 		{
 			fieldColor.color = new Color(1f, 1f, 1f);
 		}
@@ -40,7 +39,7 @@ public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 	public void OnPointerExit(PointerEventData eventData)
 	{
 		fieldScale.localScale = defaultScale;
-        if (field.myArrangedCharIndex != -1)
+        if (FieldPrefab.GetComponent<FieldPrefab>().myArrangedCharIndex != -1)
         {
             fieldColor.color = new Color(1f, 1f, 1f);
         }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf1609edfb4f8346bf21fb984995524, type: 3}
   m_Name: Stage1
   m_EditorClassIdentifier: 
-  isSelected: 1
-  CanSelected: 1
+  isSelected: 0
+  CanSelected: 0
   EnemyIndex: 0000000001000000
   EnemyArrangedIndex: 0600000008000000

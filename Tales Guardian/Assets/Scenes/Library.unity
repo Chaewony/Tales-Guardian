@@ -425,6 +425,7 @@ MonoBehaviour:
   TenTimesDrawcharSlot: []
   OnceDrawPanel: {fileID: 0}
   TenTimesDrawPanel: {fileID: 0}
+  User: {fileID: 0}
 --- !u!1 &175385504
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +578,7 @@ MonoBehaviour:
   TenTimesDrawcharSlot: []
   OnceDrawPanel: {fileID: 0}
   TenTimesDrawPanel: {fileID: 0}
+  User: {fileID: 0}
 --- !u!1 &400084873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1036,7 @@ MonoBehaviour:
   TenTimesDrawcharSlot: []
   OnceDrawPanel: {fileID: 0}
   TenTimesDrawPanel: {fileID: 0}
+  User: {fileID: 0}
 --- !u!1 &638262324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,18 +1095,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3a848b2cb95a6e24a8983e9b2da08563, type: 3}
-    m_FontSize: 44
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 44
+    m_MaxSize: 48
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "10\uD68C \uBF51\uAE30"
+  m_Text: "     10\uD68C \uBF51\uAE30"
 --- !u!222 &638262327
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1172,6 +1175,7 @@ MonoBehaviour:
   TenTimesDrawcharSlot: []
   OnceDrawPanel: {fileID: 1126130403}
   TenTimesDrawPanel: {fileID: 0}
+  User: {fileID: 0}
 --- !u!114 &746254204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1373,8 +1377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.7, y: -327}
-  m_SizeDelta: {x: 354, y: 70}
+  m_AnchoredPosition: {x: 0, y: -327}
+  m_SizeDelta: {x: 371.40662, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &810045380
 MonoBehaviour:
@@ -1958,7 +1962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2EB\uAE30"
+  m_Text: 
 --- !u!222 &1137224559
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2025,10 +2029,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3a848b2cb95a6e24a8983e9b2da08563, type: 3}
-    m_FontSize: 24
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2487,7 +2491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 63c16dbb7495abc4d88a1eb66f5b3ba1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09a805d100b06cb46a4708ee6fb9cd11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2518,26 +2522,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   librarybuttonType: 1
-  SeePercentage: {fileID: 0}
+  SeePercentage: {fileID: 556041419}
   Scale: {fileID: 1281986630}
   draw: {fileID: 1836389702}
   allCharacter:
-  - {fileID: 11400000, guid: 76da178f6d7ffb94aa7bd47207eaa70b, type: 2}
-  - {fileID: 11400000, guid: 950833a0e5729604c91ffbee90e4e70a, type: 2}
-  - {fileID: 11400000, guid: 6d0299029965f30499cd212a59704b82, type: 2}
-  - {fileID: 11400000, guid: 66b7c4f120e1d96488b6726fda3d7972, type: 2}
-  - {fileID: 11400000, guid: 0415dc6bc2dc5684d8de21547da3791b, type: 2}
-  - {fileID: 11400000, guid: fddfea17d04f1c44486bc75320e2dc87, type: 2}
-  - {fileID: 11400000, guid: 69f36f6f4bea398449511cc9898217c7, type: 2}
-  - {fileID: 11400000, guid: 9b5edcfa27a8bbf428599823e6c27472, type: 2}
-  - {fileID: 11400000, guid: 28271bce424491044b60bcb047f2a9b3, type: 2}
-  - {fileID: 11400000, guid: baa024ddf93415a48b5eeb26675a7d22, type: 2}
-  - {fileID: 11400000, guid: 1fdc54db73d12a24f873ca4f3bde2e9c, type: 2}
-  - {fileID: 11400000, guid: 0f6995f8b5e4fcd4f8957abe366756e5, type: 2}
-  - {fileID: 11400000, guid: 1019036d4ab41e24e820e47b3c74701d, type: 2}
-  - {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
-  - {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
-  - {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
+  - {fileID: 5704841294774080917, guid: 42eb87e09b52610408640aeb5b49882c, type: 3}
+  - {fileID: 7119325226909660676, guid: 989492c98b8e7ae4aace51bb98d9d693, type: 3}
+  - {fileID: 1384423671807335634, guid: abf45bb3471ff0a4b862f935e4e51132, type: 3}
+  - {fileID: 3855316628178745931, guid: 6a571c4941453e542ad999ef8899e153, type: 3}
+  - {fileID: 8882423349749291825, guid: 86f7a9d493b770b4e81e4b9147b0b1f4, type: 3}
+  - {fileID: 7186380179176256298, guid: ab4f3d769cece2f40a8c3f4e39fe9238, type: 3}
+  - {fileID: 4672814021806367019, guid: 852e32313f1948d4497e6077cb75fa00, type: 3}
+  - {fileID: 3661378846237559028, guid: 036657a6f949fab4082685b149b8871e, type: 3}
+  - {fileID: 7332583369613540253, guid: b1874ec6a86c95448aaf2cc58703cfd8, type: 3}
+  - {fileID: 2193119615341136182, guid: 3f5fbf6137d170c4dab789dcefc6b505, type: 3}
+  - {fileID: 1566361136052736295, guid: 5091c8428fdc9664ba52405d958b2a6f, type: 3}
+  - {fileID: 7269996347652833408, guid: 66a7ac98f9259324c8d9af351c167110, type: 3}
+  - {fileID: 2710704161921713602, guid: 35fe238bc4c5f8949ab3f72f2180b0db, type: 3}
+  - {fileID: 3167359251926805406, guid: 397e1510f14faf348baee9b734b309fe, type: 3}
+  - {fileID: 527303766288465412, guid: 9c88600b57de1374a859fcaa59ca25ea, type: 3}
+  - {fileID: 7840313671681440707, guid: 3f5885f86e401a645854b0b57d9817e3, type: 3}
   OnceDrawcharSlot: {fileID: 0}
   TenTimesDrawcharSlot:
   - {fileID: 826914067}
@@ -2552,6 +2556,7 @@ MonoBehaviour:
   - {fileID: 1309952385}
   OnceDrawPanel: {fileID: 0}
   TenTimesDrawPanel: {fileID: 1545770444}
+  User: {fileID: 4859678249628194357, guid: 6974cc9578847e146a85c6d2f9cca78a, type: 3}
 --- !u!1 &1287151847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,7 +2854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 63c16dbb7495abc4d88a1eb66f5b3ba1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09a805d100b06cb46a4708ee6fb9cd11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2880,30 +2885,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   librarybuttonType: 0
-  SeePercentage: {fileID: 0}
+  SeePercentage: {fileID: 556041419}
   Scale: {fileID: 1390043605}
   draw: {fileID: 1836389702}
   allCharacter:
-  - {fileID: 11400000, guid: 76da178f6d7ffb94aa7bd47207eaa70b, type: 2}
-  - {fileID: 11400000, guid: 950833a0e5729604c91ffbee90e4e70a, type: 2}
-  - {fileID: 11400000, guid: 6d0299029965f30499cd212a59704b82, type: 2}
-  - {fileID: 11400000, guid: 66b7c4f120e1d96488b6726fda3d7972, type: 2}
-  - {fileID: 11400000, guid: 0415dc6bc2dc5684d8de21547da3791b, type: 2}
-  - {fileID: 11400000, guid: fddfea17d04f1c44486bc75320e2dc87, type: 2}
-  - {fileID: 11400000, guid: 69f36f6f4bea398449511cc9898217c7, type: 2}
-  - {fileID: 11400000, guid: 9b5edcfa27a8bbf428599823e6c27472, type: 2}
-  - {fileID: 11400000, guid: 28271bce424491044b60bcb047f2a9b3, type: 2}
-  - {fileID: 11400000, guid: baa024ddf93415a48b5eeb26675a7d22, type: 2}
-  - {fileID: 11400000, guid: 1fdc54db73d12a24f873ca4f3bde2e9c, type: 2}
-  - {fileID: 11400000, guid: 0f6995f8b5e4fcd4f8957abe366756e5, type: 2}
-  - {fileID: 11400000, guid: 1019036d4ab41e24e820e47b3c74701d, type: 2}
-  - {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
-  - {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
-  - {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
+  - {fileID: 5704841294774080917, guid: 42eb87e09b52610408640aeb5b49882c, type: 3}
+  - {fileID: 7119325226909660676, guid: 989492c98b8e7ae4aace51bb98d9d693, type: 3}
+  - {fileID: 1384423671807335634, guid: abf45bb3471ff0a4b862f935e4e51132, type: 3}
+  - {fileID: 3855316628178745931, guid: 6a571c4941453e542ad999ef8899e153, type: 3}
+  - {fileID: 8882423349749291825, guid: 86f7a9d493b770b4e81e4b9147b0b1f4, type: 3}
+  - {fileID: 7186380179176256298, guid: ab4f3d769cece2f40a8c3f4e39fe9238, type: 3}
+  - {fileID: 4672814021806367019, guid: 852e32313f1948d4497e6077cb75fa00, type: 3}
+  - {fileID: 3661378846237559028, guid: 036657a6f949fab4082685b149b8871e, type: 3}
+  - {fileID: 7332583369613540253, guid: b1874ec6a86c95448aaf2cc58703cfd8, type: 3}
+  - {fileID: 2193119615341136182, guid: 3f5fbf6137d170c4dab789dcefc6b505, type: 3}
+  - {fileID: 1566361136052736295, guid: 5091c8428fdc9664ba52405d958b2a6f, type: 3}
+  - {fileID: 7269996347652833408, guid: 66a7ac98f9259324c8d9af351c167110, type: 3}
+  - {fileID: 2710704161921713602, guid: 35fe238bc4c5f8949ab3f72f2180b0db, type: 3}
+  - {fileID: 3167359251926805406, guid: 397e1510f14faf348baee9b734b309fe, type: 3}
+  - {fileID: 527303766288465412, guid: 9c88600b57de1374a859fcaa59ca25ea, type: 3}
+  - {fileID: 7840313671681440707, guid: 3f5885f86e401a645854b0b57d9817e3, type: 3}
   OnceDrawcharSlot: {fileID: 1532398660}
   TenTimesDrawcharSlot: []
   OnceDrawPanel: {fileID: 1126130403}
-  TenTimesDrawPanel: {fileID: 0}
+  TenTimesDrawPanel: {fileID: 1281986629}
+  User: {fileID: 4859678249628194357, guid: 6974cc9578847e146a85c6d2f9cca78a, type: 3}
 --- !u!1 &1492826637
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3061,7 @@ MonoBehaviour:
   TenTimesDrawcharSlot: []
   OnceDrawPanel: {fileID: 0}
   TenTimesDrawPanel: {fileID: 1545770444}
+  User: {fileID: 0}
 --- !u!1 &1532398658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,18 +3378,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3a848b2cb95a6e24a8983e9b2da08563, type: 3}
-    m_FontSize: 44
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 44
+    m_MaxSize: 48
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uD68C \uBF51\uAE30"
+  m_Text: "    1\uD68C \uBF51\uAE30"
 --- !u!222 &1771055483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3422,7 +3429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Havebookmarker: {fileID: 1160493150}
-  HaveBookmarker: 34
+  User: {fileID: 4859678249628194357, guid: 6974cc9578847e146a85c6d2f9cca78a, type: 3}
 --- !u!222 &1836389704
 CanvasRenderer:
   m_ObjectHideFlags: 0

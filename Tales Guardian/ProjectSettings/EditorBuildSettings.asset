@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/DontDestoryOnLoadScene.unity
+    guid: aa3d16db41520894d884c063f54474f0
+  - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 4624f3331d8ad9c4a8b37d47dd42cbb8
   - enabled: 1
@@ -23,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstThemeStageSelection.unity
     guid: 32b50ec504eb74743b2d0dc3e5593eed
+  - enabled: 1
+    path: Assets/Scenes/BattleArrangementcheck.unity
+    guid: afb8af86176f6b342b2945708bba378a
   - enabled: 1
     path: Assets/Scenes/BattleArrange.unity
     guid: d95c9278f1506ff4aaeb7779ded5abbd
