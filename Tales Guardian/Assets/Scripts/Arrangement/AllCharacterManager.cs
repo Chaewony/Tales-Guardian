@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class AllCharacterManager : MonoBehaviour
-{
+{ // ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ
     public CharacterInfo[] allCharacter;
     public int SelectCharacterNumber;
     public Image[] AllField;
