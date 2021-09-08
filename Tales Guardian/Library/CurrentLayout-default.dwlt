@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 82
+  controlID: 104
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0, y: 0, z: -0, w: -1}
   m_Size:
     m_Target: 667.28827
     speed: 2
@@ -682,9 +682,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c6a90000
-      m_LastClickedID: 43462
-      m_ExpandedIDs: 0ad2ffffc2d5ffffded5fffff4d5ffff10d6ffffc6d6ffffd0dafffff2daffffaedbffffe6dbffff82dcffff2ce7ffff4ae7ffffc8e7ffffa0e9ffff3ceaffff1eecffff14f3ffffd0f3ffff2cf6ffff9cf6ffff28f7ffffc4f7ffff94faffffbafaffff6afbfffff4ffffff763a0000be3b00002a3d0000d64a00008a4d0000184e0000c253000076560000ae580000966100004a6400005c70000010730000f07300002e75000096760000de7800001c7a0000847b00001c8c000086970000b0970000129b00009ca9000054aa0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -773,19 +773,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Field
+    - Assets/Scripts/Arrangement
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Field
+  - Assets/Scripts/Arrangement
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jinjh\Documents\GitHub\Tales-Guardian\Tales Guardian
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96360000
-    m_LastClickedID: 13974
+    m_SelectedIDs: a0360000
+    m_LastClickedID: 13984
     m_ExpandedIDs: 00000000483600004a3600004c3600004e3600005036000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
