@@ -15,6 +15,14 @@ public class Character : MonoBehaviour
     [SerializeField]
     private GameObject[] slot;
 
+    public void Start()
+    {
+        for(int i = 0; i < allCharacter.Count; i++)
+        {
+            allCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+        
+    }
     public void ShowCharacters()
     {
         for (int i = 0; i < allCharacter.Count; i++)

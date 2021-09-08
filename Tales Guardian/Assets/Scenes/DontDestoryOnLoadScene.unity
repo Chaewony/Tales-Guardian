@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 28458712}
   - component: {fileID: 28458713}
   m_Layer: 0
-  m_Name: Stage
+  m_Name: DDStage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 1246577558}
   - component: {fileID: 1246577559}
   m_Layer: 0
-  m_Name: Field
+  m_Name: DDField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 1836926580}
   - component: {fileID: 1836926581}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: DDEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 1961918838}
   - component: {fileID: 1961918839}
   m_Layer: 0
-  m_Name: Characters
+  m_Name: DDCharacters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

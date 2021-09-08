@@ -31,6 +31,16 @@ public class LibraryButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     //Close 창 닫기
     private int a;
 
+    public void Start()
+    {
+        User = GameObject.Find("User").gameObject;
+
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            allCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+    }
+
     public void OnButtonClick()
     {
         switch (librarybuttonType)

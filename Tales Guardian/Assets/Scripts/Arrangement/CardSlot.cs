@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class CardSlot : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField]
+    private int SlotNumber;
+    [SerializeField]
     private GameObject character;
 	[SerializeField]
 	private Image CardImage;
@@ -21,7 +23,12 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
 	public GameManager gameManager;
     public GameObject AllCharacterManager;
 
-	public void OnPointerClick(PointerEventData eventData)
+    public void Start()
+    {
+        character = GameObject.Find("DDCharacters").transform.GetChild(SlotNumber).gameObject;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
 	{
 		CardImage.sprite = character.GetComponent<CharactersPrefab>().mySprite;
 		Name.text = "이름: " + character.GetComponent<CharactersPrefab>().myCharName;

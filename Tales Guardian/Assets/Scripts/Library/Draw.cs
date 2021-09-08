@@ -13,6 +13,7 @@ public class Draw : MonoBehaviour
     public void Start()
     {
         DrawUserHaveBookMarker();
+        User = GameObject.Find("User").gameObject;
     }
     public int FunctionDraw()
     {

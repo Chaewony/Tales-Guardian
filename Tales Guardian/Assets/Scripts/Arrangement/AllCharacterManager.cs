@@ -27,6 +27,17 @@ public class AllCharacterManager : MonoBehaviour
         FillField();
         SelectCharacterNumber = -1;
         ArrangementCount = 0;
+
+        for (int i = 0; i < CharacterPrefabs.Length; i++)
+        {
+            CharacterPrefabs[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+
+        for (int i = 0; i < FieldPrefabs.Length; i++)
+        {
+            FieldPrefabs[i] = GameObject.Find("DDField").transform.GetChild(i).gameObject;
+        }
+
         for (int i = 0; i < CharacterPrefabs.Length; i++)
         {
             if (CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation != -1)

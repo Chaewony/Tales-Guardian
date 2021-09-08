@@ -12,6 +12,14 @@ public class BattleArranger : MonoBehaviour
 
     private void Start()
     {
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            allCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+        for (int i = 0; i < allField.Count; i++)
+        {
+            allField[i] = GameObject.Find("DDField").transform.GetChild(i).gameObject;
+        }
         FillField();
         SetImage();
     }

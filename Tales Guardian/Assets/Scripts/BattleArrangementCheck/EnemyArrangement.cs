@@ -18,7 +18,15 @@ public class EnemyArrangement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0;i<EnemyFields.Length;i++)
+        for (int i = 0; i < allEnemy.Count; i++)
+        {
+            allEnemy[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+        for (int i = 0; i < allStage.Count; i++)
+        {
+            allStage[i] = GameObject.Find("DDStage").transform.GetChild(i).gameObject;
+        }
+        for (int i = 0;i<EnemyFields.Length;i++)
         {
             EnemyFields[i].color = new Color(0.77f, 0.51f, 1f);
         }
@@ -34,6 +42,7 @@ public class EnemyArrangement : MonoBehaviour
             { stageIndex = i; }
         }
     }
+
     void SetImage() //에너미 필드의 이미지를 바꿔줌
     {
         for(int i=0;i< allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex.Length;i++)

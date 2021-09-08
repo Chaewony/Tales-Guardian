@@ -15,39 +15,10 @@ public class DontDestroyGameObjectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Character[0] = GameObject.Find("Character100");
-        Character[1] = GameObject.Find("Character101");
-        Character[2] = GameObject.Find("Character102");
-        Character[3] = GameObject.Find("Character103");
-        Character[4] = GameObject.Find("Character104");
-        Character[5] = GameObject.Find("Character105");
-        Character[6] = GameObject.Find("Character106");
-        Character[7] = GameObject.Find("Character107");
-        Character[8] = GameObject.Find("Character108");
-        Character[9] = GameObject.Find("Character109");
-        Character[10] = GameObject.Find("Character110");
-        Character[11] = GameObject.Find("Character111");
-        Character[12] = GameObject.Find("Character112");
-        Character[13] = GameObject.Find("Character113");
-        Character[14] = GameObject.Find("Character114");
-        Character[15] = GameObject.Find("Character115");
-
-        Enemy[0] = GameObject.Find("Enemy100");
-        Enemy[1] = GameObject.Find("Enemy101");
-        Enemy[2] = GameObject.Find("Enemy102");
-        Enemy[3] = GameObject.Find("Enemy103");
-        Enemy[4] = GameObject.Find("Enemy104");
-        Enemy[5] = GameObject.Find("Enemy105");
-        Enemy[6] = GameObject.Find("Enemy106");
-        Enemy[7] = GameObject.Find("Enemy107");
-        Enemy[8] = GameObject.Find("Enemy108");
-        Enemy[9] = GameObject.Find("Enemy109");
-        Enemy[10] = GameObject.Find("Enemy110");
-        Enemy[11] = GameObject.Find("Enemy111");
-        Enemy[12] = GameObject.Find("Enemy112");
-        Enemy[13] = GameObject.Find("Enemy113");
-        Enemy[14] = GameObject.Find("Enemy114");
-        Enemy[15] = GameObject.Find("Enemy115");
+        for (int i = 0; i < Character.Length; i++)
+        {
+            Character[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
 
         Field[0] = GameObject.Find("Field0");
         Field[1] = GameObject.Find("Field1");
