@@ -22,15 +22,15 @@ public class EnemySquadUI : MonoBehaviour
 
     void ShowCharImageUI()
     {
-        for (int i = 0; i < battleManager.allStage[battleManager.stageIndex].EnemyIndex.Length; i++)
+        for (int i = 0; i < battleManager.stagePrefabs[battleManager.stageIndex].StageEnemysIndex.Length; i++)
             charImageUI[i].sprite = battleManager.enemySquad[i].mySprite;
     }
     void ShowHpBar()
     {
-        for (int i = 0; i < battleManager.allStage[battleManager.stageIndex].EnemyIndex.Length; i++)
+        for (int i = 0; i < battleManager.stagePrefabs[battleManager.stageIndex].StageEnemysIndex.Length; i++)
         {
-            hpValue[i].text = battleManager.enemySquad[i].myCurrentHp + "/" + battleManager.enemySquad[i].myHp;
-            hpBar[i].fillAmount = battleManager.enemySquad[i].myCurrentHp / battleManager.enemySquad[i].myHp;
+            hpValue[i].text = battleManager.enemySquad[i].myCurrentHp + "/" + battleManager.enemySquad[i].myFullHp;
+            hpBar[i].fillAmount = battleManager.enemySquad[i].myCurrentHp / battleManager.enemySquad[i].myFullHp;
             if (battleManager.enemySquad[i].myCurrentHp < 0)
             {
                 battleManager.enemySquad[i].myCurrentHp = 0;

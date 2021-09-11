@@ -5,16 +5,26 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public List<FieldInfo> allField = new List<FieldInfo>();
+    //public List<FieldInfo> allField = new List<FieldInfo>();
 
-    public List<CharacterInfo> allCharacter = new List<CharacterInfo>();
-    //public List<GameObject> CharacterDDObject;
-    public List<EnemyInfo> allEnemy = new List<EnemyInfo>();
-    
-    public List<CharacterInfo> playerSquad = new List<CharacterInfo>();//플레이어 스쿼드 리스트
-    public List<EnemyInfo> enemySquad = new List<EnemyInfo>();//에너미 스쿼드 리스트
+    public List<GameObject> FieldDDObject; //수정 된거
+    public List<FieldPrefab> fieldPrefabs; //수정 된거
 
-    public List<StageInfo> allStage = new List<StageInfo>();
+
+
+    public List<GameObject> CharacterDDObject; //수정 된거
+    public List<CharactersPrefab> charactersPrefabs; //수정 된거
+    public List<CharactersPrefab> playerSquad = new List<CharactersPrefab>();//수정 된거
+
+    public List<GameObject> EnemyDDObject; //수정 된거
+    public List<EnemysPrefab> enemysPrefabs; //수정 된거
+    public List<EnemysPrefab> enemySquad = new List<EnemysPrefab>();//수정 된거
+
+
+
+    //public List<StageInfo> allStage = new List<StageInfo>();
+    public List<GameObject> StageDDObject; //수정 된거
+    public List<StagePrefab> stagePrefabs; //수정 된거
     public int stageIndex;
 
     public Transform[] playerFields;
@@ -39,12 +49,31 @@ public class BattleManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    { /*
+    {
         for (int i = 0; i < CharacterDDObject.Count; i++)
         {
             CharacterDDObject[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+            charactersPrefabs[i] = CharacterDDObject[i].GetComponent<CharactersPrefab>();
         }
-        */
+
+        for (int i = 0; i < EnemyDDObject.Count; i++)
+        {
+            EnemyDDObject[i] = GameObject.Find("DDEnemy").transform.GetChild(i).gameObject;
+            enemysPrefabs[i] = EnemyDDObject[i].GetComponent<EnemysPrefab>();
+        }
+
+        for (int i = 0; i < FieldDDObject.Count; i++)
+        {
+            FieldDDObject[i] = GameObject.Find("DDField").transform.GetChild(i).gameObject;
+            fieldPrefabs[i] = FieldDDObject[i].GetComponent<FieldPrefab>();
+        }
+
+        for (int i = 0; i < StageDDObject.Count; i++)
+        {
+            StageDDObject[i] = GameObject.Find("DDStage").transform.GetChild(i).gameObject;
+            stagePrefabs[i] = StageDDObject[i].GetComponent<StagePrefab>();
+        }
+
         CheckStage();
         SetPlayerSquad();
         SetEnemySquad();
@@ -59,18 +88,20 @@ public class BattleManager : MonoBehaviour
         isThrown = false;
 
         battleState = BattleState.SELECT_TURN;
+
+
     }
 
-	private void Update()
-	{
-		if(battleState== BattleState.SELECT_TURN)
-		{
+    private void Update()
+    {
+        if (battleState == BattleState.SELECT_TURN)
+        {
             //공수 선택시 띄워줄 UI 띄우는 함수 불러오기
             //그리고 버튼 결과에 따라 그 함수에서 스테이트 바꿔줄 것
-		}
+        }
 
-        if(battleState==BattleState.PLAYER_MOVE)
-		{
+        if (battleState == BattleState.PLAYER_MOVE)
+        {
             //플레이어의 이동 턴이 오면 실행(즉 에너미의 공격 선택을 호출)
             //이동 "선택"
             //canAttack = false;
@@ -79,14 +110,14 @@ public class BattleManager : MonoBehaviour
             Debug.Log("플레이어 이동선택 및 이동");
         }
 
-        if(battleState==BattleState.PLAYER_ATTACK_TURN)
-		{
+        if (battleState == BattleState.PLAYER_ATTACK_TURN)
+        {
             //플레이어의 공격 턴이 오면 실행
             //공격 "선택" + 에너미 이동 + 공격 "실행"
             //하나의 스크립트가 아니라 필드 각각의 스크립트가 있어 한 함수만 불러와주기 까다로움
             //EnemyField 스크립트 참고
             Debug.Log("플레이어 공격턴, 플레이어 공격선택 + 에너미 이동 + 플레이어 공격실행 ");
-		}
+        }
 
         if (battleState == BattleState.PLAYER_MOVE_CHOOSE_END)
         {
@@ -96,65 +127,65 @@ public class BattleManager : MonoBehaviour
             enemyAttack.EnemyAttackChoose();
         }
 
-        if (battleState==BattleState.BATTLE_END)
-		{
+        if (battleState == BattleState.BATTLE_END)
+        {
             //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
-		}
-	}
+        }
+    }
     void CheckStage()
     {
-        for (int i = 0; i < allStage.Count; i++)
+        for (int i = 0; i < stagePrefabs.Count; i++)
         {
-            if (allStage[i].isSelected)
+            if (stagePrefabs[i].StageisSelected)
             { stageIndex = i; }
         }
     }
 
     void SetPlayerSquad()
-	{
+    {
         //Set Info
-        int j = 0; 
-        for (int i = 0; i < allField.Count; i++)
-            if (allField[i].myArrangedCharIndex != -1) //배치가 된 필드일 경우
+        int j = 0;
+        for (int i = 0; i < fieldPrefabs.Count; i++)
+            if (fieldPrefabs[i].myArrangedCharIndex != -1) //배치가 된 필드일 경우
             {
-                playerSquad[j] = allCharacter[allField[i].myArrangedCharIndex]; 
+                playerSquad[j] = charactersPrefabs[fieldPrefabs[i].myArrangedCharIndex];
                 j++;
             }
     }
 
     void SetEnemySquad()
-	{
+    {
         //Set Info
         int j = 0;
-        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+        for (int i = 0; i < stagePrefabs[stageIndex].StageEnemysIndex.Length; i++)
         {
-            enemySquad[j] = allEnemy[allStage[stageIndex].EnemyIndex[i]];
+            enemySquad[j] = enemysPrefabs[stagePrefabs[stageIndex].StageEnemysIndex[i]];
             j++;
         }
     }
 
     void IntitiateHp()//current hp 초기화
-	{
-        for(int i = 0; i < playerSquad.Count; i++)
-		{
-            playerSquad[i].myCurrentHp = playerSquad[i].myHp;
-		}
-        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+    {
+        for (int i = 0; i < playerSquad.Count; i++)
         {
-            enemySquad[i].myCurrentHp = enemySquad[i].myHp;
+            playerSquad[i].myCurrentHp = playerSquad[i].myHp;
+        }
+        for (int i = 0; i < stagePrefabs[stageIndex].StageEnemysIndex.Length; i++)
+        {
+            enemySquad[i].myCurrentHp = enemySquad[i].myFullHp;
         }
     }
     void SetPlayerSquadCharacters()
-	{
+    {
         //이미지 렌더링
-        for(int i = 0; i < playerSquad.Count; i++)
-		{
+        for (int i = 0; i < playerSquad.Count; i++)
+        {
             playerSquadCharacters[i].sprite = playerSquad[i].mybattleSprite;
         }
         //위치정비
         int j = 0;
-        for (int i = 0; i < allField.Count; i++)
-            if (allField[i].myArrangedCharIndex != -1)
+        for (int i = 0; i < fieldPrefabs.Count; i++)
+            if (fieldPrefabs[i].myArrangedCharIndex != -1)
             {
                 playerSquadCharacters[j].transform.position = new Vector3(playerFields[i].position.x, playerSquadCharacters[j].transform.position.y, playerFields[i].position.z);
                 //playerSquadCharacters[j].transform.position = playerFields[i].position;
@@ -165,15 +196,16 @@ public class BattleManager : MonoBehaviour
     void SetEnemySquadCharacters()
     {
         //이미지 렌더링
-        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
+        for (int i = 0; i < stagePrefabs[stageIndex].StageEnemysIndex.Length; i++)
         {
             enemySquadCharacters[i].sprite = enemySquad[i].mybattleSprite;
         }
         //위치정비
         int j = 0;
-        for (int i = 0; i < allStage[stageIndex].EnemyIndex.Length; i++)
-		{
-            enemySquadCharacters[i].transform.position = new Vector3(enemyFields[allStage[stageIndex].EnemyArrangedIndex[i]].position.x, enemySquadCharacters[j].transform.position.y, enemyFields[allStage[stageIndex].EnemyArrangedIndex[i]].position.z);
+        for (int i = 0; i < stagePrefabs[stageIndex].StageEnemysIndex.Length; i++)
+        {
+            enemySquadCharacters[i].transform.position = new Vector3(enemyFields[stagePrefabs[stageIndex].StageEnemysArrangedIndex[i]].position.x, enemySquadCharacters[j].transform.position.y, enemyFields[stagePrefabs[stageIndex].StageEnemysArrangedIndex[i]].position.z);
         }
     }
 }
+

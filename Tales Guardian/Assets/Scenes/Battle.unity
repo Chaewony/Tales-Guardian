@@ -2426,51 +2426,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd43d60c2a3cf8b48bd0c385735591cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allField:
-  - {fileID: 11400000, guid: 98c873883be4b15468a05cc4849dee40, type: 2}
-  - {fileID: 11400000, guid: 92f1000112928574f829f1256df4e356, type: 2}
-  - {fileID: 11400000, guid: d028f5c854d832d428b21749b0b00e7f, type: 2}
-  - {fileID: 11400000, guid: 4700d79b735173741b7681c7924c3aa4, type: 2}
-  - {fileID: 11400000, guid: 9722716cbd3b6db4d96d97a6c7488ee3, type: 2}
-  - {fileID: 11400000, guid: f01dbcf66dc71124aaa7c789c0437b0b, type: 2}
-  - {fileID: 11400000, guid: f12a112bd75cc194c9fbb8ac83318535, type: 2}
-  - {fileID: 11400000, guid: d58388a23004bf34d8151157453141aa, type: 2}
-  - {fileID: 11400000, guid: 4f6e3b96defb929448cd1274ce29cfbf, type: 2}
-  allCharacter:
-  - {fileID: 11400000, guid: 76da178f6d7ffb94aa7bd47207eaa70b, type: 2}
-  - {fileID: 11400000, guid: 950833a0e5729604c91ffbee90e4e70a, type: 2}
-  - {fileID: 11400000, guid: 6d0299029965f30499cd212a59704b82, type: 2}
-  - {fileID: 11400000, guid: 66b7c4f120e1d96488b6726fda3d7972, type: 2}
-  - {fileID: 11400000, guid: 0415dc6bc2dc5684d8de21547da3791b, type: 2}
-  - {fileID: 11400000, guid: fddfea17d04f1c44486bc75320e2dc87, type: 2}
-  - {fileID: 11400000, guid: 69f36f6f4bea398449511cc9898217c7, type: 2}
-  - {fileID: 11400000, guid: 9b5edcfa27a8bbf428599823e6c27472, type: 2}
-  - {fileID: 11400000, guid: 28271bce424491044b60bcb047f2a9b3, type: 2}
-  - {fileID: 11400000, guid: baa024ddf93415a48b5eeb26675a7d22, type: 2}
-  - {fileID: 11400000, guid: 1fdc54db73d12a24f873ca4f3bde2e9c, type: 2}
-  - {fileID: 11400000, guid: 0f6995f8b5e4fcd4f8957abe366756e5, type: 2}
-  - {fileID: 11400000, guid: 1019036d4ab41e24e820e47b3c74701d, type: 2}
-  - {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
-  - {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
-  - {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
-  allEnemy:
-  - {fileID: 11400000, guid: adbb3fe11ad9857478b6d4cebf5352f4, type: 2}
-  - {fileID: 11400000, guid: bbe8f650160b17348ac6bc0bb4ac612e, type: 2}
-  - {fileID: 11400000, guid: afaeaf0cf912d9b458e88a67529bccf5, type: 2}
-  - {fileID: 11400000, guid: f59ec29e06e20984286f4aa5dbaaa47a, type: 2}
-  - {fileID: 11400000, guid: d53f5071384f6b345ad19ae9617f7b56, type: 2}
-  - {fileID: 11400000, guid: 07753e3feea47c44d9737f1e8000ccc2, type: 2}
-  - {fileID: 11400000, guid: f8e6b31744b2eed468d8e8b2182d95a0, type: 2}
-  - {fileID: 11400000, guid: 216ccad34ff748b4da18e8fbaa918f7d, type: 2}
-  - {fileID: 11400000, guid: a38981c914385e247ba6591deda5275e, type: 2}
-  - {fileID: 11400000, guid: ee4765e6de0b4244ea2550c1616484c1, type: 2}
-  - {fileID: 11400000, guid: dc360c4eaa93e1544898e029ba51ffea, type: 2}
-  - {fileID: 11400000, guid: c195798495af04147805e7fcf3be6209, type: 2}
-  - {fileID: 11400000, guid: 349ddcf9b7aef074c8064fbae7951963, type: 2}
-  - {fileID: 11400000, guid: 43db558d1647a3e4e90f5bb58af5952e, type: 2}
-  - {fileID: 11400000, guid: 95fe3d95630b48544ae422e02c8e94f0, type: 2}
-  - {fileID: 11400000, guid: c2d12b8a27344b441b1d0946f3b9ad46, type: 2}
+  FieldDDObject:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fieldPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  CharacterDDObject:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  charactersPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerSquad:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  EnemyDDObject:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  enemysPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2480,12 +2524,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  allStage:
-  - {fileID: 11400000, guid: f1269c30d71e10144917f3e0b2c03ab0, type: 2}
-  - {fileID: 11400000, guid: 537984fc997c41e4d874504a463f110f, type: 2}
-  - {fileID: 11400000, guid: b9b73f3b9061bc240b3c411bb73f9db9, type: 2}
-  - {fileID: 11400000, guid: 42f6d43dd49798d448e52f288b8c95ef, type: 2}
-  - {fileID: 11400000, guid: f9469667d4608dc41b145a9df8d657c5, type: 2}
+  StageDDObject:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  stagePrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   stageIndex: 0
   playerFields:
   - {fileID: 1164669169}

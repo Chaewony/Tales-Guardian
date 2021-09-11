@@ -245,18 +245,23 @@ public class EnemyField : MonoBehaviour
 		for (int i = 0; i < battleManager.enemySquad.Count; i++)
 		{
 			if (battleManager.enemySquadCharacters[i].transform.position.x == this.transform.position.x &&
-				battleManager.enemySquadCharacters[i].transform.position.z == this.transform.position.z)
+				battleManager.enemySquadCharacters[i].transform.position.z == this.transform.position.z &&
+				battleManager.enemySquad[i] != null)
 			{
-				battleManager.enemySquad[i].myCurrentHp -= 10;//수치 바꿀 것
+				Debug.Log("피격");
+				battleManager.enemySquad[i].myCurrentHp -= 10;//수치 바꿀 것 
 			}
 		}
 		//두번째 타겟에 공격, i랑 j랑 잘 볼 것
-		for(int i=0;i< selectedSecondTarget.Count; i++)
+		for (int i = 0; i < selectedSecondTarget.Count; i++)
 		{
 			for (int j = 0; j < battleManager.enemySquad.Count; j++)
 			{
-				if (battleManager.enemySquadCharacters[j].transform.position.x == selectedSecondTarget[i].transform.position.x&& battleManager.enemySquadCharacters[j].transform.position.z == selectedSecondTarget[i].transform.position.z)
+				if (battleManager.enemySquadCharacters[j].transform.position.x == selectedSecondTarget[i].transform.position.x &&
+					battleManager.enemySquadCharacters[j].transform.position.z == selectedSecondTarget[i].transform.position.z &&
+					battleManager.enemySquad[i] != null)
 				{
+					Debug.Log("피격2");
 					battleManager.enemySquad[j].myCurrentHp -= 5;//수치 바꿀 것
 				}
 			}

@@ -16,10 +16,10 @@ public class EnemyAttack : MonoBehaviour
 		{
 			isChoosingEnd = true;
 			myFieldRand = GetAttckFieldIndex();
-			int charRand = Random.Range(0, battleManager.allStage[battleManager.stageIndex].EnemyIndex.Length); //캐릭터 랜덤
+			int charRand = Random.Range(0, battleManager.stagePrefabs[battleManager.stageIndex].StageEnemysIndex.Length); //캐릭터 랜덤
 			int type = Random.Range(0, 2); //스킬 랜덤
-			if(type==0) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].firstSkillSecondTargetRange);
-			else if(type==1) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].secondSkillSecondTargetRange);
+			if (type == 0) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].firstSkillSecondTargetRange);
+			else if (type == 1) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].secondSkillSecondTargetRange);
 			//playerFieldsColor[myFieldRand].color = new Color(1, 0.5f, 0.5f);
 			Invoke("Attack", 1f);
 		}
@@ -40,7 +40,7 @@ public class EnemyAttack : MonoBehaviour
 		//세컨드 타겟 hp 안깎이고 어딘가에서 널 레퍼런스 오류 뜸
 		for (int i = 0; i < playerFields[myFieldRand].selectedSecondTarget.Count; i++) //플레이어 스쿼드 수만큼 돌아야하는거 아닌가?
 		{
-			for(int j = 0; j < battleManager.playerSquad.Count; j++)
+			for (int j = 0; j < battleManager.playerSquad.Count; j++)
 			{
 				if (battleManager.playerSquadCharacters[j].transform.position.x == playerFields[myFieldRand].selectedSecondTarget[i].transform.position.x &&
 				battleManager.playerSquadCharacters[j].transform.position.z == playerFields[myFieldRand].selectedSecondTarget[i].transform.position.z)
