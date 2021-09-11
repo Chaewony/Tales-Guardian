@@ -8,6 +8,7 @@ public class BattleManager : MonoBehaviour
     public List<FieldInfo> allField = new List<FieldInfo>();
 
     public List<CharacterInfo> allCharacter = new List<CharacterInfo>();
+    //public List<GameObject> CharacterDDObject;
     public List<EnemyInfo> allEnemy = new List<EnemyInfo>();
     
     public List<CharacterInfo> playerSquad = new List<CharacterInfo>();//플레이어 스쿼드 리스트
@@ -38,7 +39,12 @@ public class BattleManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { /*
+        for (int i = 0; i < CharacterDDObject.Count; i++)
+        {
+            CharacterDDObject[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+        */
         CheckStage();
         SetPlayerSquad();
         SetEnemySquad();
