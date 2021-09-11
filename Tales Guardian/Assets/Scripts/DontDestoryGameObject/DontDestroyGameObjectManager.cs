@@ -11,6 +11,7 @@ public class DontDestroyGameObjectManager : MonoBehaviour
     public GameObject[] Field;
     public GameObject[] EnemyField;
     public GameObject User;
+    public CharactersPrefab aasdf;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,10 @@ public class DontDestroyGameObjectManager : MonoBehaviour
         for (int i = 0; i < Character.Length; i++)
         {
             Character[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+        }
+        for (int i = 0; i < Enemy.Length; i++)
+        {
+            Enemy[i] = GameObject.Find("DDEnemy").transform.GetChild(i).gameObject;
         }
 
         Field[0] = GameObject.Find("Field0");
