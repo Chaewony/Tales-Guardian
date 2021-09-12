@@ -21,13 +21,6 @@ public class AllCharacterManager : MonoBehaviour
 
     public void Start()
     {
-        //ResetTeam(); // 임시로 초기상태로 돌리는 함수 /*/ 나중에 여기꺼는 꼭 빼야됨 /*/
-        ClearField();
-        DrawField();
-        FillField();
-        SelectCharacterNumber = -1;
-        ArrangementCount = 0;
-
         for (int i = 0; i < CharacterPrefabs.Length; i++)
         {
             CharacterPrefabs[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
@@ -45,6 +38,15 @@ public class AllCharacterManager : MonoBehaviour
                 ArrangementCount++;
             }
         }
+
+        //ResetTeam(); // 임시로 초기상태로 돌리는 함수 /*/ 나중에 여기꺼는 꼭 빼야됨 /*/
+        ClearField();
+        FillField();
+        DrawField();
+        SelectCharacterNumber = -1;
+        ArrangementCount = 0;
+
+        
     }
 
     public void ResetTeam()

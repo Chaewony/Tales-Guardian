@@ -16,6 +16,7 @@ public class GoLobby: MonoBehaviour
                 GameObject.Find("Main Camera").GetComponent<TitleCenter>().image[i].color = new Color(255, 255, 255, 1);
             }
             GameObject.Find("StartText").GetComponent<Blink>().canblink = true;
+            StartCoroutine(GameObject.Find("StartText").GetComponent<Blink>().BlinkText());//이거 추가
         }
         else if (GameObject.Find("Main Camera").GetComponent<TitleCenter>().titletouch == true)
             SceneManager.LoadScene("Lobby");
