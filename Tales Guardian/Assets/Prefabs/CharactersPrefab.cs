@@ -73,4 +73,6 @@ public class CharactersPrefab : MonoBehaviour
     public int myLocation { get => Location; set { Location = value; } }
     public int[] myFirstSkillSecondTargetRange { get => firstSkillSecondTargetRange; }
     public int[] mySecondSkillSecondTargetRange { get => secondSkillSecondTargetRange; }
+    public int myFirstSkillDamage { get => firstSkillDamage; set => firstSkillDamage = value; }
+    public int mySecondSkillDamage { get => SecondSkillDamage; set => SecondSkillDamage = value; }
 }
