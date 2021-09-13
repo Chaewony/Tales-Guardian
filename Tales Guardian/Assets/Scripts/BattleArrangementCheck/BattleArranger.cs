@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BattleArranger : MonoBehaviour
 {
-    public List<GameObject> allField = new List<GameObject>(); //스크립터블 오브젝트
+    public List<GameObject> allField = new List<GameObject>();
     public Image[] field;
     public List<GameObject> allCharacter = new List<GameObject>();
 

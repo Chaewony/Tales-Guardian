@@ -20,7 +20,7 @@ public class EnemyArrangement : MonoBehaviour
     {
         for (int i = 0; i < allEnemy.Count; i++)
         {
-            allEnemy[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
+            allEnemy[i] = GameObject.Find("DDEnemy").transform.GetChild(i).gameObject;
         }
         for (int i = 0; i < allStage.Count; i++)
         {
@@ -47,8 +47,8 @@ public class EnemyArrangement : MonoBehaviour
     {
         for(int i=0;i< allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex.Length;i++)
         {
-            EnemyFields[allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex[i]].color = new Color(1f, 1f, 1f);
-            EnemyFields[allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex[i]].sprite = allEnemy[allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex[i]].GetComponent<EnemysPrefab>().mySprite;
+            EnemyFields[allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex[i]].color = new Color(255f, 255f, 255f, 1f);
+            EnemyFields[allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysArrangedIndex[i]].sprite = allEnemy[allStage[stageIndex].GetComponent<StagePrefab>().StageEnemysIndex[i]].GetComponent<EnemysPrefab>().mySprite;
         }
     }
 

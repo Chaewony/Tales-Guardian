@@ -7,5 +7,6 @@ public enum SceneButtonType
 {
     BattleArrangeButton,
     CloseButton,
-    StartButton
+    StartButton,
+    CloseWarringButton
 }
