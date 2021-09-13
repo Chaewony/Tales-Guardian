@@ -18,8 +18,8 @@ public class EnemyAttack : MonoBehaviour
 			myFieldRand = GetAttckFieldIndex();
 			int charRand = Random.Range(0, battleManager.stagePrefabs[battleManager.stageIndex].StageEnemysIndex.Length); //캐릭터 랜덤
 			int type = Random.Range(0, 2); //스킬 랜덤
-			if (type == 0) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].firstSkillSecondTargetRange);
-			else if (type == 1) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].secondSkillSecondTargetRange);
+			if (type == 0) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].myFirstSkillSecondTargetRange);
+			else if (type == 1) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].mySecondSkillSecondTargetRange);
 			//playerFieldsColor[myFieldRand].color = new Color(1, 0.5f, 0.5f);
 			Invoke("Attack", 1f);
 		}

@@ -37,8 +37,15 @@ public class EnemysPrefab : MonoBehaviour
     [SerializeField]
     private int Location;
 
-    public int[] firstSkillSecondTargetRange;
-    public int[] secondSkillSecondTargetRange;
+    [SerializeField]
+    private int[] firstSkillSecondTargetRange;
+    [SerializeField]
+    private int[] secondSkillSecondTargetRange;
+
+    [SerializeField]
+    private int firstSkillDamage;
+    [SerializeField]
+    private int SecondSkillDamage;
 
     public Sprite mybattleSprite { get => battleSprite; }
     public Sprite mySprite { get => Sprite; }
@@ -55,4 +62,6 @@ public class EnemysPrefab : MonoBehaviour
     public string myFirstSkillName { get => firstSkillName; }
     public string mySecondSkillName { get => secondSkillName; }
     public int myLocation { get => Location; set { Location = value; } }
+    public int[] myFirstSkillSecondTargetRange { get => firstSkillSecondTargetRange; }
+    public int[] mySecondSkillSecondTargetRange { get => secondSkillSecondTargetRange; }
 }
