@@ -16,52 +16,52 @@ public class SkillButton : MonoBehaviour
                 //캐릭터 0의 스킬
                 case SkillButtonType.char0skill1:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[0].firstSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[0].myFirstSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 case SkillButtonType.char0skill2:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[0].secondSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[0].mySecondSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 //캐릭터 1의 스킬
                 case SkillButtonType.char1skill1:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[1].firstSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[1].myFirstSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 case SkillButtonType.char1skill2:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[1].secondSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[1].mySecondSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 //캐릭터 2의 스킬
                 case SkillButtonType.char2skill1:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[2].firstSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[2].myFirstSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 case SkillButtonType.char2skill2:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[2].secondSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[2].mySecondSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 //캐릭터 3의 스킬
                 case SkillButtonType.char3skill1:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[3].firstSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[3].myFirstSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;
                 case SkillButtonType.char3skill2:
                     for (int i = 0; i < enemyField.Length; i++)
-                        enemyField[i].SetSecondTarget(battleManager.playerSquad[3].secondSkillSecondTargetRange);
+                        enemyField[i].SetSecondTarget(battleManager.playerSquad[3].mySecondSkillSecondTargetRange);
                     battleManager.canAttack = true;
                     battleManager.canMove = false;
                     break;

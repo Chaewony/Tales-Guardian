@@ -11,7 +11,8 @@ public class ChangeScene : MonoBehaviour
     [SerializeField]
     private GameObject WarringMassage;
     [SerializeField]
-    private List<GameObject> allCharacter = new List<GameObject>();
+    private List<GameObject> allCharacter;
+    [SerializeField]
     private int InFeildCharacter;
 
     public void Start()
@@ -20,7 +21,10 @@ public class ChangeScene : MonoBehaviour
         for (int i = 0; i < allCharacter.Count; i++)
         {
             allCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
-            if(allCharacter[i].GetComponent<CharactersPrefab>().myLocation == -1)
+        }
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            if(allCharacter[i].GetComponent<CharactersPrefab>().myLocation != -1)
             {
                 InFeildCharacter++;
             }
@@ -42,8 +46,8 @@ public class ChangeScene : MonoBehaviour
             case SceneButtonType.StartButton:
                 if(InFeildCharacter != 0)
                 {
-                    SceneManager.LoadScene("Battle");
                     Debug.Log("배틀시작");
+                    SceneManager.LoadScene("Battle");
                 }
                 else if (InFeildCharacter == 0)
                 {

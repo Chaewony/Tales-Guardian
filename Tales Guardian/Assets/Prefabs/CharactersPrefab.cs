@@ -43,8 +43,15 @@ public class CharactersPrefab : MonoBehaviour
     [SerializeField]
     private int Location;
 
-    public int[] firstSkillSecondTargetRange;
-    public int[] secondSkillSecondTargetRange;
+    [SerializeField]
+    private int[] firstSkillSecondTargetRange;
+    [SerializeField]
+    private int[] secondSkillSecondTargetRange;
+
+    [SerializeField]
+    private int firstSkillDamage;
+    [SerializeField]
+    private int SecondSkillDamage;
 
     public int myLocalNumber { get => LocalNumber; }
     public Sprite mySprite { get => sprite; }
@@ -64,4 +71,6 @@ public class CharactersPrefab : MonoBehaviour
     public float myHaveManyCard { get => HaveManyCard; set { HaveManyCard = value; } }
     public float myEnhanceStep { get => EnhanceStep; set { EnhanceStep = value; } }
     public int myLocation { get => Location; set { Location = value; } }
+    public int[] myFirstSkillSecondTargetRange { get => firstSkillSecondTargetRange; }
+    public int[] mySecondSkillSecondTargetRange { get => secondSkillSecondTargetRange; }
 }

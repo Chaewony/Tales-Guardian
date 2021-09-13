@@ -1335,7 +1335,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenebuttontype: 2
   WarringMassage: {fileID: 892193652}
-  allCharacter: []
+  allCharacter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  InFeildCharacter: 0
 --- !u!114 &975155749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,7 +1572,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenebuttontype: 0
   WarringMassage: {fileID: 892193652}
-  allCharacter: []
+  allCharacter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  InFeildCharacter: 0
 --- !u!114 &1064284438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2805,7 +2839,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenebuttontype: 1
   WarringMassage: {fileID: 892193652}
-  allCharacter: []
+  allCharacter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  InFeildCharacter: 0
 --- !u!114 &1991908323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3100,6 +3151,7 @@ MonoBehaviour:
   scenebuttontype: 3
   WarringMassage: {fileID: 892193652}
   allCharacter: []
+  InFeildCharacter: 0
 --- !u!114 &2117060011
 MonoBehaviour:
   m_ObjectHideFlags: 0
