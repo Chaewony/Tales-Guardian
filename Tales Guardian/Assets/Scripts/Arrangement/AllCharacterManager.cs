@@ -17,6 +17,8 @@ public class AllCharacterManager : MonoBehaviour
 
     public GameObject[] CharacterPrefabs;
     public GameObject[] FieldPrefabs;
+
+    public GameObject[] DissolutionButton;
     //FieldPrefabs.GetComponent<FieldPrefab>() CharacterPrefabs[i].GetComponent<CharactersPrefab>()
 
     public void Start()
@@ -31,6 +33,20 @@ public class AllCharacterManager : MonoBehaviour
             FieldPrefabs[i] = GameObject.Find("DDField").transform.GetChild(i).gameObject;
         }
 
+        
+
+        //ResetTeam(); // 임시로 초기상태로 돌리는 함수 /*/ 나중에 여기꺼는 꼭 빼야됨 /*/
+        ClearField();
+        FillField();
+        DrawField();
+        SelectCharacterNumber = -1;
+        ArrangementCounting();
+
+    }
+
+    public void ArrangementCounting()
+    {
+        ArrangementCount = 0;
         for (int i = 0; i < CharacterPrefabs.Length; i++)
         {
             if (CharacterPrefabs[i].GetComponent<CharactersPrefab>().myLocation != -1)
@@ -38,15 +54,6 @@ public class AllCharacterManager : MonoBehaviour
                 ArrangementCount++;
             }
         }
-
-        //ResetTeam(); // 임시로 초기상태로 돌리는 함수 /*/ 나중에 여기꺼는 꼭 빼야됨 /*/
-        ClearField();
-        FillField();
-        DrawField();
-        SelectCharacterNumber = -1;
-        ArrangementCount = 0;
-
-        
     }
 
     public void ResetTeam()
@@ -60,6 +67,15 @@ public class AllCharacterManager : MonoBehaviour
             FieldPrefabs[i].GetComponent<FieldPrefab>().myArrangedCharIndex = -1;
         }
         ArrangementCount = 0;
+    }
+
+    public void ResetSelected()
+    {
+        SelectCharacterNumber = -1;
+        for (int i = 0; i < CharacterPrefabs.Length; i++)
+        {
+            CharacterPrefabs[i].GetComponent<CharactersPrefab>().myIsSelected = false;
+        }
     }
 
     public void SeeNowFilterType()

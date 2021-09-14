@@ -21,8 +21,8 @@ public class Character : MonoBehaviour
         {
             allCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
         }
-        
     }
+
     public void ShowCharacters()
     {
         for (int i = 0; i < allCharacter.Count; i++)
@@ -41,6 +41,7 @@ public class Character : MonoBehaviour
             }
         }
     }
+
     public void SelectMainCharacter(int index) //메인캐릭터 선택 후 화면에 보이지는 이미지
     {
         if (allCharacter[index].GetComponent<CharactersPrefab>().myIsOwning)
@@ -77,6 +78,7 @@ public class Character : MonoBehaviour
             }
         }
     }
+
     public void ShowDefTypeCharacters() //가지고있는 캐릭터들만 표시
     {
         for (int i = 0; i < allCharacter.Count; i++)

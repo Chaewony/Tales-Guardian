@@ -56,16 +56,18 @@ public class ArrangeButtonCase2 : MonoBehaviour
                 Debug.Log("결과2");
                 this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
                 AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation = FieldNumber;
+                AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[FieldNumber].GetComponent<CharactersPrefab>().myLocation = -1;
                 AllcharacterManager.GetComponent<AllCharacterManager>().ClearField();
                 AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                 AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
+                AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
             }
             else if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)
             {
                 if(AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount != 4)
                 {//결과 3.
                     if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == true)//애들 있는데 배치)
-                    {//결과 4. 
+                    {//결과 3.1 
                         Debug.Log("결과3.1");
                         this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
                         AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[FindWillSameFieldCharNumber(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs)].GetComponent<CharactersPrefab>().myLocation = -1;
@@ -74,9 +76,10 @@ public class ArrangeButtonCase2 : MonoBehaviour
                         AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().SeeNowFilterType();
+                        AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
                     }
                     else if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)// 애들 없는데 배치)
-                    {//결과 5. 
+                    {//결과 3.2 
                         Debug.Log("결과3.2");
                         this.SelectCharacterNumber = AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber;
                         AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs[SelectCharacterNumber].GetComponent<CharactersPrefab>().myLocation = FieldNumber;
@@ -84,8 +87,8 @@ public class ArrangeButtonCase2 : MonoBehaviour
                         AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount++;
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
+                        AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
                     }
-                    
                 }
                 else if (AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount == 4)
                 { 
@@ -99,6 +102,7 @@ public class ArrangeButtonCase2 : MonoBehaviour
                         AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().SeeNowFilterType();
+                        AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
                     }
                     else if(SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)// 애들 없는데 배치)
                     {//결과 5. 
@@ -110,6 +114,11 @@ public class ArrangeButtonCase2 : MonoBehaviour
         else if(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber == -1)
         {
             //결과 1.
+            for(int i =0; i< AllcharacterManager.GetComponent<AllCharacterManager>().DissolutionButton.Length; i++)
+            {
+                AllcharacterManager.GetComponent<AllCharacterManager>().DissolutionButton[i].SetActive(false);
+            }
+            AllcharacterManager.GetComponent<AllCharacterManager>().DissolutionButton[FieldNumber].SetActive(true);  
             Debug.Log("결과1");
         }
     }

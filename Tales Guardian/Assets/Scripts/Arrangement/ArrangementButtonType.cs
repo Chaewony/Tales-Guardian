@@ -28,5 +28,6 @@ public enum ArrangementButtonType
     Field6,
     Field7,
     Field8,
-    AllArrangementReset
+    AllArrangementReset,
+    Dissolution
 }
