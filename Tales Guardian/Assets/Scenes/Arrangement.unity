@@ -11195,6 +11195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1829187502}
   - component: {fileID: 1829187501}
+  - component: {fileID: 1829187503}
   m_Layer: 0
   m_Name: AllCharacterManager
   m_TagString: Untagged
@@ -11283,6 +11284,7 @@ MonoBehaviour:
   - {fileID: 237085033}
   - {fileID: 737395862}
   - {fileID: 238523210}
+  CardSlot: {fileID: 0}
 --- !u!4 &1829187502
 Transform:
   m_ObjectHideFlags: 0
@@ -11297,6 +11299,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829187503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829187500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlotNumber: 0
+  character: {fileID: 0}
+  CardImage: {fileID: 283406207}
+  Name: {fileID: 1771853896}
+  PositionType: {fileID: 1684169828}
+  FirstSkillName: {fileID: 1667320758}
+  SecondSkillName: {fileID: 2045218564}
+  gameManager: {fileID: 1071961445}
+  AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &1877668907
 GameObject:
   m_ObjectHideFlags: 0

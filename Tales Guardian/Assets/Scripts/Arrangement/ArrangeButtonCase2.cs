@@ -61,6 +61,7 @@ public class ArrangeButtonCase2 : MonoBehaviour
                 AllcharacterManager.GetComponent<AllCharacterManager>().DrawField();
                 AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                 AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
+                AllcharacterManager.GetComponent<AllCharacterManager>().CardSlot.ResetCardSlot();
             }
             else if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)
             {
@@ -77,6 +78,7 @@ public class ArrangeButtonCase2 : MonoBehaviour
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().SeeNowFilterType();
                         AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CardSlot.ResetCardSlot();
                     }
                     else if (SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)// 애들 없는데 배치)
                     {//결과 3.2 
@@ -88,6 +90,7 @@ public class ArrangeButtonCase2 : MonoBehaviour
                         AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount++;
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CardSlot.ResetCardSlot();
                     }
                 }
                 else if (AllcharacterManager.GetComponent<AllCharacterManager>().ArrangementCount == 4)
@@ -103,6 +106,7 @@ public class ArrangeButtonCase2 : MonoBehaviour
                         AllcharacterManager.GetComponent<AllCharacterManager>().FillField();
                         AllcharacterManager.GetComponent<AllCharacterManager>().SeeNowFilterType();
                         AllcharacterManager.GetComponent<AllCharacterManager>().ResetSelected();
+                        AllcharacterManager.GetComponent<AllCharacterManager>().CardSlot.ResetCardSlot();
                     }
                     else if(SelectedFieldIsFill(FieldNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == false)// 애들 없는데 배치)
                     {//결과 5. 

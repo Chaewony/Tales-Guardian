@@ -19,10 +19,14 @@ public class AllCharacterManager : MonoBehaviour
     public GameObject[] FieldPrefabs;
 
     public GameObject[] DissolutionButton;
+    public CardSlot CardSlot;
+
     //FieldPrefabs.GetComponent<FieldPrefab>() CharacterPrefabs[i].GetComponent<CharactersPrefab>()
 
     public void Start()
     {
+        CardSlot = this.gameObject.GetComponent<CardSlot>();
+
         for (int i = 0; i < CharacterPrefabs.Length; i++)
         {
             CharacterPrefabs[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
