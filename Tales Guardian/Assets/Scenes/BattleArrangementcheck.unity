@@ -253,7 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 76da178f6d7ffb94aa7bd47207eaa70b, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -420,6 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 4778401457199787464, guid: fe13495ce2905344abc5607ccb97bd00,
     type: 3}
   fieldScale: {fileID: 47101009}
@@ -557,7 +559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 9b5edcfa27a8bbf428599823e6c27472, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -697,7 +700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 69f36f6f4bea398449511cc9898217c7, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -1225,7 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33fe47d733599945a00d802799bdea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrangeButtonType: 12
+  arrangeButtonType: 23
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 0}
@@ -1866,7 +1870,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: baa024ddf93415a48b5eeb26675a7d22, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -2598,7 +2603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 02e916b5044bf84468d073ed89d36a2f, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -2843,6 +2849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 7904761240357796970, guid: 2cc28738da7991147bfd957067f745f8,
     type: 3}
   fieldScale: {fileID: 475883221}
@@ -2980,7 +2987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 6d0299029965f30499cd212a59704b82, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -3697,6 +3705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 6981097548936052215, guid: 0943b6ecd3c0bfc4e9a98c9313283457,
     type: 3}
   fieldScale: {fileID: 684733729}
@@ -3912,7 +3921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 0f6995f8b5e4fcd4f8957abe366756e5, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -4344,7 +4354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: b230d772881b388418a70e3ccdabd0ec, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -4511,6 +4522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 2130534093082799728, guid: d14e1d33e37f5474a90a5fafb5595e55,
     type: 3}
   fieldScale: {fileID: 796505449}
@@ -4648,7 +4660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 66b7c4f120e1d96488b6726fda3d7972, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -5474,6 +5487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 1772473329598826342, guid: 202fc2f50eaa2b34c93a21c3f09df2bb,
     type: 3}
   fieldScale: {fileID: 977521627}
@@ -6013,7 +6027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 950833a0e5729604c91ffbee90e4e70a, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -6309,7 +6324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 28271bce424491044b60bcb047f2a9b3, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -6830,7 +6846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 0415dc6bc2dc5684d8de21547da3791b, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -6997,6 +7014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 7009344157096557900, guid: 91dd26c7a0e729a41a8a06e392a7dad8,
     type: 3}
   fieldScale: {fileID: 1272080327}
@@ -7161,6 +7179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 916530757091806033, guid: bf41e340ec3ca6446ad3c018d7d68c97,
     type: 3}
   fieldScale: {fileID: 1341300939}
@@ -7481,6 +7500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 2840484389557396506, guid: 3639b2542870ae840bf288da32a50f2e,
     type: 3}
   fieldScale: {fileID: 1428493115}
@@ -7696,7 +7716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 5d6b70872d922574ea8dda57fe73e79e, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -8455,6 +8476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc97b8069728b4086c483a67ff79dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FieldNumber: 0
   FieldPrefab: {fileID: 320018817265174773, guid: fa5c03957757dbd45be2679fb625afa8,
     type: 3}
   fieldScale: {fileID: 1642032170}
@@ -8934,6 +8956,8 @@ MonoBehaviour:
   - {fileID: 916530757091806033, guid: bf41e340ec3ca6446ad3c018d7d68c97, type: 3}
   - {fileID: 2130534093082799728, guid: d14e1d33e37f5474a90a5fafb5595e55, type: 3}
   - {fileID: 7009344157096557900, guid: 91dd26c7a0e729a41a8a06e392a7dad8, type: 3}
+  DissolutionButton: []
+  CardSlot: {fileID: 0}
 --- !u!4 &1829187502
 Transform:
   m_ObjectHideFlags: 0
@@ -9599,7 +9623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 1019036d4ab41e24e820e47b3c74701d, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -10031,7 +10056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: fddfea17d04f1c44486bc75320e2dc87, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}
@@ -10249,7 +10275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd99f98d2264c5d419bb5891e0e38e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 1fdc54db73d12a24f873ca4f3bde2e9c, type: 2}
+  SlotNumber: 0
+  character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
   PositionType: {fileID: 1684169828}

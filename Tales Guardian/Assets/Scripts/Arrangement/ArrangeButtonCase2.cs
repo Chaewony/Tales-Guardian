@@ -18,6 +18,9 @@ public class ArrangeButtonCase2 : MonoBehaviour
             case ArrangementButtonType.CloseArragement:
                 SceneManager.LoadScene("Lobby");// 배치 확인에서 거길로 넘어가는것도 확인해야됨
                 break;
+            case ArrangementButtonType.GoBattleArrangement:
+                SceneManager.LoadScene("BattleArrange");
+                break;
             case ArrangementButtonType.Field0:
                 FieldFunction(0);
                 break;             

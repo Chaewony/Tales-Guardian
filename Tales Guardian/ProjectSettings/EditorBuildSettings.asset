@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: dd93109f1f0a8f84fb382c363c60b528
   - enabled: 1
     path: Assets/Scenes/Arrangement.unity
-    guid: c22ae17a482e44a4e90f56b0854b8b7a
+    guid: 8d26abdaf6881d046ac39838b87fdec9
   - enabled: 1
     path: Assets/Scenes/Library.unity
     guid: 38e73cdd099413442b3a3e36225f0466
@@ -27,15 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstThemeStageSelection.unity
     guid: 32b50ec504eb74743b2d0dc3e5593eed
   - enabled: 1
-    path: Assets/Scenes/BattleArrangementcheck.unity
-    guid: afb8af86176f6b342b2945708bba378a
-  - enabled: 1
     path: Assets/Scenes/BattleArrange.unity
     guid: d95c9278f1506ff4aaeb7779ded5abbd
   - enabled: 1
+    path: Assets/Scenes/BattleArrangementCheck.unity
+    guid: c22ae17a482e44a4e90f56b0854b8b7a
+  - enabled: 1
     path: Assets/Scenes/Battle.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}

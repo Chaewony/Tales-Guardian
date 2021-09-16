@@ -29,5 +29,6 @@ public enum ArrangementButtonType
     Field7,
     Field8,
     AllArrangementReset,
+    GoBattleArrangement,
     Dissolution
 }
