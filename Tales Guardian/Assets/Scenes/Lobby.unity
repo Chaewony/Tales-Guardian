@@ -173,9 +173,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 5
 --- !u!114 &119071268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +401,7 @@ MonoBehaviour:
   buttonType: 1
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!114 &156501015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,6 +852,7 @@ MonoBehaviour:
   buttonType: 3
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!114 &400639221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,9 +996,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 13
 --- !u!114 &446156824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,6 +1146,7 @@ MonoBehaviour:
   buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 14
 --- !u!114 &449406705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,9 +1602,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 8
 --- !u!114 &594553409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,9 +1905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 7
 --- !u!114 &678282398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,9 +2052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 11
 --- !u!114 &713029302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2282,9 +2290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 8
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 2
 --- !u!1 &719172471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,9 +2346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 9
 --- !u!114 &719172474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2638,6 +2648,7 @@ MonoBehaviour:
   buttonType: 2
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!114 &787156717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3511,6 +3522,7 @@ MonoBehaviour:
   buttonType: 0
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!1 &1158120120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,9 +3653,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 6
 --- !u!114 &1190131330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3853,9 +3866,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 10
 --- !u!114 &1255202007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4080,6 +4094,7 @@ MonoBehaviour:
   buttonType: 4
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!114 &1410811132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4223,9 +4238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 12
 --- !u!114 &1444768166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4369,9 +4385,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 4
 --- !u!114 &1448900052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4897,6 +4914,7 @@ MonoBehaviour:
   buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!1 &1767684391
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,6 +4970,7 @@ MonoBehaviour:
   buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 15
 --- !u!114 &1767684394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5304,9 +5323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 9
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 3
 --- !u!1 &1899222765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5453,6 +5473,7 @@ MonoBehaviour:
   buttonType: 5
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 0
 --- !u!1 &1912004013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,9 +5695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b6461701471f43827fe07b5563f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 7
+  buttonType: 6
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
+  CharNum: 1
 --- !u!1 &2008482358
 GameObject:
   m_ObjectHideFlags: 0

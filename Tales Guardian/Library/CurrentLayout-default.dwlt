@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 35
+  controlID: 84
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -681,10 +681,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1a360000
+      scrollPos: {x: 0, y: 60}
+      m_SelectedIDs: 08380000
       m_LastClickedID: 0
-      m_ExpandedIDs: 34e6ffffc2f1ffff0cf3ffffc2f4ffff5ef5ffff64f6ffff7af6ffff36f7ffff8af9ffff6afbffff16370000b6370000e037000094440000b24400003445000076450000404c0000e04c00000a4d00002e5300004c530000ce530000f8530000265500003a55000058550000da55000004560000
+      m_ExpandedIDs: c4f3ffff42f4ffffe0f4fffff4f8ffffb4faffff6afbffff20370000963a0000b43a0000363b00002e4400004c440000ce440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -773,20 +773,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/Characters
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/Characters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jinjh\Documents\GitHub\Tales-Guardian\Tales Guardian
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 38350000
-    m_LastClickedID: 13624
-    m_ExpandedIDs: 00000000323500003435000036350000383500003a3500008635000000ca9a3b
+    scrollPos: {x: 0, y: 42}
+    m_SelectedIDs: fc370000
+    m_LastClickedID: 14332
+    m_ExpandedIDs: 000000007a3600007c3600007e3600008036000082360000c436000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +814,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000323500003435000036350000383500003a350000
+    m_ExpandedIDs: 000000007a3600007c3600007e3600008036000082360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

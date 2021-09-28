@@ -9,6 +9,7 @@ public class Button : MonoBehaviour
     public ButtonType buttonType;
     public GameObject selectCharUI;
     public Character character;
+    public int CharNum;
     // Start is called before the first frame update
 
     public void OnButtonClick()
@@ -39,17 +40,9 @@ public class Button : MonoBehaviour
                 Debug.Log("창닫기 클릭");
                 selectCharUI.SetActive(false);
                 break;
-            case ButtonType.Char0:
-                character.SelectMainCharacter(0);
-                break;
-            case ButtonType.Char1:
-                character.SelectMainCharacter(1);
-                break;
-            case ButtonType.Char2:
-                character.SelectMainCharacter(2);
-                break;
-            case ButtonType.Char3:
-                character.SelectMainCharacter(3);
+            case ButtonType.Char:
+                character.SelectMainCharacter(CharNum);
+                selectCharUI.SetActive(false);
                 break;
         }
 	}

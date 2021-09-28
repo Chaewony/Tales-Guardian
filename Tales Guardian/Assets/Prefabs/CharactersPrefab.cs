@@ -42,6 +42,8 @@ public class CharactersPrefab : MonoBehaviour
     private float EnhanceStep;
     [SerializeField]
     private int Location;
+    [SerializeField]
+    private bool IsRepresentativeCharacter;
 
     [SerializeField]
     private int[] firstSkillSecondTargetRange;
@@ -53,6 +55,7 @@ public class CharactersPrefab : MonoBehaviour
     [SerializeField]
     private int SecondSkillDamage;
 
+    public bool IsRepreChar { get => IsRepresentativeCharacter; set { IsRepresentativeCharacter = value; } }
     public int myLocalNumber { get => LocalNumber; }
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }

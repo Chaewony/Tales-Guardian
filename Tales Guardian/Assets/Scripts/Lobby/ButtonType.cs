@@ -13,10 +13,7 @@ public enum ButtonType
 	SelectChar, //대표 캐릭터 선택
 
 	Close, //캐릭터 선택 창 닫기
-	Char0, //캐릭터 0 선택
-	Char1, //캐릭터 1 선택
-	Char2, //캐릭터 2 선택
-	Char3 //캐릭터 3 선택
+	Char
 }
 
 public enum SkillButtonType

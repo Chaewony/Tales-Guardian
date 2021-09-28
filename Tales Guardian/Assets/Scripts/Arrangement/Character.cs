@@ -44,8 +44,12 @@ public class Character : MonoBehaviour
 
     public void SelectMainCharacter(int index) //메인캐릭터 선택 후 화면에 보이지는 이미지
     {
-        if (allCharacter[index].GetComponent<CharactersPrefab>().myIsOwning)
-            illustSlot.sprite = allCharacter[index].GetComponent<CharactersPrefab>().myIllustSprite;
+        for(int i = 0; i<allCharacter.Count;i++)
+        {
+            allCharacter[i].GetComponent<CharactersPrefab>().IsRepreChar = false;
+        }
+        allCharacter[index].GetComponent<CharactersPrefab>().IsRepreChar = true;
+        illustSlot.sprite = allCharacter[index].GetComponent<CharactersPrefab>().myIllustSprite;
     }
     /*
     public void IfSetArrangementShowSlotCharacters() //가지고있는 캐릭터들만 표시
