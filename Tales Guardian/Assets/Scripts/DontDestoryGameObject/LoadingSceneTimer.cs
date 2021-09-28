@@ -16,7 +16,7 @@ public class LoadingSceneTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown )//|| timer > 10f)
+        if (Input.anyKeyDown || timer > 5.5f)
         {
             SceneManager.LoadScene("Title");
         }

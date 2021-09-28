@@ -28,7 +28,7 @@ public class TitleCenter : MonoBehaviour
         {
             while (fadeCount < 1.0f)
             {
-                fadeCount += 0.015f;
+                fadeCount += 0.025f;
                 yield return new WaitForSeconds(0.01f);
                 image[i].color = new Color(255, 255, 255, fadeCount);
                 if (titletouch == true)
@@ -43,7 +43,11 @@ public class TitleCenter : MonoBehaviour
             }
             fadeCount = 0;
         }
-        GameObject.Find("StartText").GetComponent<Blink>().canblink = true;
+        if(GameObject.Find("StartText").GetComponent<Blink>().canblink == false)
+        {
+            GameObject.Find("StartText").GetComponent<Blink>().canblink = true;
+            StartCoroutine(GameObject.Find("StartText").GetComponent<Blink>().BlinkText());//이거 추가
+        }
         titletouch = true;
     }
 }

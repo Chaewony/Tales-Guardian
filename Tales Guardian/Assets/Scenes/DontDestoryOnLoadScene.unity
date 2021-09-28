@@ -121,6 +121,129 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3710323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3710324}
+  - component: {fileID: 3710328}
+  - component: {fileID: 3710327}
+  - component: {fileID: 3710326}
+  - component: {fileID: 3710325}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3710324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 905125252}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -379}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &3710325
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710323}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.26663017, y: 0.8396454}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.723656, y: 104.49205}
+  m_EdgeRadius: 0
+--- !u!50 &3710326
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710323}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &3710327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &3710328
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710323}
+  m_CullTransparentMesh: 0
 --- !u!1 &20985468
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +635,8 @@ RectTransform:
   m_Children:
   - {fileID: 1473976166}
   - {fileID: 1155731918}
+  - {fileID: 1336893981}
+  - {fileID: 3710324}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -531,6 +656,8 @@ GameObject:
   - component: {fileID: 1155731918}
   - component: {fileID: 1155731920}
   - component: {fileID: 1155731919}
+  - component: {fileID: 1155731921}
+  - component: {fileID: 1155731922}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -554,7 +681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -476.5, y: 0.000011444}
+  m_AnchoredPosition: {x: -500.81, y: 1276}
   m_SizeDelta: {x: 618.97144, y: 603.4972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155731919
@@ -594,6 +721,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155731917}
   m_CullTransparentMesh: 0
+--- !u!50 &1155731921
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155731917}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 200
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 1
+--- !u!61 &1155731922
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155731917}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -10.164307, y: 7.6052856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 592.4894, y: 581.62646}
+  m_EdgeRadius: 0
 --- !u!1 &1246577557
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +820,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f88f0a2c40229846a239ca17ff53efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1336893980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336893981}
+  - component: {fileID: 1336893983}
+  - component: {fileID: 1336893982}
+  - component: {fileID: 1336893984}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1336893981
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336893980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 905125252}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 321, y: 0.000022888}
+  m_SizeDelta: {x: 1024.6576, y: 698.2654}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1336893982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336893980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: eea3fdea5253d1a4ab04e446ea877786, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1336893983
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336893980}
+  m_CullTransparentMesh: 0
+--- !u!114 &1336893984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336893980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670b67af98ecb58438605de59504c57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chessless: {fileID: 1336893982}
+  transparency: 0
 --- !u!1 &1380800710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,8 +1406,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &549898988333434173
 Transform:
   m_ObjectHideFlags: 0
@@ -1233,6 +1500,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &991702130807701122
 Transform:
   m_ObjectHideFlags: 0
@@ -1294,6 +1563,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &1371940362794767607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1612,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!114 &1531524042707838793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,6 +1644,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!114 &1573997036836729792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,6 +1676,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &1574158314108019846
 Transform:
   m_ObjectHideFlags: 0
@@ -1473,6 +1750,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &1663095873562175324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,8 +1817,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &1756370189537367045
 Transform:
   m_ObjectHideFlags: 0
@@ -1616,8 +1898,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!114 &1925669447235596681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,6 +1995,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &2320888333185514527
 Transform:
   m_ObjectHideFlags: 0
@@ -1802,6 +2089,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &2934757503124156306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,8 +2153,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &2945318034021011141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,6 +2205,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &3107047394402373681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,6 +2361,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &4511000495153217795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,8 +2462,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &4671114430238240271
 Transform:
   m_ObjectHideFlags: 0
@@ -2244,8 +2543,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &4778558244460419830
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,8 +2610,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &4838469942651084004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,8 +2680,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &4844860602392374205
 Transform:
   m_ObjectHideFlags: 0
@@ -2439,8 +2747,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &4857698424025953327
 Transform:
   m_ObjectHideFlags: 0
@@ -2568,8 +2879,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &5037173309536881461
 Transform:
   m_ObjectHideFlags: 0
@@ -2673,6 +2987,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &5761718262834787782
 Transform:
   m_ObjectHideFlags: 0
@@ -2858,6 +3174,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &6379484707683231924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,8 +3314,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &6712957286631543949
 Transform:
   m_ObjectHideFlags: 0
@@ -3076,6 +3397,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &6954800218042466182
 Transform:
   m_ObjectHideFlags: 0
@@ -3180,8 +3503,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &7538202219140291619
 Transform:
   m_ObjectHideFlags: 0
@@ -3261,8 +3587,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &7551846909483600591
 Transform:
   m_ObjectHideFlags: 0
@@ -3353,8 +3682,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!1 &7675153412878148602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,8 +3749,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &7771016297841144197
 Transform:
   m_ObjectHideFlags: 0
@@ -3511,6 +3846,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!114 &8160075470034584360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3541,6 +3878,8 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!114 &8290385926139665040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3572,8 +3911,11 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
 --- !u!4 &8290385926139665041
 Transform:
   m_ObjectHideFlags: 0
@@ -3680,3 +4022,5 @@ MonoBehaviour:
   Location: 0
   firstSkillSecondTargetRange: 
   secondSkillSecondTargetRange: 
+  firstSkillDamage: 0
+  SecondSkillDamage: 0
