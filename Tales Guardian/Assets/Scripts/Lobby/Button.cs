@@ -32,8 +32,8 @@ public class Button : MonoBehaviour
                 break;
             case ButtonType.SelectChar:
                 Debug.Log("SelectChar 클릭");
-                character.ShowCharacters();
                 selectCharUI.SetActive(true);
+                character.ShowCharacters();
                 break;
             case ButtonType.Close:
                 Debug.Log("창닫기 클릭");
