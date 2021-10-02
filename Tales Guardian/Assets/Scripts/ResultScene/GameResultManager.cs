@@ -21,11 +21,11 @@ public class GameResultManager : MonoBehaviour
     {
         if(BattleResult)
         {
-            ResultText.text = "이겼음 수고링";
+            ResultText.text = "정화 성공";
         }
         else
         {
-            ResultText.text = "졌음 수고링";
+            ResultText.text = "정화 실패";
         }
     }
 
