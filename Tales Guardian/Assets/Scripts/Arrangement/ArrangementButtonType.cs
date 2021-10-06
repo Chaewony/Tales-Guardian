@@ -30,5 +30,8 @@ public enum ArrangementButtonType
     Field8,
     AllArrangementReset,
     GoBattleArrangement,
-    Dissolution
+    Dissolution,
+    SkillImageButton1,
+    SkillImageButton2,
+    SkillExplanationPanelExit
 }
