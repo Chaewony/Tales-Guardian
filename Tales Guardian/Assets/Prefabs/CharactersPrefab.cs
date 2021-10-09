@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharactersPrefab : MonoBehaviour
 {
@@ -51,6 +52,11 @@ public class CharactersPrefab : MonoBehaviour
     private int[] secondSkillSecondTargetRange;
 
     [SerializeField]
+    private Sprite firstSkillSprite;
+    [SerializeField]
+    private Sprite SecondSkillSprite;
+
+    [SerializeField]
     private int firstSkillDamage;
     [SerializeField]
     private int SecondSkillDamage;
@@ -78,4 +84,6 @@ public class CharactersPrefab : MonoBehaviour
     public int[] mySecondSkillSecondTargetRange { get => secondSkillSecondTargetRange; }
     public int myFirstSkillDamage { get => firstSkillDamage; set => firstSkillDamage = value; }
     public int mySecondSkillDamage { get => SecondSkillDamage; set => SecondSkillDamage = value; }
+    public Sprite myfirstSkillSprite { get => firstSkillSprite; }
+    public Sprite mySecondSkillSprite { get => SecondSkillSprite; }
 }

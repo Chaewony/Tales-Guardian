@@ -20,6 +20,7 @@ public class AllCharacterManager : MonoBehaviour
 
     public GameObject[] DissolutionButton;
     public CardSlot CardSlot;
+    public CardSlot CardSlot1;
 
     //FieldPrefabs.GetComponent<FieldPrefab>() CharacterPrefabs[i].GetComponent<CharactersPrefab>()
 
@@ -37,7 +38,6 @@ public class AllCharacterManager : MonoBehaviour
             FieldPrefabs[i] = GameObject.Find("DDField").transform.GetChild(i).gameObject;
         }
 
-        
 
         //ResetTeam(); // 임시로 초기상태로 돌리는 함수 /*/ 나중에 여기꺼는 꼭 빼야됨 /*/
         ClearField();
@@ -45,7 +45,7 @@ public class AllCharacterManager : MonoBehaviour
         DrawField();
         SelectCharacterNumber = -1;
         ArrangementCounting();
-
+        CardSlot1.FillCardSlot();
     }
 
     public void ArrangementCounting()

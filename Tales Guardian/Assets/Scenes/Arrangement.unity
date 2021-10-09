@@ -336,9 +336,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &47101008
@@ -642,9 +648,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &76290658
@@ -784,9 +796,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &77568695
@@ -1878,7 +1896,7 @@ GameObject:
   - component: {fileID: 249582834}
   - component: {fileID: 249582833}
   m_Layer: 5
-  m_Name: SKillImage
+  m_Name: SKillImage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2544,9 +2562,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &324177783
@@ -3527,9 +3551,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &463857916
@@ -4085,9 +4115,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &556121549
@@ -4102,7 +4138,7 @@ GameObject:
   - component: {fileID: 556121552}
   - component: {fileID: 556121551}
   m_Layer: 5
-  m_Name: Panel (8)
+  m_Name: MR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4255,7 +4291,7 @@ GameObject:
   - component: {fileID: 590826431}
   - component: {fileID: 590826430}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5640,9 +5676,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &737395862
@@ -6326,9 +6368,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &796505448
@@ -6632,9 +6680,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &816873958
@@ -8560,9 +8614,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &1105032770
@@ -8858,9 +8918,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &1155982828
@@ -9615,9 +9681,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &1272080326
@@ -9796,7 +9868,7 @@ GameObject:
   - component: {fileID: 1277730451}
   - component: {fileID: 1277730450}
   m_Layer: 5
-  m_Name: Panel (5)
+  m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10419,7 +10491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot0
+  m_Text: 1
 --- !u!222 &1352158945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10440,7 +10512,7 @@ GameObject:
   - component: {fileID: 1373074873}
   - component: {fileID: 1373074872}
   m_Layer: 5
-  m_Name: Panel (7)
+  m_Name: AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11116,9 +11188,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &1476455036
@@ -12468,7 +12546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 61.1, y: -148}
+  m_AnchoredPosition: {x: 1093, y: 235.54}
   m_SizeDelta: {x: 144.99377, y: 66.135376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771853896
@@ -12611,7 +12689,8 @@ MonoBehaviour:
   - {fileID: 237085033}
   - {fileID: 737395862}
   - {fileID: 238523210}
-  CardSlot: {fileID: 0}
+  CardSlot: {fileID: 27451558}
+  CardSlot1: {fileID: 27451558}
 --- !u!4 &1829187502
 Transform:
   m_ObjectHideFlags: 0
@@ -12642,9 +12721,15 @@ MonoBehaviour:
   character: {fileID: 0}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &1877668907
@@ -12797,7 +12882,7 @@ GameObject:
   - component: {fileID: 1896007246}
   - component: {fileID: 1896007245}
   m_Layer: 5
-  m_Name: Panel (6)
+  m_Name: ATK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13175,7 +13260,7 @@ GameObject:
   - component: {fileID: 2033600108}
   - component: {fileID: 2033600107}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13530,9 +13615,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &2082812433
@@ -13964,9 +14055,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &2094786575
@@ -14184,9 +14281,15 @@ MonoBehaviour:
     type: 3}
   CardImage: {fileID: 283406207}
   Name: {fileID: 1771853896}
+  HP: {fileID: 590826430}
+  ATK: {fileID: 1172108031}
+  AR: {fileID: 1466142072}
+  MR: {fileID: 1996375828}
   PositionType: {fileID: 1684169828}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
+  FirstSkillImage: {fileID: 0}
+  SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
 --- !u!1 &2121743683
@@ -14439,7 +14542,7 @@ GameObject:
   - component: {fileID: 2138778803}
   - component: {fileID: 2138778802}
   m_Layer: 5
-  m_Name: SKillImage (1)
+  m_Name: SKillImage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
