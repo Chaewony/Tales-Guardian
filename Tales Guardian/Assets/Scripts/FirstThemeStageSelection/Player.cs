@@ -170,7 +170,8 @@ public class Player : MonoBehaviour
                 break;
             case 5:
                 if (GoAhead) { TargetPoint = Stage[playerInStageAdress + 1].transform.position; }
-                if (GoBack) { TargetPoint = Stage[playerInStageAdress - 1].transform.position; }
+                else if (GoBack) { TargetPoint = Stage[playerInStageAdress - 1].transform.position; }
+                else { TargetPoint = Stage[0].transform.position; }
                 break;
         }
 

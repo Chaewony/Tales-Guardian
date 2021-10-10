@@ -2918,6 +2918,7 @@ MonoBehaviour:
   - {fileID: 446156821}
   - {fileID: 449406702}
   - {fileID: 1767684391}
+  RepresentativeCharacterImage: {fileID: 1152137510}
 --- !u!1 &884056767
 GameObject:
   m_ObjectHideFlags: 0

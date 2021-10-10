@@ -10,6 +10,7 @@ public class GameResult : MonoBehaviour
     public void Start()
     {
         IsWin = true;
+        UseTurn = 0;
     }
 
 }

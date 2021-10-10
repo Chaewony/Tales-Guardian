@@ -10,8 +10,8 @@ public class Button : MonoBehaviour
     public GameObject selectCharUI;
     public Character character;
     public int CharNum;
-    // Start is called before the first frame update
 
+    // Start is called before the first frame update
     public void OnButtonClick()
 	{
 		switch (buttonType)
@@ -42,6 +42,7 @@ public class Button : MonoBehaviour
                 break;
             case ButtonType.Char:
                 character.SelectMainCharacter(CharNum);
+                character.UpdateRepresentativeChar(CharNum);
                 selectCharUI.SetActive(false);
                 break;
         }

@@ -32,6 +32,10 @@ public class StageSelectionButton : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public void Start()
     {
+        for (int i = 0; i < stage.Length; i++)
+        {
+            stage[i] = GameObject.Find("DDStage").transform.GetChild(i).gameObject;
+        }
         SelectStageNumber = 1;
         for(int i = 0;i<StageSize;i++)
         {
