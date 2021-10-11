@@ -1,18 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ResultSceneButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private ResultSceneButtonType buttonType;
 
-    // Update is called once per frame
-    void Update()
+    public void OnButtonClick()
     {
-        
+        switch (buttonType)
+        {
+            case ResultSceneButtonType.GoLobby:
+                SceneManager.LoadScene("Lobby");
+                break;
+            case ResultSceneButtonType.GoStage:
+                SceneManager.LoadScene("FirstThemeStageSelection");
+                break;
+            case ResultSceneButtonType.DoAgain:
+                SceneManager.LoadScene("BattleArrange");
+                break;
+        }
     }
 }

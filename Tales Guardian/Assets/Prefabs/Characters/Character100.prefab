@@ -62,5 +62,10 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 1
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillSprite: {fileID: 0}
+  SecondSkillSprite: {fileID: 0}
+  firstSkillDamage: 0
+  SecondSkillDamage: 0

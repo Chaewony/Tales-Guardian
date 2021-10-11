@@ -21,6 +21,7 @@ public class GameResultManager : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        /*
         BattleSceneResult = GameObject.Find("GameResult").gameObject;
         for (int i = 0; i < Stage.Length; i++)
         {
@@ -31,13 +32,14 @@ public class GameResultManager : MonoBehaviour
         {
             AllCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
         }
-        for(int i = 0; i<Star.Length;i++)
+        */
+        for (int i = 0; i<Star.Length;i++)
         {
             Star[i].GetComponent<Image>().color = new Color(0.6f, 0.6f, 0.6f, 1f);
         }
 
         BattleResult = BattleSceneResult.GetComponent<GameResult>().IsWin;
-        UseTurn.text = BattleSceneResult.GetComponent<GameResult>().UseTurn.ToString();
+        UseTurn.text = " " + BattleSceneResult.GetComponent<GameResult>().UseTurn + " ";
         intiserUseTurn = BattleSceneResult.GetComponent<GameResult>().UseTurn;
         SetResult();
     }
@@ -57,7 +59,7 @@ public class GameResultManager : MonoBehaviour
         {
             if(Stage[i].GetComponent<StagePrefab>().StageisSelected == true)
             {
-                StageText.text = "Stage" + Stage[i].GetComponent<StagePrefab>().StageTheme + "-" + i;
+                StageText.text = "Stage " + (Stage[i].GetComponent<StagePrefab>().StageTheme +1) + "-" + (i+1);
             }
         }
         for(int i = 0; i<AllCharacter.Length;i++)
@@ -69,7 +71,7 @@ public class GameResultManager : MonoBehaviour
         }
         for(int i = 0;i< Stage[i].GetComponent<StagePrefab>().StageClearStandard.Length; i++)
         {
-            if(Stage[i].GetComponent<StagePrefab>().StageClearStandard[i] > intiserUseTurn)
+            if(Stage[i].GetComponent<StagePrefab>().StageClearStandard[i] >= intiserUseTurn)
             {
                 Star[i].GetComponent<Image>().color = new Color(1f, 1f, 0f, 1f);
             }
