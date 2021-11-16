@@ -1390,8 +1390,8 @@ MonoBehaviour:
   LocalNumber: 110
   sprite: {fileID: 21300000, guid: ab88d1454528db5408e69ed7057872a0, type: 3}
   illustSprite: {fileID: 21300000, guid: 8c1032b9135282e46867aac6ba43775a, type: 3}
-  battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  cardSprite: {fileID: 0}
+  battleSprite: {fileID: 21300000, guid: c3496aafc88938946bca6f9f79f02797, type: 3}
+  cardSprite: {fileID: 21300000, guid: b13808881e7f8da4083d00ca97892bec, type: 3}
   charName: "\uCE7C\uB9AC\uB2E4"
   rank: Normal
   positionType: Atk
@@ -1807,8 +1807,8 @@ MonoBehaviour:
   LocalNumber: 103
   sprite: {fileID: 21300000, guid: 64fe00c166389ca47850a2f93fd500e3, type: 3}
   illustSprite: {fileID: 21300000, guid: 8df778c321ee59e48825280d04e9c31d, type: 3}
-  battleSprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
-  cardSprite: {fileID: 0}
+  battleSprite: {fileID: 21300000, guid: d151cf7a86885a5499512e71951a2aa6, type: 3}
+  cardSprite: {fileID: 21300000, guid: 990593944f05dc34697546fc11c38696, type: 3}
   charName: "\uBE4C\uB9AC\uB098"
   rank: Normal
   positionType: Atk
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   LocalNumber: 101
   sprite: {fileID: 21300000, guid: dbf0a78319b04684ab1f7780eab7042d, type: 3}
   illustSprite: {fileID: 21300000, guid: 160476aee92b92144aeec85e062861f8, type: 3}
-  battleSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
+  battleSprite: {fileID: 21300000, guid: 8a677a8f83d192d4088a22a14a5afc68, type: 3}
   cardSprite: {fileID: 21300000, guid: bb58baf003434914ab87c90745384b76, type: 3}
   charName: "\uB291\uB300"
   rank: Normal
@@ -2150,8 +2150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 106
-  sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
+  sprite: {fileID: 21300000, guid: fed56d5fb71923f46a24f32903a4159c, type: 3}
+  illustSprite: {fileID: 21300000, guid: 512e1f3a4c544a542b72fe9beddbc168, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   cardSprite: {fileID: 0}
   charName: "\uB0A8\uCABD \uB9C8\uB140"
@@ -2161,7 +2161,7 @@ MonoBehaviour:
   fullAtk: 100
   fullAr: 100
   fullMr: 100
-  isOwning: 1
+  isOwning: 0
   firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
   secondSkillName: "\uC18D\uC774\uAE30"
   isSelected: 0
@@ -2692,8 +2692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 107
-  sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
+  sprite: {fileID: 21300000, guid: fed56d5fb71923f46a24f32903a4159c, type: 3}
+  illustSprite: {fileID: 21300000, guid: 512e1f3a4c544a542b72fe9beddbc168, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   cardSprite: {fileID: 0}
   charName: "\uB3D9\uCABD \uB9C8\uB140\uC758 \uC601\uD63C"
@@ -2703,7 +2703,7 @@ MonoBehaviour:
   fullAtk: 100
   fullAr: 100
   fullMr: 100
-  isOwning: 1
+  isOwning: 0
   firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
   secondSkillName: "\uC18D\uC774\uAE30"
   isSelected: 0
@@ -2899,7 +2899,7 @@ MonoBehaviour:
   LocalNumber: 102
   sprite: {fileID: 21300000, guid: 4332b79404564da409102e60d22e6b89, type: 3}
   illustSprite: {fileID: 21300000, guid: 73b08c401608fca468bd89074a579ca6, type: 3}
-  battleSprite: {fileID: 21300000, guid: 496b4e588c3a1c64f911e6b072edbb94, type: 3}
+  battleSprite: {fileID: 21300000, guid: b60bb3d57c954a845b17db19d4b33aff, type: 3}
   cardSprite: {fileID: 21300000, guid: 42fa98ba500a5ff4c87ddae627af508e, type: 3}
   charName: "\uBC30\uACE0\uD508 \uD638\uB791\uC774"
   rank: Normal
@@ -3335,8 +3335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 104
-  sprite: {fileID: 21300000, guid: f1cd9ee28f41bf14eb03410af57d6222, type: 3}
-  illustSprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
+  sprite: {fileID: 21300000, guid: 251a2fb3d61e79049b9a4018208e3114, type: 3}
+  illustSprite: {fileID: 21300000, guid: 512e1f3a4c544a542b72fe9beddbc168, type: 3}
   battleSprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
   cardSprite: {fileID: 0}
   charName: "\uC9C4\uC800 \uC7A5\uAD70\uC758 \uBCD1\uC0AC"
@@ -3346,7 +3346,7 @@ MonoBehaviour:
   fullAtk: 100
   fullAr: 100
   fullMr: 100
-  isOwning: 1
+  isOwning: 0
   firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
   secondSkillName: "\uC18D\uC774\uAE30"
   isSelected: 0
@@ -3617,8 +3617,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 108
-  sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
+  sprite: {fileID: 21300000, guid: fed56d5fb71923f46a24f32903a4159c, type: 3}
+  illustSprite: {fileID: 21300000, guid: 512e1f3a4c544a542b72fe9beddbc168, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   cardSprite: {fileID: 0}
   charName: "\uBD81\uCABD \uB9C8\uB140"
@@ -3628,7 +3628,7 @@ MonoBehaviour:
   fullAtk: 100
   fullAr: 100
   fullMr: 100
-  isOwning: 1
+  isOwning: 0
   firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
   secondSkillName: "\uC18D\uC774\uAE30"
   isSelected: 0
@@ -3787,8 +3787,8 @@ MonoBehaviour:
   LocalNumber: 105
   sprite: {fileID: 21300000, guid: 31113bd27ad24294f9d241c33bceacfc, type: 3}
   illustSprite: {fileID: 21300000, guid: 4cb4d26ee3356ed4caba037dc1fcd787, type: 3}
-  battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  cardSprite: {fileID: 0}
+  battleSprite: {fileID: 21300000, guid: 355fc26415da8b94b8e306f0f1d2f1fc, type: 3}
+  cardSprite: {fileID: 21300000, guid: 0f66b9484fcd74f46bb54676e3356966, type: 3}
   charName: "\uAC81\uC7C1\uC774 \uC0AC\uC790"
   rank: Normal
   positionType: Atk
@@ -3955,8 +3955,8 @@ MonoBehaviour:
   LocalNumber: 100
   sprite: {fileID: 21300000, guid: 095ae5a434b48504ea9a6ff2a43152d8, type: 3}
   illustSprite: {fileID: 21300000, guid: 9bbfd2beaec0087429558357b1dc4242, type: 3}
-  battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  cardSprite: {fileID: 0}
+  battleSprite: {fileID: 21300000, guid: 354b6da2a9a7e6a46b7972acfa662bc4, type: 3}
+  cardSprite: {fileID: 21300000, guid: 89c1d9053248ed842b97db3c8f78fa7e, type: 3}
   charName: "\uB0A0\uAC1C \uB2EC\uB9B0 \uC6D0\uC22D\uC774"
   rank: Normal
   positionType: Atk
