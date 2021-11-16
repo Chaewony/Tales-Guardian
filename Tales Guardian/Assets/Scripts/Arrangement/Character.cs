@@ -121,7 +121,7 @@ public class Character : MonoBehaviour
             if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myPosType == "Def")
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().myCardSprite;
             }
             else slot[i].SetActive(false);
         }
@@ -135,7 +135,7 @@ public class Character : MonoBehaviour
             if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myPosType == "Atk")
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().myCardSprite;
             }
             else slot[i].SetActive(false);
         }
@@ -149,7 +149,7 @@ public class Character : MonoBehaviour
             if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myPosType == "Sup")
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().myCardSprite;
             }
             else slot[i].SetActive(false);
         }

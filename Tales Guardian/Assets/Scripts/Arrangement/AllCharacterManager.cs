@@ -22,10 +22,14 @@ public class AllCharacterManager : MonoBehaviour
     public CardSlot CardSlot;
     public CardSlot CardSlot1;
 
+    Color defaultColor;
+    public Image fieldColor;
+
     //FieldPrefabs.GetComponent<FieldPrefab>() CharacterPrefabs[i].GetComponent<CharactersPrefab>()
 
     public void Start()
     {
+        defaultColor = fieldColor.color;
         CardSlot = this.gameObject.GetComponent<CardSlot>();
 
         for (int i = 0; i < CharacterPrefabs.Length; i++)
@@ -45,7 +49,7 @@ public class AllCharacterManager : MonoBehaviour
         DrawField();
         SelectCharacterNumber = -1;
         ArrangementCounting();
-        CardSlot1.FillCardSlot();
+        //CardSlot1.FillCardSlot();
     }
 
     public void ArrangementCounting()
@@ -133,7 +137,8 @@ public class AllCharacterManager : MonoBehaviour
             if(AllField[i].sprite != null)
             {
                 AllField[i].sprite = null;
-                AllField[i].color = new Color(1f, 0.45f, 0.45f, 1);
+                //AllField[i].color = new Color(1f, 1f, 1f);
+                AllField[i].color = defaultColor;
             }
         }
     }
