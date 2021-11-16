@@ -22,6 +22,18 @@ public class Character : MonoBehaviour
         {
             allCharacter[i] = GameObject.Find("DDCharacters").transform.GetChild(i).gameObject;
         }
+
+        //실험용 코드
+        for (int i = 0; i < allCharacter.Count; i++)
+        {
+            //모든 캐릭터 이미지들 이미지 슬롯에 넣기
+            if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myLocation == -1)
+            {
+                //Debug.Log(i);
+                slot[i].SetActive(true);
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+            }
+        }
     }
 
     public void UpdateRepresentativeChar(int CharNum)
@@ -31,7 +43,8 @@ public class Character : MonoBehaviour
             allCharacter[i].GetComponent<CharactersPrefab>().IsRepreChar = false;
         }
         allCharacter[CharNum].GetComponent<CharactersPrefab>().IsRepreChar = true;
-        RepresentativeCharacterImage.GetComponent<Image>().sprite = allCharacter[CharNum].GetComponent<CharactersPrefab>().mySprite;
+        //RepresentativeCharacterImage.GetComponent<Image>().sprite = allCharacter[CharNum].GetComponent<CharactersPrefab>().mySprite;
+        RepresentativeCharacterImage.GetComponent<Image>().sprite = allCharacter[CharNum].GetComponent<CharactersPrefab>().myIllustSprite;
         RepresentativeCharacterImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     }
 
