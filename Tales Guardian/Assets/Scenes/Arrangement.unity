@@ -347,6 +347,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &47101008
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +404,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 47101008}
+  CardInform: {fileID: 295222697}
 --- !u!114 &47101011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,6 +661,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &76290658
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +810,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &77568695
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +958,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot5
+  m_Text: 
 --- !u!222 &124253323
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1032,7 +1036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot7
+  m_Text: 
 --- !u!222 &130203691
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1110,7 +1114,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot1
+  m_Text: 
 --- !u!222 &171425066
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1253,6 +1257,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 0}
+  CardInform: {fileID: 0}
 --- !u!114 &185550259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,7 +2164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &295222698
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2344,6 +2349,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &324177783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,7 +2419,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot2
+  m_Text: 
 --- !u!222 &324177786
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3187,6 +3193,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &463857916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,7 +3263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot13
+  m_Text: 
 --- !u!222 &463857919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3495,6 +3502,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 475883220}
+  CardInform: {fileID: 295222697}
 --- !u!114 &475883223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3751,6 +3759,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &556121549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,7 +3904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot12
+  m_Text: 
 --- !u!222 &586825442
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4537,7 +4546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot10
+  m_Text: 
 --- !u!222 &646156229
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4761,7 +4770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot14
+  m_Text: 
 --- !u!222 &677921760
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4826,6 +4835,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 684733728}
+  CardInform: {fileID: 295222697}
 --- !u!114 &684733731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5003,7 +5013,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot3
+  m_Text: 
 --- !u!222 &718345192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5160,6 +5170,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &737395862
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,6 +5863,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &796505448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,6 +5920,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 796505448}
+  CardInform: {fileID: 295222697}
 --- !u!114 &796505451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6164,6 +6177,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &816873958
 GameObject:
   m_ObjectHideFlags: 0
@@ -6467,7 +6481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot9
+  m_Text: 
 --- !u!222 &855585970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7077,7 +7091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot6
+  m_Text: 
 --- !u!222 &912200498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7363,6 +7377,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 977521626}
+  CardInform: {fileID: 295222697}
 --- !u!114 &977521629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8099,6 +8114,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &1105032770
 GameObject:
   m_ObjectHideFlags: 0
@@ -8246,7 +8262,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot15
+  m_Text: 
 --- !u!222 &1135567394
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8403,6 +8419,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &1155982828
 GameObject:
   m_ObjectHideFlags: 0
@@ -9092,6 +9109,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &1272080326
 GameObject:
   m_ObjectHideFlags: 0
@@ -9148,6 +9166,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 1272080326}
+  CardInform: {fileID: 295222697}
 --- !u!114 &1272080329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9714,6 +9733,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 1341300938}
+  CardInform: {fileID: 295222697}
 --- !u!114 &1341300941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9891,7 +9911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 
 --- !u!222 &1352158945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10224,6 +10244,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 1428493114}
+  CardInform: {fileID: 295222697}
 --- !u!114 &1428493119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10364,7 +10385,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot8
+  m_Text: 
 --- !u!222 &1441228890
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10599,6 +10620,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &1476455036
 GameObject:
   m_ObjectHideFlags: 0
@@ -11496,6 +11518,7 @@ MonoBehaviour:
   AllcharacterManager: {fileID: 1829187500}
   SelectCharacterNumber: 0
   ThisField: {fileID: 1642032169}
+  CardInform: {fileID: 295222697}
 --- !u!114 &1642032172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12207,6 +12230,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 0}
 --- !u!1 &1877668907
 GameObject:
   m_ObjectHideFlags: 0
@@ -12636,7 +12660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot4
+  m_Text: 
 --- !u!222 &2005497005
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12714,7 +12738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slot11
+  m_Text: 
 --- !u!222 &2019964018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12949,6 +12973,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &2082812433
 GameObject:
   m_ObjectHideFlags: 0
@@ -13243,6 +13268,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &2094786575
 GameObject:
   m_ObjectHideFlags: 0
@@ -13469,6 +13495,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 0}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
+  CardInform: {fileID: 295222697}
 --- !u!1 &2121743683
 GameObject:
   m_ObjectHideFlags: 0

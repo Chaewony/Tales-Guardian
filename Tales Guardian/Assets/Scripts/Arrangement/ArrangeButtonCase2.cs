@@ -10,6 +10,7 @@ public class ArrangeButtonCase2 : MonoBehaviour
     public GameObject AllcharacterManager;
     public int SelectCharacterNumber;
     public GameObject ThisField;
+    public GameObject CardInform;
 
     public void OnButtonClick()
     {
@@ -52,7 +53,10 @@ public class ArrangeButtonCase2 : MonoBehaviour
     }
     public void FieldFunction(int FieldNumber)
     {
-        if(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber != -1)
+        if(CardInform!=null)
+            CardInform.SetActive(false);
+
+        if (AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber != -1)
         {
             if(CheckSelectedCharIsInField(AllcharacterManager.GetComponent<AllCharacterManager>().SelectCharacterNumber, AllcharacterManager.GetComponent<AllCharacterManager>().CharacterPrefabs) == true)
             {//결과 2.

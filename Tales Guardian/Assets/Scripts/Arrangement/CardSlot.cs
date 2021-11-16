@@ -36,6 +36,8 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
     public GameManager gameManager;
     public GameObject AllCharacterManager;
 
+    public GameObject CardInform;
+
     public void Start()
     {
         character = GameObject.Find("DDCharacters").transform.GetChild(SlotNumber).gameObject;
@@ -43,6 +45,7 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
 	{
+        CardInform.SetActive(true);
         FillCardSlot();
     }
 
