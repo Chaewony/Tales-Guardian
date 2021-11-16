@@ -208,9 +208,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1097.335, y: 599.43384, z: 23.40393}
+    m_Target: {x: 619.4582, y: 264.484, z: 325.01706}
     speed: 2
-    m_Value: {x: 1097.335, y: 599.43384, z: 23.40393}
+    m_Value: {x: 619.4582, y: 264.484, z: 325.01706}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -256,13 +256,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0677566, y: -0.005390423, z: 0.00036621303, w: -0.9976892}
+    m_Target: {x: -0.5928627, y: -0.018841874, z: 0.013877319, w: -0.804966}
     speed: 2
-    m_Value: {x: -0.067756474, y: -0.0053904126, z: 0.00036621233, w: -0.9976873}
+    m_Value: {x: -0.59286153, y: -0.018841837, z: 0.013877291, w: -0.80496436}
   m_Size:
-    m_Target: 523.755
+    m_Target: 196.4737
     speed: 2
-    m_Value: 523.755
+    m_Value: 196.4737
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
-  m_SceneVisActive: 1
+  m_SceneVisActive: 0
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 --- !u!114 &6
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 79
+  controlID: 2012
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -515,7 +515,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff
+      m_ExpandedIDs: 9eedffff10efffff62efffff4ef0ffffcef1ffffdaf2ffffcef3ffff3ef7ffff5af7ffff70f7ffffe6f9ffff6afbfffff4ffffff12470000425f000046790000e67c0000d8950000c8990000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -656,11 +656,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Arrangement
+    - "Assets/\uC77C\uB7EC\uC2A4\uD2B8"
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/Scripts/Arrangement
+  - "Assets/\uC77C\uB7EC\uC2A4\uD2B8"
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\USER\Documents\GitHub\Tales-Guardian\Tales Guardian
   m_LockTracker:
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086370000
+    m_ExpandedIDs: 000000008637000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

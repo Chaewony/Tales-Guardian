@@ -42,7 +42,8 @@ public class TurnCardButton : MonoBehaviour
 			turnCard.ChooseEnemyTurnCard();
 			turnCard.ShowTurnCards();
 			turnCard.PaintEnemyTurnCard();
-			this.image.color = new Color(1, 1, 1, 0.5f);
+			//this.image.color = new Color(1, 1, 1, 0.5f);
+			this.image.color = new Color(0.5f, 0.5f, 1);
 			Invoke("CallSetTurn", 5f);
 
 			turnCard.isSelected = true;

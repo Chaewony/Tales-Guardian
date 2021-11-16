@@ -59,7 +59,7 @@ public class TurnCard : MonoBehaviour
 
     public void PaintEnemyTurnCard()
 	{
-        TurnCardImages[enemyTurnCardIndex].color = new Color(1, 0.5f, 0.5f, 0.5f);
+        TurnCardImages[enemyTurnCardIndex].color = new Color(1, 0.5f, 0.5f);
     }
 
     public void SetTurn()

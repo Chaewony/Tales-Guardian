@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8952c30b15346c49932c3555ad9bfb2, type: 3}
   m_Name: TurnCard1
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 15fd4b0e3306cfd4e9f14f0696c05848, type: 3}
+  sprite: {fileID: 21300000, guid: e7c29497a0250ee408a7ec084384f481, type: 3}
   cardNum: 1
