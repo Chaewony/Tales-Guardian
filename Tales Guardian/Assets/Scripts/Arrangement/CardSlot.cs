@@ -49,8 +49,9 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
     public void FillCardSlot()
     {
         CardImage.color = new Color(1f, 1f, 1f, 1f);
-        CardImage.sprite = character.GetComponent<CharactersPrefab>().mySprite;
-		Name.text = "이름: " + character.GetComponent<CharactersPrefab>().myCharName;
+        //CardImage.sprite = character.GetComponent<CharactersPrefab>().mySprite;
+        CardImage.sprite = character.GetComponent<CharactersPrefab>().myCardSprite;
+        Name.text = "이름: " + character.GetComponent<CharactersPrefab>().myCharName;
 		PositionType.text = "포지션 타입: " + character.GetComponent<CharactersPrefab>().myPosType;
 		FirstSkillName.text = character.GetComponent<CharactersPrefab>().myFirstSkillName;
 		SecondSkillName.text = character.GetComponent<CharactersPrefab>().mySecondSkillName;
@@ -68,7 +69,8 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
 
     public void ResetCardSlot()
     {
-        CardImage.sprite = character.GetComponent<CharactersPrefab>().mySprite;
+        //CardImage.sprite = character.GetComponent<CharactersPrefab>().mySprite;
+        CardImage.sprite = character.GetComponent<CharactersPrefab>().myCardSprite;
         CardImage.color = new Color(1f, 1f, 1f, 0);
         Name.text = "이름";
         PositionType.text = "포지션";

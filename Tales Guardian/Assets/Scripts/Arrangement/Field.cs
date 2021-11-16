@@ -34,7 +34,8 @@ public class Field : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 		}
         else
         {
-            fieldColor.color = new Color(fieldColor.color.r, 0.25f, fieldColor.color.b);
+            //fieldColor.color = new Color(fieldColor.color.r, 0.25f, fieldColor.color.b);
+            fieldColor.color = new Color(1f, 1f, 1f,0.5f);
         }
 	}
 

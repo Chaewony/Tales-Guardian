@@ -103,7 +103,8 @@ public class Character : MonoBehaviour
             if (allCharacter[i].GetComponent<CharactersPrefab>().myIsOwning && allCharacter[i].GetComponent<CharactersPrefab>().myLocation == -1)
             {
                 slot[i].SetActive(true);
-                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+                //charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().mySprite;
+                charSlot[i].sprite = allCharacter[i].GetComponent<CharactersPrefab>().myCardSprite;
             }
         }
     }

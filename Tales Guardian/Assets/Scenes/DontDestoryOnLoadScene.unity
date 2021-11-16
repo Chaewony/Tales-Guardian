@@ -1391,6 +1391,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: ab88d1454528db5408e69ed7057872a0, type: 3}
   illustSprite: {fileID: 21300000, guid: 8c1032b9135282e46867aac6ba43775a, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uCE7C\uB9AC\uB2E4"
   rank: Normal
   positionType: Atk
@@ -1807,6 +1808,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 64fe00c166389ca47850a2f93fd500e3, type: 3}
   illustSprite: {fileID: 21300000, guid: 8df778c321ee59e48825280d04e9c31d, type: 3}
   battleSprite: {fileID: 21300000, guid: d6c1e2039f2a84d41ba64ffc3175bff7, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uBE4C\uB9AC\uB098"
   rank: Normal
   positionType: Atk
@@ -1890,6 +1892,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: dbf0a78319b04684ab1f7780eab7042d, type: 3}
   illustSprite: {fileID: 21300000, guid: 160476aee92b92144aeec85e062861f8, type: 3}
   battleSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
+  cardSprite: {fileID: 21300000, guid: bb58baf003434914ab87c90745384b76, type: 3}
   charName: "\uB291\uB300"
   rank: Normal
   positionType: Atk
@@ -2150,6 +2153,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uB0A8\uCABD \uB9C8\uB140"
   rank: Normal
   positionType: Atk
@@ -2461,9 +2465,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 114
-  sprite: {fileID: 21300000, guid: 50fb5c77f02193745948a5611420443c, type: 3}
-  illustSprite: {fileID: 21300000, guid: 20ce829d17d2b7141b559aac0bb4b263, type: 3}
+  sprite: {fileID: 21300000, guid: 13c40131c1b80214882c0677a7954519, type: 3}
+  illustSprite: {fileID: 21300000, guid: bde25150bfba7e34ebc230edf9c4f535, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 21300000, guid: 76da9b42e1aec684cb420064ba6ea9cc, type: 3}
   charName: "\uB3C4\uB85C\uC2DC"
   rank: Normal
   positionType: Atk
@@ -2544,9 +2549,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 111
-  sprite: {fileID: 21300000, guid: 4208de165db9ec945be000c4f6c7d048, type: 3}
+  sprite: {fileID: 21300000, guid: 7c38e93ead668a14e94b01f7b932f835, type: 3}
   illustSprite: {fileID: 21300000, guid: 2c971e8720066ce4d9c5719bea4a4304, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 21300000, guid: 1f74d721afd9e1e4a8f946c5cd2457f4, type: 3}
   charName: "\uC591\uCCA0 \uB098\uBB34\uAFBC"
   rank: Normal
   positionType: Atk
@@ -2613,9 +2619,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 115
-  sprite: {fileID: 21300000, guid: 0dd096c7ab4dba44cb1112ff168301f0, type: 3}
+  sprite: {fileID: 21300000, guid: 7eced0abd6bec9244b5b503297012eae, type: 3}
   illustSprite: {fileID: 21300000, guid: a4b4076e32f51514882fd3f7d054dd1d, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 21300000, guid: a0579bfd27d9c4847b54c9fbab2925c2, type: 3}
   charName: "\uD0C0\uB77D\uD55C \uB3C4\uB85C\uC2DC"
   rank: Normal
   positionType: Atk
@@ -2688,6 +2695,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uB3D9\uCABD \uB9C8\uB140\uC758 \uC601\uD63C"
   rank: Normal
   positionType: Atk
@@ -2754,9 +2762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 113
-  sprite: {fileID: 21300000, guid: 737b6e8cdd76cc948b756c676cdd8807, type: 3}
+  sprite: {fileID: 21300000, guid: d931b4b8a344af947af13a656838ea3f, type: 3}
   illustSprite: {fileID: 21300000, guid: 97ce042dec3431f48b35f9398da8714a, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 21300000, guid: 25cbc1921f374fc4f88d9232ee48bbdf, type: 3}
   charName: "\uD5C8\uC218\uC544\uBE44"
   rank: Normal
   positionType: Atk
@@ -2888,9 +2897,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 102
-  sprite: {fileID: 21300000, guid: ab88d1454528db5408e69ed7057872a0, type: 3}
+  sprite: {fileID: 21300000, guid: 4332b79404564da409102e60d22e6b89, type: 3}
   illustSprite: {fileID: 21300000, guid: 73b08c401608fca468bd89074a579ca6, type: 3}
   battleSprite: {fileID: 21300000, guid: 496b4e588c3a1c64f911e6b072edbb94, type: 3}
+  cardSprite: {fileID: 21300000, guid: 42fa98ba500a5ff4c87ddae627af508e, type: 3}
   charName: "\uBC30\uACE0\uD508 \uD638\uB791\uC774"
   rank: Normal
   positionType: Atk
@@ -3325,9 +3335,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 104
-  sprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
+  sprite: {fileID: 21300000, guid: f1cd9ee28f41bf14eb03410af57d6222, type: 3}
   illustSprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
   battleSprite: {fileID: 21300000, guid: 5c3e5b2051d0ac64eb75ff6adc832e9d, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uC9C4\uC800 \uC7A5\uAD70\uC758 \uBCD1\uC0AC"
   rank: Normal
   positionType: Atk
@@ -3519,9 +3530,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 108
-  sprite: {fileID: 21300000, guid: eba9a53a8e340b14aae1d374c52c52be, type: 3}
+  sprite: {fileID: 21300000, guid: af950893cdccc1e48905dd5d4cb438c5, type: 3}
   illustSprite: {fileID: 21300000, guid: 39cf72842f4283e418192bd8570c5818, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 21300000, guid: fb7f0123cf91eeb418c33d49283e0c48, type: 3}
   charName: "\uC11C\uCABD \uB9C8\uB140"
   rank: Normal
   positionType: Atk
@@ -3608,6 +3620,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
   illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uBD81\uCABD \uB9C8\uB140"
   rank: Normal
   positionType: Atk
@@ -3702,9 +3715,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 112
-  sprite: {fileID: 21300000, guid: d91dd21262de5ef44b1f5f0081a1ce07, type: 3}
+  sprite: {fileID: 21300000, guid: 89fe56362fbe6fb4ea29e4881cb6a119, type: 3}
   illustSprite: {fileID: 21300000, guid: f14d2d7159209064b85cd6d0dab67887, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 21300000, guid: ccb5a70a7073ecc4dbd2c7e1949eeeb7, type: 3}
   charName: "\uC624\uC988"
   rank: Normal
   positionType: Atk
@@ -3774,6 +3788,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 31113bd27ad24294f9d241c33bceacfc, type: 3}
   illustSprite: {fileID: 21300000, guid: 4cb4d26ee3356ed4caba037dc1fcd787, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uAC81\uC7C1\uC774 \uC0AC\uC790"
   rank: Normal
   positionType: Atk
@@ -3941,6 +3956,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 095ae5a434b48504ea9a6ff2a43152d8, type: 3}
   illustSprite: {fileID: 21300000, guid: 9bbfd2beaec0087429558357b1dc4242, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uB0A0\uAC1C \uB2EC\uB9B0 \uC6D0\uC22D\uC774"
   rank: Normal
   positionType: Atk

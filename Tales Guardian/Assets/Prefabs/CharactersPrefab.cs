@@ -14,6 +14,8 @@ public class CharactersPrefab : MonoBehaviour
     [SerializeField]
     private Sprite battleSprite;
     [SerializeField]
+    private Sprite cardSprite;
+    [SerializeField]
     private string charName;
     [SerializeField]
     private string rank; //등급
@@ -66,6 +68,7 @@ public class CharactersPrefab : MonoBehaviour
     public Sprite mySprite { get => sprite; }
     public Sprite myIllustSprite { get => illustSprite; }
     public Sprite mybattleSprite { get => battleSprite; }
+    public Sprite myCardSprite { get => cardSprite; }
     public string myCharName { get => charName; }
     public string myPosType { get => positionType; }
     public float myHp { get => fullHp; set { fullHp = value; } }
