@@ -23,8 +23,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 910, y: 442}
-  m_MaxSize: {x: 22005, y: 10021}
+  m_MinSize: {x: 911, y: 442}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
   controlID: -1
 --- !u!114 &2
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -260,9 +260,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.024305657, y: 0.009594188, z: -0.00023319956, w: -0.9996585}
   m_Size:
-    m_Target: 343.38144
+    m_Target: 492.89563
     speed: 2
-    m_Value: 343.38144
+    m_Value: 492.89563
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -396,8 +396,8 @@ MonoBehaviour:
     y: 437
     width: 732
     height: 510
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -454,10 +454,10 @@ MonoBehaviour:
     y: 0
     width: 284
     height: 947
-  m_MinSize: {x: 202, y: 321}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 342}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 57082
+  controlID: 274
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -513,9 +513,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a8370000
+      m_SelectedIDs: ac370000
       m_LastClickedID: 0
-      m_ExpandedIDs: d026fffffc27ffff3629ffffde2affff302bffff6c2bffff162cffff3843ffff1a44ffffc444ffff4245ffff4246ffff5a49ffff3c4afffffc53ffffac55ffff4e56ffff066bffff086bffff0a6bffff0e6bffff8c6fffff3871ffffe271ffff5c74ffffc278ffffd682ffff0486ffffa286ffff1687ffffe887ffff288cffff488dffffd08effff109cffff309cffff4a9cffff30a4ffff00a6ffff00b8ffff96bbffffeabfffffccccffff66cdffffeecfffffeedbffff1ce1ffff22e8ffff2eebffffc0ecffff6cf5ffffa8f6ffffa0faffff4afbfffff4ffffff583c0000823c0000c2450000ec450000fe7200002873000054740000c4a7000088a9000046360100303f01007c400100f440010008410100e24201002a69010066690100b2690100f06d0100326e01003c6f0100b46f01006aa501008ea5010054cb01009acb0100d0d5010086df0100f612020096130200f218020092190200bc190200c81f020068200200aa200200c4580200ee58020074590200565b0200905b02006e5c0200ea6c0200146d02007c6f0200ac710200d6710200a4940200ce94020036970200b4990200de99020090b20200bab20200a4c60200cec6020054c7020036c9020070c902004eca0200f8d5020022d60200c4d80200a2d902007cda020096da0200a2da0200d6da0200fada020024db020028db02003cdb020050db02005cdb020070db02009edb0200aadb0200e8db020012dc02003edc02004adc020064dc0200acdc0200b6dc0200cadc02000edd02002add020046dd020072dd02008cdd020094dd0200c6dd0200fcdd02001cde020096de0200a4de0200acde0200d2de0200eade0200fede02004823030072230300f2270300303103001e40030048400300b0420300c8440300f24403002a450300784503005a4703009447030062480300
+      m_ExpandedIDs: daf5ffff1cf9ffff6afbffff944a0000be4a0000f64a00002e4d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -656,11 +656,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\USER\Documents\GitHub\Tales-Guardian\Tales Guardian
   m_LockTracker:
@@ -722,8 +722,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a8370000
-    m_LastClickedInstanceID: 14248
+    m_SelectedInstanceIDs: ac370000
+    m_LastClickedInstanceID: 14252
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 2cd8ffffc03a0000743b0000e035000062390000443e0000e837000028a00000663a0000b29f0000b89f0000be9f0000d435000094380000ec430000444600007c460000be5d0000de3800002e3d0000d8390000de3d00006a3600008e36000062360000027a0000b86201003039000060b4010000000000928f020004370000d8360000c636000072400000444800003c38000032a70000
     m_RenameOverlay:
@@ -772,8 +772,8 @@ MonoBehaviour:
     y: 0
     width: 394
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

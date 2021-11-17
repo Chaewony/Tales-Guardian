@@ -40,11 +40,11 @@ public class Character : MonoBehaviour
 
     public void UpdateRepresentativeChar(int CharNum)
     {
-        for (int i = 0; i < allCharacter.Count; i++)
-        {
-            allCharacter[i].GetComponent<CharactersPrefab>().IsRepreChar = false;
-        }
-        allCharacter[CharNum].GetComponent<CharactersPrefab>().IsRepreChar = true;
+		for (int i = 0; i < allCharacter.Count; i++)
+		{
+			allCharacter[i].GetComponent<CharactersPrefab>().IsRepreChar = false;
+		}
+		allCharacter[CharNum].GetComponent<CharactersPrefab>().IsRepreChar = true;
         //RepresentativeCharacterImage.GetComponent<Image>().sprite = allCharacter[CharNum].GetComponent<CharactersPrefab>().mySprite;
         RepresentativeCharacterImage.GetComponent<Image>().sprite = allCharacter[CharNum].GetComponent<CharactersPrefab>().myIllustSprite;
         RepresentativeCharacterImage.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
