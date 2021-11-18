@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Char15
   m_EditorClassIdentifier: 
   LocalNumber: 115
-  sprite: {fileID: 21300000, guid: a05c7771a6422e04cb2e9df89e6a5d7d, type: 3}
+  sprite: {fileID: 21300000, guid: 7eced0abd6bec9244b5b503297012eae, type: 3}
   illustSprite: {fileID: 0}
   battleSprite: {fileID: 0}
   charName: "\uD0C0\uB77D\uD55C \uB3C4\uB85C\uC2DC"

@@ -50,10 +50,10 @@ public class StageSelectionButton : MonoBehaviour, IPointerEnterHandler, IPointe
             TargetImage[i].sprite = AllCharacter.GetComponent<AllCharacters>().allCharacter[StageEnemyInfo.StageEnemysIndex[i]].mySprite;
             TargetImage[i].color = new Color(charSlot[i].color.r, charSlot[i].color.g, charSlot[i].color.b, 1.0f);
         }
-        for(int i = StageEnemyInfo.StageEnemysIndex.Length; i < 5; i++)
+        /*for(int i = StageEnemyInfo.StageEnemysIndex.Length; i < 4; i++)
         {
             TargetImage[i].sprite = null;
-        }
+        }*/
     }
 
     public void SetIsSelected(int SelectStageNumber)

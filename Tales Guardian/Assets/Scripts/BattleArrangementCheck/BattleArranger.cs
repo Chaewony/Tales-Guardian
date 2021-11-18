@@ -46,7 +46,7 @@ public class BattleArranger : MonoBehaviour
             if (allField[i].GetComponent<FieldPrefab>().myArrangedCharIndex != -1)
             {
                 field[i].color = new Color(1, 1, 1);
-                field[i].sprite = allCharacter[allField[i].GetComponent<FieldPrefab>().myArrangedCharIndex].GetComponent<CharactersPrefab>().mybattleSprite;
+                field[i].sprite = allCharacter[allField[i].GetComponent<FieldPrefab>().myArrangedCharIndex].GetComponent<CharactersPrefab>().mySprite;
             }
         }
     }

@@ -44,9 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalNumber: 101
-  sprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
+  sprite: {fileID: 21300000, guid: 4332b79404564da409102e60d22e6b89, type: 3}
   illustSprite: {fileID: 21300000, guid: e13c5f36f8c13454aadb235d2a0466a7, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
+  cardSprite: {fileID: 0}
   charName: "\uB0A0\uAC1C \uB2EC\uB9B0 \uC6D0\uC22D\uC774"
   rank: Normal
   positionType: Atk
@@ -62,5 +63,10 @@ MonoBehaviour:
   HaveManyCard: 0
   EnhanceStep: 0
   Location: -1
+  IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
+  firstSkillSprite: {fileID: 0}
+  SecondSkillSprite: {fileID: 0}
+  firstSkillDamage: 0
+  SecondSkillDamage: 0

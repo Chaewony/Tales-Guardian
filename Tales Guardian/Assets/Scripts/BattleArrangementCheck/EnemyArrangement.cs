@@ -28,7 +28,7 @@ public class EnemyArrangement : MonoBehaviour
         }
         for (int i = 0;i<EnemyFields.Length;i++)
         {
-            EnemyFields[i].color = new Color(0.77f, 0.51f, 1f);
+            EnemyFields[i].color = new Color(0.55f, 0.55f, 0.55f, 0.13f);
         }
         CheckStage();
         SetImage();

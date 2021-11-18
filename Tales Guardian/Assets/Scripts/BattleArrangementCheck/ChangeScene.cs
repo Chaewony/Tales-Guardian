@@ -36,7 +36,7 @@ public class ChangeScene : MonoBehaviour
         switch (scenebuttontype)
         {
             case SceneButtonType.BattleArrangeButton:
-                SceneManager.LoadScene("BattleArrangementCheck");
+                SceneManager.LoadScene("Arrangement");
                 Debug.Log("배치로");
                 break;
             case SceneButtonType.CloseButton:              
