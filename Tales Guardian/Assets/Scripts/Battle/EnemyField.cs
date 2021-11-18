@@ -29,6 +29,8 @@ public class EnemyField : MonoBehaviour
 	//이펙트 부분
 	public SkillEffect skillEffect;
 	public Transform SkillEffectTr;
+
+	private int skillButtonType=1;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -49,6 +51,11 @@ public class EnemyField : MonoBehaviour
 				selectedSecondTarget[i].fieldColor.color = new Color(1, 0.75f, 0.5f);
 			}
 		}
+	}
+
+	public void setSkillType(int num)
+	{
+		skillButtonType = num;
 	}
 
 	public void SetSecondTarget(int[] secondTarget)
@@ -237,7 +244,11 @@ public class EnemyField : MonoBehaviour
 
 			//이펙트 처리
 			SkillEffectTr.position = new Vector3(this.transform.position.x, SkillEffectTr.transform.position.y, this.transform.position.z); //이펙트 나타날 위치 조정
-			StartCoroutine(skillEffect.StartAnimation0());
+
+			if(skillButtonType==1) StartCoroutine(skillEffect.StartAnimation1());
+			if(skillButtonType==2) StartCoroutine(skillEffect.StartAnimation2());
+			if(skillButtonType==3) StartCoroutine(skillEffect.StartAnimation3());
+			if(skillButtonType==4) StartCoroutine(skillEffect.StartAnimation4());
 
 			Invoke("Delay", 1f);
 			Invoke("Attack", 2f);
