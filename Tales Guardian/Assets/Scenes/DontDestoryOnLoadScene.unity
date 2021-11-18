@@ -2172,8 +2172,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 0}
-  SecondSkillSprite: {fileID: 0}
+  firstSkillSprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!1 &2945318034021011141
@@ -2714,8 +2714,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 0}
-  SecondSkillSprite: {fileID: 0}
+  firstSkillSprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!4 &4844860602392374205
@@ -3639,8 +3639,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 0}
-  SecondSkillSprite: {fileID: 0}
+  firstSkillSprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!4 &7551846909483600591
@@ -3975,8 +3975,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 21300000, guid: 095ae5a434b48504ea9a6ff2a43152d8, type: 3}
-  SecondSkillSprite: {fileID: 21300000, guid: 095ae5a434b48504ea9a6ff2a43152d8, type: 3}
+  firstSkillSprite: {fileID: 21300000, guid: 28bbf6704835e294da63c8e1a51ec694, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: 0c6d7c17facfb4e4cb8c22b33e778131, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!4 &8290385926139665041

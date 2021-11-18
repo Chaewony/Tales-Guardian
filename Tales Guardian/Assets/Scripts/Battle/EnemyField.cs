@@ -26,6 +26,9 @@ public class EnemyField : MonoBehaviour
 
 	public EnemyMove enemyMove;
 
+	//이펙트 부분
+	public SkillEffect skillEffect;
+	public Transform SkillEffectTr;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -121,6 +124,8 @@ public class EnemyField : MonoBehaviour
 				}
 			}
 		}
+
+		
 	}
 	private void OnMouseExit()
 	{
@@ -229,6 +234,11 @@ public class EnemyField : MonoBehaviour
 			}
 			//선택 이후
 			battleManager.canAttack = false;
+
+			//이펙트 처리
+			SkillEffectTr.position = new Vector3(this.transform.position.x, SkillEffectTr.transform.position.y, this.transform.position.z); //이펙트 나타날 위치 조정
+			StartCoroutine(skillEffect.StartAnimation0());
+
 			Invoke("Delay", 1f);
 			Invoke("Attack", 2f);
 			Invoke("Initiate", 3f);

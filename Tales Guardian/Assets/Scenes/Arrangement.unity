@@ -343,8 +343,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -657,8 +657,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -806,8 +806,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -1924,7 +1924,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 394, y: -150}
-  m_SizeDelta: {x: 110, y: 110}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249582833
 MonoBehaviour:
@@ -2015,7 +2015,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4208de165db9ec945be000c4f6c7d048, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bde878a79bac8454794c8095c217df22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2422,8 +2422,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -3266,8 +3266,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -3832,8 +3832,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -5169,8 +5169,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -5862,8 +5862,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -6176,8 +6176,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -8113,8 +8113,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -8418,8 +8418,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -9182,8 +9182,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -10693,8 +10693,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -12151,7 +12151,7 @@ MonoBehaviour:
   SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
-  CardInform: {fileID: 0}
+  CardInform: {fileID: 295222697}
 --- !u!1 &1877668907
 GameObject:
   m_ObjectHideFlags: 0
@@ -12968,8 +12968,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -13263,8 +13263,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -13490,8 +13490,8 @@ MonoBehaviour:
   PositionType: {fileID: 1897526544}
   FirstSkillName: {fileID: 1667320758}
   SecondSkillName: {fileID: 2045218564}
-  FirstSkillImage: {fileID: 0}
-  SecondSkillImage: {fileID: 0}
+  FirstSkillImage: {fileID: 249582835}
+  SecondSkillImage: {fileID: 2138778804}
   gameManager: {fileID: 1071961445}
   AllCharacterManager: {fileID: 1829187500}
   CardInform: {fileID: 295222697}
@@ -13694,7 +13694,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 661, y: -150}
-  m_SizeDelta: {x: 110, y: 110}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2138778802
 MonoBehaviour:
