@@ -84,8 +84,8 @@ public class CardSlot : MonoBehaviour, IPointerClickHandler
         AR.text = " ";
         MR.text = " ";
         FirstSkillImage.sprite = character.GetComponent<CharactersPrefab>().myfirstSkillSprite;
-        FirstSkillImage.color = new Color(1f, 1f, 1f, 0);
+        FirstSkillImage.color = new Color(1f, 1f, 1f, 1f);
         SecondSkillImage.sprite = character.GetComponent<CharactersPrefab>().mySecondSkillSprite;
-        SecondSkillImage.color = new Color(1f, 1f, 1f, 0);
+        SecondSkillImage.color = new Color(1f, 1f, 1f, 1f);
     }
 }

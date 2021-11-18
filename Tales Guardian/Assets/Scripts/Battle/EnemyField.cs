@@ -242,14 +242,6 @@ public class EnemyField : MonoBehaviour
 			//선택 이후
 			battleManager.canAttack = false;
 
-			//이펙트 처리
-			SkillEffectTr.position = new Vector3(this.transform.position.x, SkillEffectTr.transform.position.y, this.transform.position.z); //이펙트 나타날 위치 조정
-
-			if(skillButtonType==1) StartCoroutine(skillEffect.StartAnimation1());
-			if(skillButtonType==2) StartCoroutine(skillEffect.StartAnimation2());
-			if(skillButtonType==3) StartCoroutine(skillEffect.StartAnimation3());
-			if(skillButtonType==4) StartCoroutine(skillEffect.StartAnimation4());
-
 			Invoke("Delay", 1f);
 			Invoke("Attack", 2f);
 			Invoke("Initiate", 3f);
@@ -262,6 +254,15 @@ public class EnemyField : MonoBehaviour
 
 	private void Attack()
 	{
+		
+
+		//이펙트 처리
+		SkillEffectTr.position = new Vector3(this.transform.position.x, SkillEffectTr.transform.position.y, this.transform.position.z); //이펙트 나타날 위치 조정
+
+		if (skillButtonType == 1) StartCoroutine(skillEffect.StartAnimation1());
+		if (skillButtonType == 2) StartCoroutine(skillEffect.StartAnimation2());
+		if (skillButtonType == 3) StartCoroutine(skillEffect.StartAnimation3());
+		if (skillButtonType == 4) StartCoroutine(skillEffect.StartAnimation4());
 		//첫번째 타겟에 공격
 		for (int i = 0; i < battleManager.enemySquad.Count; i++)
 		{

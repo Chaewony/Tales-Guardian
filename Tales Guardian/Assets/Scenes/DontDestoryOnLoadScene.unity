@@ -1808,7 +1808,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 64fe00c166389ca47850a2f93fd500e3, type: 3}
   illustSprite: {fileID: 21300000, guid: 8df778c321ee59e48825280d04e9c31d, type: 3}
   battleSprite: {fileID: 21300000, guid: d151cf7a86885a5499512e71951a2aa6, type: 3}
-  cardSprite: {fileID: 21300000, guid: 990593944f05dc34697546fc11c38696, type: 3}
+  cardSprite: {fileID: 21300000, guid: 6c1f09dc51cd1e84b8d3b3c828d5c750, type: 3}
   charName: "\uBE4C\uB9AC\uB098"
   rank: Normal
   positionType: Sup
@@ -1827,8 +1827,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 21300000, guid: 64fe00c166389ca47850a2f93fd500e3, type: 3}
-  SecondSkillSprite: {fileID: 21300000, guid: 64fe00c166389ca47850a2f93fd500e3, type: 3}
+  firstSkillSprite: {fileID: 21300000, guid: e17fa995e713226438d5706624538ce2, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: 9786a3ea39f760b4b9287ad7839cea32, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!4 &1756370189537367045
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: dbf0a78319b04684ab1f7780eab7042d, type: 3}
   illustSprite: {fileID: 21300000, guid: 160476aee92b92144aeec85e062861f8, type: 3}
   battleSprite: {fileID: 21300000, guid: 8a677a8f83d192d4088a22a14a5afc68, type: 3}
-  cardSprite: {fileID: 21300000, guid: bb58baf003434914ab87c90745384b76, type: 3}
+  cardSprite: {fileID: 21300000, guid: 4db103c4765eefb4ba4022e3a9050c20, type: 3}
   charName: "\uB291\uB300"
   rank: Normal
   positionType: Atk
@@ -1911,8 +1911,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 21300000, guid: 6cbfa51d77c84284bb71f4c5163e90d5, type: 3}
-  SecondSkillSprite: {fileID: 21300000, guid: 6cbfa51d77c84284bb71f4c5163e90d5, type: 3}
+  firstSkillSprite: {fileID: 21300000, guid: ffccc427d2e977b448671b2306bdfcf5, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: 91b3391f8cca0ba44aa154be83848ede, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!114 &1925669447235596681
@@ -2552,7 +2552,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 7c38e93ead668a14e94b01f7b932f835, type: 3}
   illustSprite: {fileID: 21300000, guid: 2c971e8720066ce4d9c5719bea4a4304, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  cardSprite: {fileID: 21300000, guid: 1f74d721afd9e1e4a8f946c5cd2457f4, type: 3}
+  cardSprite: {fileID: 21300000, guid: 414b654fe245fda4497acd90bf0d37d5, type: 3}
   charName: "\uC591\uCCA0 \uB098\uBB34\uAFBC"
   rank: Normal
   positionType: Def
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 7eced0abd6bec9244b5b503297012eae, type: 3}
   illustSprite: {fileID: 21300000, guid: a4b4076e32f51514882fd3f7d054dd1d, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  cardSprite: {fileID: 21300000, guid: a0579bfd27d9c4847b54c9fbab2925c2, type: 3}
+  cardSprite: {fileID: 21300000, guid: dc8cf2f319983574e9bce67843a1bde1, type: 3}
   charName: "\uD0C0\uB77D\uD55C \uB3C4\uB85C\uC2DC"
   rank: Normal
   positionType: Atk
@@ -2765,7 +2765,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: d931b4b8a344af947af13a656838ea3f, type: 3}
   illustSprite: {fileID: 21300000, guid: 97ce042dec3431f48b35f9398da8714a, type: 3}
   battleSprite: {fileID: 21300000, guid: 9bf34608699f2034e813bfe48a491348, type: 3}
-  cardSprite: {fileID: 21300000, guid: 25cbc1921f374fc4f88d9232ee48bbdf, type: 3}
+  cardSprite: {fileID: 21300000, guid: b8a10db53d596cd46823bf0c0013e9ed, type: 3}
   charName: "\uD5C8\uC218\uC544\uBE44"
   rank: Normal
   positionType: Atk
@@ -2919,8 +2919,8 @@ MonoBehaviour:
   IsRepresentativeCharacter: 0
   firstSkillSecondTargetRange: 0100000003000000
   secondSkillSecondTargetRange: 03000000
-  firstSkillSprite: {fileID: 21300000, guid: e9194222a76f0fb478273041a23f3711, type: 3}
-  SecondSkillSprite: {fileID: 21300000, guid: e9194222a76f0fb478273041a23f3711, type: 3}
+  firstSkillSprite: {fileID: 21300000, guid: 53678c6a3f5fe714d99a77bac91802a9, type: 3}
+  SecondSkillSprite: {fileID: 21300000, guid: 49d8fbd556f0fb240a1d65ec8ea9a2c0, type: 3}
   firstSkillDamage: 0
   SecondSkillDamage: 0
 --- !u!4 &5037173309536881461
@@ -3788,7 +3788,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 31113bd27ad24294f9d241c33bceacfc, type: 3}
   illustSprite: {fileID: 21300000, guid: 4cb4d26ee3356ed4caba037dc1fcd787, type: 3}
   battleSprite: {fileID: 21300000, guid: 355fc26415da8b94b8e306f0f1d2f1fc, type: 3}
-  cardSprite: {fileID: 21300000, guid: 0f66b9484fcd74f46bb54676e3356966, type: 3}
+  cardSprite: {fileID: 21300000, guid: 3ac6a90b24e3ebb4d862ef6c78ec6b2a, type: 3}
   charName: "\uAC81\uC7C1\uC774 \uC0AC\uC790"
   rank: Normal
   positionType: Def
@@ -3956,7 +3956,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 095ae5a434b48504ea9a6ff2a43152d8, type: 3}
   illustSprite: {fileID: 21300000, guid: 9bbfd2beaec0087429558357b1dc4242, type: 3}
   battleSprite: {fileID: 21300000, guid: 354b6da2a9a7e6a46b7972acfa662bc4, type: 3}
-  cardSprite: {fileID: 21300000, guid: 89c1d9053248ed842b97db3c8f78fa7e, type: 3}
+  cardSprite: {fileID: 21300000, guid: 6ade293b5b0c76b4e8a9e7b1742d8015, type: 3}
   charName: "\uB0A0\uAC1C \uB2EC\uB9B0 \uC6D0\uC22D\uC774"
   rank: Normal
   positionType: Atk
