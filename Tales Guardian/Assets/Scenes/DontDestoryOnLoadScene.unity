@@ -1817,8 +1817,8 @@ MonoBehaviour:
   fullAr: 100
   fullMr: 100
   isOwning: 1
-  firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
-  secondSkillName: "\uC18D\uC774\uAE30"
+  firstSkillName: "\uD30C\uB2E4\uB2ED!"
+  secondSkillName: "\uAF2C\uB07C\uC624!"
   isSelected: 0
   currentHp: 100
   HaveManyCard: 0
@@ -1901,8 +1901,8 @@ MonoBehaviour:
   fullAr: 100
   fullMr: 100
   isOwning: 1
-  firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
-  secondSkillName: "\uC18D\uC774\uAE30"
+  firstSkillName: "\uC5B4\uB460\uC0AC\uB0E5"
+  secondSkillName: "\uD558\uC6B8\uB9C1"
   isSelected: 0
   currentHp: 100
   HaveManyCard: 0
@@ -2909,8 +2909,8 @@ MonoBehaviour:
   fullAr: 100
   fullMr: 100
   isOwning: 1
-  firstSkillName: "\uC6B8\uBD80\uC9D6\uAE30"
-  secondSkillName: "\uC18D\uC774\uAE30"
+  firstSkillName: "\uC6B0\uB85C\uC9C0\uD0DD"
+  secondSkillName: "\uACAC\uC778\uBD88\uBC1C"
   isSelected: 1
   currentHp: 100
   HaveManyCard: 0
