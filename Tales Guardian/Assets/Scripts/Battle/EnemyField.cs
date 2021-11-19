@@ -244,7 +244,7 @@ public class EnemyField : MonoBehaviour
 
 			Invoke("Delay", 1f);
 			Invoke("Attack", 2f);
-			Invoke("Initiate", 3f);
+			Invoke("Initiate", 4f);
 			//enemyMove.Move();
 			//Attack();
 			//Initiate();

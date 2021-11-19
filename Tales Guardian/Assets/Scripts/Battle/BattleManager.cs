@@ -107,7 +107,7 @@ public class BattleManager : MonoBehaviour
             //이동 "선택"
             //canAttack = false;
             if (!isThrown) DiceButton.SetActive(true);
-            remainMoveTimeText.text = " ";
+            remainMoveTimeText.text = "주사위 굴리기";
             if (diceScript.clickedDice)
                 remainMoveTimeText.text = "남은 이동 횟수: " + remainMoveTime;
             Debug.Log("플레이어 이동선택 및 이동");
