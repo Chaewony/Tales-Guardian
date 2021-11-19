@@ -42,6 +42,7 @@ public class BattleManager : MonoBehaviour
     public int[] dice;
     public int remainMoveTime;
     public GameObject DiceButton;
+    public Dice diceScript;
     public bool isThrown;
     public Text remainMoveTimeText;
 
@@ -106,7 +107,9 @@ public class BattleManager : MonoBehaviour
             //이동 "선택"
             //canAttack = false;
             if (!isThrown) DiceButton.SetActive(true);
-            remainMoveTimeText.text = "남은 이동 횟수: " + remainMoveTime;
+            remainMoveTimeText.text = " ";
+            if (diceScript.clickedDice)
+                remainMoveTimeText.text = "남은 이동 횟수: " + remainMoveTime;
             Debug.Log("플레이어 이동선택 및 이동");
         }
 
@@ -116,6 +119,7 @@ public class BattleManager : MonoBehaviour
             //공격 "선택" + 에너미 이동 + 공격 "실행"
             //하나의 스크립트가 아니라 필드 각각의 스크립트가 있어 한 함수만 불러와주기 까다로움
             //EnemyField 스크립트 참고
+            remainMoveTimeText.text = "공격 턴입니다";
             Debug.Log("플레이어 공격턴, 플레이어 공격선택 + 에너미 이동 + 플레이어 공격실행 ");
         }
 
@@ -123,6 +127,7 @@ public class BattleManager : MonoBehaviour
         {
             //플레이어의 이동은 바로 화면에 출력되니 신경쓰지 말고 에너미 공격을 하면 됨
             isThrown = false; //주사위
+            diceScript.clickedDice = false;
             remainMoveTimeText.text = " ";
             enemyAttack.EnemyAttackChoose();
         }
