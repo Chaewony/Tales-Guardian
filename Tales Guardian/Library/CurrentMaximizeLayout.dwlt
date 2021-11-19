@@ -23,7 +23,7 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 908, y: 342}
+  m_MinSize: {x: 910, y: 342}
   m_MaxSize: {x: 22005, y: 10021}
   vertical: 0
   controlID: -1
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -140,8 +140,8 @@ MonoBehaviour:
     y: 0
     width: 732
     height: 947
-  m_MinSize: {x: 201, y: 342}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 321}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
   controlID: -1
 --- !u!114 &4
@@ -163,8 +163,8 @@ MonoBehaviour:
     y: 0
     width: 732
     height: 525
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -208,9 +208,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 306, y: 777.39, z: 0}
+    m_Target: {x: 840.6863, y: 87.64705, z: -47.57373}
     speed: 2
-    m_Value: {x: 306.00003, y: 777.39, z: 0}
+    m_Value: {x: 840.6863, y: 87.64705, z: -47.57373}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -258,11 +258,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.11843818, y: -0.039612815, z: 0.004728794, w: -0.9921846}
     speed: 2
-    m_Value: {x: -0.118435256, y: -0.03961184, z: 0.004728677, w: -0.9921601}
+    m_Value: {x: -0.11843818, y: -0.039612815, z: 0.004728794, w: -0.9921846}
   m_Size:
-    m_Target: 66.58533
+    m_Target: 550.27234
     speed: 2
-    m_Value: 66.58535
+    m_Value: 526.5764
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 29406
+  m_LastSelectedObjectID: 25956
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -556,10 +556,10 @@ MonoBehaviour:
     y: 0
     width: 284
     height: 947
-  m_MinSize: {x: 200, y: 321}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 342}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 8169
+  controlID: 4673
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -579,8 +579,8 @@ MonoBehaviour:
     y: 0
     width: 284
     height: 700
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -615,9 +615,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 843b0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bad8ffff96dbffffe4dbffffb0deffff5ae0ffff7ae2ffff02e4ffffeee5ffff3ee7ffff54e8ffff98e9ffffb4f1fffff0f3ffffb4f4ffff92f7ffff9af9ffffa2faffff4afbffff5a55000084550000605a00008a5a00009a710000ec7c0000da7d0000307e0000a87e00001a9b0000d69c000088b1000044b3000022d100005a030100e003010052040100a0110100ac110100b8110100d611010022120100421201008c120100dc1201004e1301005a140100ee14010062150100
+      m_ExpandedIDs: 02e9ffffb8e9ffff60ecffff06efffffdaefffff0ef4ffff72f5ffff32f6ffffe4f9ffffacfaffff6afbffffe0390000d23a0000604f0000bc4f0000ae500000ce520000c0530000b8650000aa6600009468000086690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -660,8 +660,8 @@ MonoBehaviour:
     y: 700
     width: 284
     height: 247
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -758,11 +758,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Battle
+    - "Assets/\uC77C\uB7EC\uC2A4\uD2B82"
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/Scripts/Battle
+  - "Assets/\uC77C\uB7EC\uC2A4\uD2B82"
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\USER\Documents\GitHub\Tales-Guardian\Tales Guardian
   m_LockTracker:
@@ -771,7 +771,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000203b0000223b0000243b000000ca9a3b
+    m_ExpandedIDs: 00000000ac380000ae380000b038000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -799,7 +799,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000203b0000223b0000243b000000ca9a3b
+    m_ExpandedIDs: 00000000ac380000ae380000b038000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -824,9 +824,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 843b0000
-    m_LastClickedInstanceID: 15236
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 2cd8ffffc03a0000743b0000e035000062390000443e0000e837000028a00000663a0000b29f0000b89f0000be9f0000d435000094380000ec430000444600007c460000be5d0000de3800002e3d0000d8390000de3d00006a3600008e36000062360000027a0000b86201003039000060b40100928f020004370000d8360000c636000072400000444800003c38000032a70000e636000000000000fe370000f6360000843e0000c0440000c8440000c6440000ae440000ec3f0000ea3f0000d03f0000ce3f0000f03f0000023800000438000006380000083800000a3800000c3800000e38000010380000123800001438000016380000183800001a3800001c3800001e38000020380000223800002638000028380000243800009c3f0000703f00004a3f0000044000004e3700006037000050370000fe400000043c00007e400000c8680000663c0000386b0000063900000439000002390000a63e0000c23e00003a3e00004c3e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -874,8 +874,8 @@ MonoBehaviour:
     y: 0
     width: 394
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
