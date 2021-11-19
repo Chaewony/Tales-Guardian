@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class BattleManager : MonoBehaviour
 {
@@ -47,6 +49,8 @@ public class BattleManager : MonoBehaviour
     public Text remainMoveTimeText;
 
     public EnemyAttack enemyAttack;
+
+    public GameObject Result;
 
     // Start is called before the first frame update
     void Start()
@@ -106,6 +110,11 @@ public class BattleManager : MonoBehaviour
             //플레이어의 이동 턴이 오면 실행(즉 에너미의 공격 선택을 호출)
             //이동 "선택"
             //canAttack = false;
+
+            
+
+
+
             if (!isThrown) DiceButton.SetActive(true);
             remainMoveTimeText.text = "주사위 굴리기";
             if (diceScript.clickedDice)
@@ -119,6 +128,8 @@ public class BattleManager : MonoBehaviour
             //공격 "선택" + 에너미 이동 + 공격 "실행"
             //하나의 스크립트가 아니라 필드 각각의 스크립트가 있어 한 함수만 불러와주기 까다로움
             //EnemyField 스크립트 참고
+            checkEnd();
+
             remainMoveTimeText.text = "공격 턴입니다";
             Debug.Log("플레이어 공격턴, 플레이어 공격선택 + 에너미 이동 + 플레이어 공격실행 ");
         }
@@ -135,7 +146,11 @@ public class BattleManager : MonoBehaviour
         if (battleState == BattleState.BATTLE_END)
         {
             //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
+            Debug.Log("끝");
+            Invoke("loadResult", 3f);
         }
+
+
     }
     void CheckStage()
     {
@@ -211,6 +226,55 @@ public class BattleManager : MonoBehaviour
         {
             enemySquadCharacters[i].transform.position = new Vector3(enemyFields[stagePrefabs[stageIndex].StageEnemysArrangedIndex[i]].position.x, enemySquadCharacters[j].transform.position.y, enemyFields[stagePrefabs[stageIndex].StageEnemysArrangedIndex[i]].position.z);
         }
+    }
+
+    public void die(int num)
+    {
+        StartCoroutine(fade(num));
+
+    }
+
+    public IEnumerator fade(int num)
+    {
+        yield return new WaitForSeconds(1f);
+        Color color = enemySquadCharacters[num].color;                            //color 에 판넬 이미지 참조
+
+        while (enemySquadCharacters[num].color.a > 0f)
+        {
+            color.a -= Time.deltaTime / 0.5f;
+            enemySquadCharacters[num].color = color;
+
+            if (color.a <= 0f) color.a = 0f;
+
+            yield return null;
+        }
+    }
+
+    private void checkEnd()
+	{
+        int j = 0;
+        //사망처리
+        for (int i = 0; i < stagePrefabs[stageIndex].StageEnemysIndex.Length; i++)
+        {
+            
+            if (enemySquad[i].myCurrentHp <= 0)
+            {
+                j++;
+            }
+
+            if (j >= stagePrefabs[stageIndex].StageEnemysIndex.Length)
+            {
+                battleState = BattleState.BATTLE_END;
+                return;
+            }
+
+        }
+    }
+
+    private void loadResult()
+	{
+        //SceneManager.LoadScene("ResultScene");
+        Result.SetActive(true);
     }
 }
 

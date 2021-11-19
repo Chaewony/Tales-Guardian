@@ -38,4 +38,6 @@ public class EnemyMove : MonoBehaviour
 		}
 		return true;
 	}
+
+	
 }

@@ -244,7 +244,8 @@ public class EnemyField : MonoBehaviour
 
 			Invoke("Delay", 1f);
 			Invoke("Attack", 2f);
-			Invoke("Initiate", 4f);
+			Invoke("hpCheck", 3f);
+			Invoke("Initiate", 5f);
 			//enemyMove.Move();
 			//Attack();
 			//Initiate();
@@ -271,7 +272,7 @@ public class EnemyField : MonoBehaviour
 				battleManager.enemySquad[i] != null)
 			{
 				Debug.Log("피격");
-				battleManager.enemySquad[i].myCurrentHp -= 10;//수치 바꿀 것 
+				battleManager.enemySquad[i].myCurrentHp -= 100;//수치 바꿀 것 
 			}
 		}
 		//두번째 타겟에 공격, i랑 j랑 잘 볼 것
@@ -284,7 +285,7 @@ public class EnemyField : MonoBehaviour
 					battleManager.enemySquad[i] != null)
 				{
 					Debug.Log("피격2");
-					battleManager.enemySquad[j].myCurrentHp -= 5;//수치 바꿀 것
+					battleManager.enemySquad[j].myCurrentHp -= 50;//수치 바꿀 것
 				}
 			}
 		}
@@ -300,6 +301,17 @@ public class EnemyField : MonoBehaviour
 		}
 		isClicked = false;
 		battleManager.battleState = BattleState.PLAYER_MOVE;
+	}
+
+	private void hpCheck()
+	{
+		for (int i = 0; i < battleManager.stagePrefabs[battleManager.stageIndex].StageEnemysIndex.Length; i++)
+		{
+			if (battleManager.enemySquad[i].myCurrentHp <= 0)
+			{
+				battleManager.die(i);
+			}
+		}
 	}
 
 	private void Delay()

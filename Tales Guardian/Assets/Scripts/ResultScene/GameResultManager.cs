@@ -80,6 +80,6 @@ public class GameResultManager : MonoBehaviour
 
     private void OnDisable()
     {
-        Destroy(GameObject.Find("GameResult").gameObject); 
+        //Destroy(GameObject.Find("GameResult").gameObject); 
     }
 }
