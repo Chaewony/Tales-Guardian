@@ -33,6 +33,7 @@ public class BattleManager : MonoBehaviour
     public Transform[] enemyFields;
 
     public SpriteRenderer[] playerSquadCharacters;
+    public SpriteRenderer[] playerSquadCharactersPosition;
     public SpriteRenderer[] enemySquadCharacters;
 
     public bool canAttack; //어택 턴을 나타내는 것이 아니라, 스킬 클릭됐다는걸 체크
@@ -51,6 +52,9 @@ public class BattleManager : MonoBehaviour
     public EnemyAttack enemyAttack;
 
     public GameObject Result;
+    public Text ResultText;
+
+    public Button buttons;
 
     // Start is called before the first frame update
     void Start()
@@ -129,8 +133,8 @@ public class BattleManager : MonoBehaviour
             //하나의 스크립트가 아니라 필드 각각의 스크립트가 있어 한 함수만 불러와주기 까다로움
             //EnemyField 스크립트 참고
             checkEnd();
-
-            remainMoveTimeText.text = "공격 턴입니다";
+            checkPlayerEnd();
+;           remainMoveTimeText.text = "공격 턴입니다";
             Debug.Log("플레이어 공격턴, 플레이어 공격선택 + 에너미 이동 + 플레이어 공격실행 ");
         }
 
@@ -148,6 +152,16 @@ public class BattleManager : MonoBehaviour
             //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
             Debug.Log("끝");
             Invoke("loadResult", 3f);
+            ResultText.text = "성공";
+        }
+
+        if (battleState == BattleState.BATTLE_PLAYER_END)
+        {
+            //두 squad중 하나의 모든 오브젝트의 hp가 0이 될 경우
+            Debug.Log("플레이어 짐");
+            Invoke("loadResult", 3f);
+            ResultText.text = "실패";
+
         }
 
 
@@ -275,6 +289,52 @@ public class BattleManager : MonoBehaviour
 	{
         //SceneManager.LoadScene("ResultScene");
         Result.SetActive(true);
+    }
+    public void playerDie(int num)
+	{
+        StartCoroutine(playerFade(num));
+    }
+
+    public IEnumerator playerFade(int num)
+	{
+        yield return new WaitForSeconds(1f);
+        Color color = playerSquadCharacters[num].color;                            //color 에 판넬 이미지 참조
+
+        while (playerSquadCharacters[num].color.a > 0f)
+        {
+            color.a -= Time.deltaTime / 0.5f;
+            playerSquadCharacters[num].color = color;
+
+            if (color.a <= 0f)
+            {
+                color.a = 0f;
+                playerSquadCharactersPosition[num].transform.position = new Vector3(-1000, 0, 0);
+            }
+
+            yield return null;
+        }
+    }
+
+    private void checkPlayerEnd()
+    {
+        int j = 0;
+        //사망처리
+        for (int i = 0; i < playerSquad.Count; i++)
+        {
+
+            if (playerSquad[i].myCurrentHp <= 0)
+            {
+                
+                j++;
+            }
+
+            if (j >= playerSquad.Count)
+            {
+                battleState = BattleState.BATTLE_PLAYER_END;
+                return;
+            }
+
+        }
     }
 }
 

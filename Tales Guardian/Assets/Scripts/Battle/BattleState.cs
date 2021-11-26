@@ -12,5 +12,7 @@ public enum BattleState
 
 	PLAYER_MOVE_CHOOSE_END, //턴이 끝나면
 	PLAYER_MOVE, //플레이어 이동턴(에너미 공격 턴)
-	BATTLE_END //게임 종료
+	BATTLE_END, //게임 종료
+	BATTLE_PLAYER_END, //게임 종료
+
 }

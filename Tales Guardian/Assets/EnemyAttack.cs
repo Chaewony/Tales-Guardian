@@ -34,7 +34,7 @@ public class EnemyAttack : MonoBehaviour
 			if (battleManager.playerSquadCharacters[i].transform.position.x == playerFields[myFieldRand].transform.position.x &&
 				battleManager.playerSquadCharacters[i].transform.position.z == playerFields[myFieldRand].transform.position.z)
 			{
-				battleManager.playerSquad[i].myCurrentHp -= 10;
+				battleManager.playerSquad[i].myCurrentHp -= 100;
 			}
 		}
 		//세컨드 타겟 hp 안깎이고 어딘가에서 널 레퍼런스 오류 뜸
@@ -45,10 +45,12 @@ public class EnemyAttack : MonoBehaviour
 				if (battleManager.playerSquadCharacters[j].transform.position.x == playerFields[myFieldRand].selectedSecondTarget[i].transform.position.x &&
 				battleManager.playerSquadCharacters[j].transform.position.z == playerFields[myFieldRand].selectedSecondTarget[i].transform.position.z)
 				{
-					battleManager.playerSquad[j].myCurrentHp -= 5;
+					battleManager.playerSquad[j].myCurrentHp -= 50;
 				}
 			}
 		}
+
+		playerHpCheck();
 		isChoosingEnd = false;
 		playerFields[myFieldRand].PlayerFieldInitiate();
 		//battleManager.battleState = BattleState.PLAYER_ATTACK;
@@ -57,5 +59,16 @@ public class EnemyAttack : MonoBehaviour
 	{
 		int fieldRand = Random.Range(0, playerFields.Length);
 		return fieldRand;
+	}
+
+	private void playerHpCheck()
+	{
+		for (int i = 0; i < battleManager.playerSquad.Count; i++)
+		{
+			if (battleManager.playerSquad[i].myCurrentHp <= 0)
+			{
+				battleManager.playerDie(i);
+			}
+		}
 	}
 }

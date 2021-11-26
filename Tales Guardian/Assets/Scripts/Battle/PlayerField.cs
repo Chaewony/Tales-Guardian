@@ -143,4 +143,6 @@ public class PlayerField : MonoBehaviour
 		selectedSecondTarget = new List<PlayerField>();
 		battleManager.battleState = BattleState.PLAYER_ATTACK_TURN;
 	}
+
+	
 }

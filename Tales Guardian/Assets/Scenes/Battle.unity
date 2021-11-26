@@ -1409,6 +1409,7 @@ MonoBehaviour:
   - {fileID: 1538612398}
   - {fileID: 1929592936}
   - {fileID: 1861881022}
+  index: 2
 --- !u!1 &228038565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +2901,11 @@ MonoBehaviour:
   - {fileID: 1929592937}
   - {fileID: 211583488}
   - {fileID: 1861881023}
+  playerSquadCharactersPosition:
+  - {fileID: 1538612399}
+  - {fileID: 1929592937}
+  - {fileID: 211583488}
+  - {fileID: 1861881023}
   enemySquadCharacters:
   - {fileID: 1115204570}
   - {fileID: 143251563}
@@ -2917,6 +2923,8 @@ MonoBehaviour:
   remainMoveTimeText: {fileID: 228038567}
   enemyAttack: {fileID: 1557815368}
   Result: {fileID: 1814835521}
+  ResultText: {fileID: 2062683976}
+  buttons: {fileID: 0}
 --- !u!4 &574789749
 Transform:
   m_ObjectHideFlags: 0
@@ -8232,6 +8240,7 @@ MonoBehaviour:
   - {fileID: 1929592936}
   - {fileID: 211583487}
   - {fileID: 1861881022}
+  index: 0
 --- !u!1 &1539307053
 GameObject:
   m_ObjectHideFlags: 0
@@ -10458,6 +10467,7 @@ MonoBehaviour:
   - {fileID: 1538612398}
   - {fileID: 1929592936}
   - {fileID: 211583487}
+  index: 3
 --- !u!1 &1866963656
 GameObject:
   m_ObjectHideFlags: 0
@@ -10932,6 +10942,7 @@ MonoBehaviour:
   - {fileID: 1538612398}
   - {fileID: 211583487}
   - {fileID: 1861881022}
+  index: 1
 --- !u!1 &1931840902
 GameObject:
   m_ObjectHideFlags: 0

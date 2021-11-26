@@ -44,14 +44,14 @@ public class ChangeScene : MonoBehaviour
                 SceneManager.LoadScene("FirstThemeStageSelection");
                 break;
             case SceneButtonType.StartButton:
-                if(InFeildCharacter != 0)
+                if (InFeildCharacter < 4)
+                {
+                    WarringMassage.SetActive(true);
+                }
+                else if (InFeildCharacter == 4)
                 {
                     Debug.Log("배틀시작");
                     SceneManager.LoadScene("Battle");
-                }
-                else if (InFeildCharacter == 0)
-                {
-                    WarringMassage.SetActive(true);
                 }
                 break;
             case SceneButtonType.CloseWarringButton:

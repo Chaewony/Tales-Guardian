@@ -14,6 +14,8 @@ public class PlayerMove : MonoBehaviour
 
 	public Transform[] otherCharacters;
 
+	public int index;
+
 	void Start()
 	{
 		characterColor = GetComponent<SpriteRenderer>();
@@ -23,7 +25,7 @@ public class PlayerMove : MonoBehaviour
 
 	private void OnMouseDown() //캐릭터가 클릭되면
 	{
-		if (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject())
+		if (Input.GetMouseButtonDown(0) && !IsPointerOverUIObject()&&battleManager.playerSquad[index].myCurrentHp>0)
 		{
 			// UI터치만 처리
 			if (battleManager.battleState == BattleState.PLAYER_MOVE && battleManager.canClick) //배틀스테이트가 Player_Move일때만 실행 되도록
@@ -44,8 +46,29 @@ public class PlayerMove : MonoBehaviour
 			battleManager.canClick = false;
 		}*/
 	}
-
 	public void move(Vector3 fieldPosition)
+	{
+		if (clicked && battleManager.battleState == BattleState.PLAYER_MOVE &&
+			(Vector3.Distance(fieldPosition, this.transform.position) < 351) && //대각선 이동 방지
+			(Mathf.Abs(fieldPosition.x - this.transform.position.x) < 351 && //좌우 두 칸 이동 방지
+			(Mathf.Abs(fieldPosition.z - this.transform.position.z) < 171))) //상하 두 칸 이동 방지
+		{
+			this.transform.position = new Vector3(fieldPosition.x, this.transform.position.y, fieldPosition.z); //캐릭터 이동
+
+			if (battleManager.remainMoveTime > 1) battleManager.remainMoveTime--;
+			else
+			{
+				battleManager.remainMoveTime = 0;
+				characterColor.color = defaultColor; //원래 색깔로 되돌리기
+				clicked = false;
+				battleManager.canMove = false;
+				battleManager.canClick = true;
+
+				battleManager.battleState = BattleState.PLAYER_MOVE_CHOOSE_END;
+			}
+		}
+	}
+	/*public void move(Vector3 fieldPosition)
 	{
 		if (clicked && battleManager.battleState == BattleState.PLAYER_MOVE &&
 			ComparePosition(fieldPosition) && //다른캐릭터가 없으면 이동 가능
@@ -67,9 +90,9 @@ public class PlayerMove : MonoBehaviour
 				battleManager.battleState = BattleState.PLAYER_MOVE_CHOOSE_END;
 			}
 		}
-	}
+	}*/
 
-	public bool ComparePosition(Vector3 fieldPosition) //다른캐릭터가 움직이려는 필드에 있는지 확인
+	/*public bool ComparePosition(Vector3 fieldPosition) //다른캐릭터가 움직이려는 필드에 있는지 확인
 	{
 		for(int i=0;i< otherCharacters.Length;i++)
 		{
@@ -78,7 +101,7 @@ public class PlayerMove : MonoBehaviour
 		}
 
 		return true; //없으면 true
-	}
+	}*/
 
 	private bool IsPointerOverUIObject() //주사위 굴리는 버튼과 겹쳐지는지 판별
 	{
@@ -88,4 +111,6 @@ public class PlayerMove : MonoBehaviour
 		EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
 		return results.Count > 0;
 	}
+
+
 }

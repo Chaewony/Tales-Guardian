@@ -272,7 +272,7 @@ public class EnemyField : MonoBehaviour
 				battleManager.enemySquad[i] != null)
 			{
 				Debug.Log("피격");
-				battleManager.enemySquad[i].myCurrentHp -= 100;//수치 바꿀 것 
+				battleManager.enemySquad[i].myCurrentHp -= 10;//수치 바꿀 것 
 			}
 		}
 		//두번째 타겟에 공격, i랑 j랑 잘 볼 것
@@ -282,10 +282,10 @@ public class EnemyField : MonoBehaviour
 			{
 				if (battleManager.enemySquadCharacters[j].transform.position.x == selectedSecondTarget[i].transform.position.x &&
 					battleManager.enemySquadCharacters[j].transform.position.z == selectedSecondTarget[i].transform.position.z &&
-					battleManager.enemySquad[i] != null)
+					battleManager.enemySquad[j] != null)
 				{
 					Debug.Log("피격2");
-					battleManager.enemySquad[j].myCurrentHp -= 50;//수치 바꿀 것
+					battleManager.enemySquad[j].myCurrentHp -= 5;//수치 바꿀 것
 				}
 			}
 		}
