@@ -405,6 +405,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 47101008}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &47101011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,6 +890,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77568695}
   m_CullTransparentMesh: 0
+--- !u!1001 &89257657
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 231.06094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 641.3533
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 413.39346
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434718, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_Name
+      value: "\uC7A5\uCC29 \uC0AC\uC6B4\uB4DC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434719, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ffa1da5f09f0b04488207bc7f9996ab, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e19d7db36baa09946aa48f6635df069f, type: 3}
+--- !u!82 &89257658 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3930975899987434719, guid: e19d7db36baa09946aa48f6635df069f,
+    type: 3}
+  m_PrefabInstance: {fileID: 89257657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &124253320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1339,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 0}
   CardInform: {fileID: 0}
+  unlockSound: {fileID: 0}
 --- !u!114 &185550259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3580,6 +3662,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 475883220}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &475883223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4839,6 +4922,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 684733728}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &684733731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5924,6 +6008,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 796505448}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &796505451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7381,6 +7466,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 977521626}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &977521629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9244,6 +9330,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 1272080326}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &1272080329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9811,6 +9898,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 1341300938}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &1341300941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10322,6 +10410,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 1428493114}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &1428493119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11596,6 +11685,7 @@ MonoBehaviour:
   SelectCharacterNumber: 0
   ThisField: {fileID: 1642032169}
   CardInform: {fileID: 295222697}
+  unlockSound: {fileID: 89257658}
 --- !u!114 &1642032172
 MonoBehaviour:
   m_ObjectHideFlags: 0

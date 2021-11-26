@@ -10,7 +10,12 @@ public class SkillEffect : MonoBehaviour
     public Animator rainbowPang;
     public Animator scratch;
     public float effectTime;
-    
+
+    public AudioSource explosion;
+    public AudioSource electric;
+    public AudioSource fireBoom;
+    public AudioSource axe;
+
     //카메라 흔들기
     public Animator cam;
 
@@ -37,7 +42,7 @@ public class SkillEffect : MonoBehaviour
         
         BKpang.SetBool("Attack", true);
         cam.SetBool("Move", true);
-
+        explosion.Play();
 
         yield return new WaitForSeconds(effectTime);
         BKpang.SetBool("Attack", false);
@@ -48,6 +53,7 @@ public class SkillEffect : MonoBehaviour
     {
         justPang.SetBool("Attack", true);
         cam.SetBool("Move", true);
+        electric.Play();
 
         yield return new WaitForSeconds(effectTime);
         justPang.SetBool("Attack", false);
@@ -58,6 +64,7 @@ public class SkillEffect : MonoBehaviour
     {
         rainbowPang.SetBool("Attack", true);
         cam.SetBool("Move", true);
+        fireBoom.Play();
 
         yield return new WaitForSeconds(effectTime);
         rainbowPang.SetBool("Attack", false);
@@ -68,6 +75,7 @@ public class SkillEffect : MonoBehaviour
     {
         scratch.SetBool("Attack", true);
         cam.SetBool("Move", true);
+        axe.Play();
 
         yield return new WaitForSeconds(effectTime);
         scratch.SetBool("Attack", false);

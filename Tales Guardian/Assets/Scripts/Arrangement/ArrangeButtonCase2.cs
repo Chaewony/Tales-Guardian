@@ -12,6 +12,8 @@ public class ArrangeButtonCase2 : MonoBehaviour
     public GameObject ThisField;
     public GameObject CardInform;
 
+    public AudioSource unlockSound;
+
     public void OnButtonClick()
     {
         switch (arrangeButtonType)
@@ -24,30 +26,39 @@ public class ArrangeButtonCase2 : MonoBehaviour
                 break;
             case ArrangementButtonType.Field0:
                 FieldFunction(0);
+                unlockSound.Play();
                 break;             
             case ArrangementButtonType.Field1:
                 FieldFunction(1);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field2:
                 FieldFunction(2);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field3:
                 FieldFunction(3);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field4:
                 FieldFunction(4);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field5:
                 FieldFunction(5);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field6:
                 FieldFunction(6);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field7:
                 FieldFunction(7);
+                unlockSound.Play();
                 break;
             case ArrangementButtonType.Field8:
                 FieldFunction(8);
+                unlockSound.Play();
                 break;
         }
     }

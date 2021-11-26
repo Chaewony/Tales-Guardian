@@ -10,6 +10,8 @@ public class EnemyAttack : MonoBehaviour
 	int myFieldRand;
 	bool isChoosingEnd;
 
+	public AudioSource punch;
+
 	public void EnemyAttackChoose()
 	{
 		if (!isChoosingEnd)
@@ -20,6 +22,7 @@ public class EnemyAttack : MonoBehaviour
 			int type = Random.Range(0, 2); //스킬 랜덤
 			if (type == 0) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].myFirstSkillSecondTargetRange);
 			else if (type == 1) playerFields[myFieldRand].SetSecondTarget(battleManager.enemySquad[charRand].mySecondSkillSecondTargetRange);
+			punch.Play();
 			//playerFieldsColor[myFieldRand].color = new Color(1, 0.5f, 0.5f);
 			Invoke("Attack", 1f);
 		}
@@ -28,6 +31,7 @@ public class EnemyAttack : MonoBehaviour
 
 	public void Attack()
 	{
+		
 		//공격
 		for (int i = 0; i < battleManager.playerSquad.Count; i++)
 		{

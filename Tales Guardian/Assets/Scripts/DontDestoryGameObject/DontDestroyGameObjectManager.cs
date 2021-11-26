@@ -13,8 +13,23 @@ public class DontDestroyGameObjectManager : MonoBehaviour
     public GameObject User;
     public CharactersPrefab aasdf;
 
-    // Start is called before the first frame update
-    void Start()
+    GameObject BackgroundMusic;
+    AudioSource backmusic;
+
+    private void Awake()
+	{
+        /*BackgroundMusic = GameObject.Find("BackgroundMusic");
+        backmusic = BackgroundMusic.GetComponent<AudioSource>(); //배경음악 저장해둠
+        if (backmusic.isPlaying) return; //배경음악이 재생되고 있다면 패스
+        else
+        {
+            backmusic.Play();
+            DontDestroyOnLoad(BackgroundMusic); //배경음악 계속 재생하게(이후 버튼매니저에서 조작)
+        }*/
+    }
+
+	// Start is called before the first frame update
+	void Start()
     {
         for (int i = 0; i < Character.Length; i++)
         {
@@ -54,6 +69,15 @@ public class DontDestroyGameObjectManager : MonoBehaviour
         Stage[4] = GameObject.Find("Stage1-5");
 
         User = GameObject.Find("User");
+
+        BackgroundMusic = GameObject.Find("BackgroundMusic");
+        backmusic = BackgroundMusic.GetComponent<AudioSource>(); //배경음악 저장해둠
+        if (backmusic.isPlaying) return; //배경음악이 재생되고 있다면 패스
+        else
+        {
+            backmusic.Play();
+            DontDestroyOnLoad(BackgroundMusic); //배경음악 계속 재생하게(이후 버튼매니저에서 조작)
+        }
     }
 
     // Update is called once per frame

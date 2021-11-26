@@ -10,6 +10,7 @@ public class MyButton : MonoBehaviour
     public GameObject selectCharUI;
     public Character character;
     public int CharNum;
+    public AudioSource unlock;
 
     // Start is called before the first frame update
     public void OnButtonClick()
@@ -41,6 +42,7 @@ public class MyButton : MonoBehaviour
                 selectCharUI.SetActive(false);
                 break;
             case ButtonType.Char:
+                unlock.Play();
                 character.SelectMainCharacter(CharNum);
                 character.UpdateRepresentativeChar(CharNum);
                 selectCharUI.SetActive(false);

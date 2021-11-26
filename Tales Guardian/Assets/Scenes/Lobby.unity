@@ -177,6 +177,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 5
+  unlock: {fileID: 1052077223}
 --- !u!114 &119071268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &156501013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -383,7 +384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 357, y: -326}
+  m_AnchoredPosition: {x: 207, y: -326}
   m_SizeDelta: {x: 224.95694, y: 250.43182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156501014
@@ -402,6 +403,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 1052077223}
 --- !u!114 &156501015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,6 +707,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 1052077223}
 --- !u!114 &400639221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,6 +855,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 13
+  unlock: {fileID: 1052077223}
 --- !u!114 &446156824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,6 +1003,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 14
+  unlock: {fileID: 1052077223}
 --- !u!114 &449406705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,6 +1385,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 8
+  unlock: {fileID: 1052077223}
 --- !u!114 &594553409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,6 +1689,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 7
+  unlock: {fileID: 1052077223}
 --- !u!114 &678282398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,6 +1837,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 11
+  unlock: {fileID: 1052077223}
 --- !u!114 &713029302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2068,6 +2076,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 2
+  unlock: {fileID: 1052077223}
 --- !u!1 &719172471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2133,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 9
+  unlock: {fileID: 1052077223}
 --- !u!114 &719172474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2404,7 +2414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187, y: -327}
+  m_AnchoredPosition: {x: 371, y: -327}
   m_SizeDelta: {x: 200.44873, y: 214.69421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &787156716
@@ -2423,6 +2433,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 1052077223}
 --- !u!114 &787156717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2926,6 +2937,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998755464}
   m_CullTransparentMesh: 0
+--- !u!82 &1052077223 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3930975899987434719, guid: e19d7db36baa09946aa48f6635df069f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3930975899090563192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1064669265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,7 +3239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91.1, y: -30}
+  m_AnchoredPosition: {x: -160, y: -30}
   m_SizeDelta: {x: 670, y: 842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1152137514
@@ -3273,7 +3290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1154841149
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3401,6 +3418,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 1052077223}
 --- !u!1 &1158120120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3535,6 +3553,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 6
+  unlock: {fileID: 1052077223}
 --- !u!114 &1190131330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3748,6 +3767,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 10
+  unlock: {fileID: 1052077223}
 --- !u!114 &1255202007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3973,6 +3993,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 1052077223}
 --- !u!114 &1410811132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4120,6 +4141,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 12
+  unlock: {fileID: 1052077223}
 --- !u!114 &1444768166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4267,6 +4289,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 4
+  unlock: {fileID: 1052077223}
 --- !u!114 &1448900052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4793,6 +4816,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 1052077223}
 --- !u!1 &1767684391
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,6 +4873,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 15
+  unlock: {fileID: 1052077223}
 --- !u!114 &1767684394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5205,6 +5230,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 3
+  unlock: {fileID: 1052077223}
 --- !u!1 &1899222765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5351,6 +5377,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 0
+  unlock: {fileID: 0}
 --- !u!1 &1912004013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5576,6 +5603,7 @@ MonoBehaviour:
   selectCharUI: {fileID: 862517773}
   character: {fileID: 862517775}
   CharNum: 1
+  unlock: {fileID: 1052077223}
 --- !u!1 &2008482358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,3 +5930,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095796245}
   m_CullTransparentMesh: 0
+--- !u!1001 &3930975899090563192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 231.06094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 641.3533
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 413.39346
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434704, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3930975899987434718, guid: e19d7db36baa09946aa48f6635df069f,
+        type: 3}
+      propertyPath: m_Name
+      value: "\uC7A5\uCC29 \uC0AC\uC6B4\uB4DC"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e19d7db36baa09946aa48f6635df069f, type: 3}

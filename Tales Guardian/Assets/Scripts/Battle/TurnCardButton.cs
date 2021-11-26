@@ -10,6 +10,8 @@ public class TurnCardButton : MonoBehaviour
 
 	Image image;
 
+	public AudioSource card;
+
 	// Start is called before the first frame update
 	private void Start()
 	{
@@ -24,15 +26,19 @@ public class TurnCardButton : MonoBehaviour
 			{
 				case TurnCardIndex.TurnCardIndex0:
 					turnCard.myTurnCardIndex = 0;
+					card.Play();
 					break;
 				case TurnCardIndex.TurnCardIndex1:
 					turnCard.myTurnCardIndex = 1;
+					card.Play();
 					break;
 				case TurnCardIndex.TurnCardIndex2:
 					turnCard.myTurnCardIndex = 2;
+					card.Play();
 					break;
 				case TurnCardIndex.TurnCardIndex3:
 					turnCard.myTurnCardIndex = 3;
+					card.Play();
 					break;
 			}
 		}
