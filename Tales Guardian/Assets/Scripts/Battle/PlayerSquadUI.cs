@@ -18,6 +18,9 @@ public class PlayerSquadUI : MonoBehaviour
     [SerializeField]
     private Text[] skill2;
 
+    public Button[] skill1Button;
+    public Button[] skill2Button;
+
     // Update is called once per frame
     void Update()
     {
@@ -48,12 +51,35 @@ public class PlayerSquadUI : MonoBehaviour
         //스킬1
         for (int i = 0; i < battleManager.playerSquad.Count; i++)
         {
-            skill1[i].text = battleManager.playerSquad[i].myFirstSkillName;
+            if (battleManager.playerSquad[i].myCurrentHp <= 0)
+            {
+                skill1Button[i].interactable = false;
+                skill1[i].text = "";
+            }
+            else skill1[i].text = battleManager.playerSquad[i].myFirstSkillName;
         }
         //스킬2
         for (int i = 0; i < battleManager.playerSquad.Count; i++)
         {
-            skill2[i].text = battleManager.playerSquad[i].mySecondSkillName;
+            if (battleManager.playerSquad[i].myCurrentHp <= 0)
+            {
+                skill2Button[i].interactable = false;
+                skill2[i].text = "";
+            }
+            else skill2[i].text = battleManager.playerSquad[i].mySecondSkillName;
         }
+
+        /*//스킬1
+        for (int i = 0; i < battleManager.playerSquad.Count; i++)
+        {
+            if (battleManager.playerSquad[i].myCurrentHp <= 0)
+                skill1Button[i].interactable = false;
+        }
+        //스킬2
+        for (int i = 0; i < battleManager.playerSquad.Count; i++)
+        {
+            if (battleManager.playerSquad[i].myCurrentHp <= 0)
+                skill2Button[i].interactable = false;
+        }*/
     }
 }
